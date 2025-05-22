@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { DRH } from "@/types";
 import DRHTable from "@/components/drh-table";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default async function BuildingTestDataPage({
   params,
@@ -21,6 +23,15 @@ export default async function BuildingTestDataPage({
 
   if (!test) return notFound();
 
+  // Get all buildings tested by this machine
+  const testedBuildings = Array.from(
+    new Set(
+      testData
+        .filter((t) => t.machineId === machineId)
+        .map((t) => t.buildingId),
+    ),
+  ).map((id) => buildings.find((b) => b.id === id)!);
+
   const renderTestResults = () => {
     switch (machineId) {
       case "drh":
@@ -32,23 +43,42 @@ export default async function BuildingTestDataPage({
   };
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="mb-8">
-        <Link
-          href={`/machines/${machineId}/buildings`}
-          className="text-blue-600 hover:underline"
-        >
-          &larr; Back to buildings
-        </Link>
+    <div className="flex h-full">
+      {/* Sidebar */}
+      <div className="hidden w-64 border-r bg-gray-50 p-4 md:block">
+        <h2 className="mb-4 text-lg font-semibold">Tested Buildings</h2>
+        <ScrollArea className="h-[calc(100vh-150px)]">
+          <div className="space-y-2">
+            {testedBuildings.map((b) => (
+              <Link
+                key={b.id}
+                href={`/machines/${machineId}/buildings/${b.id}`}
+              >
+                <Button
+                  variant={b.id === buildingId ? "default" : "ghost"}
+                  className="w-full justify-start"
+                >
+                  {b.name}
+                </Button>
+              </Link>
+            ))}
+          </div>
+        </ScrollArea>
       </div>
 
-      <h1 className="mb-2 text-3xl font-bold">
-        {building.name} - {machine.name} Test Results
-      </h1>
+      {/* Main Content */}
+      <div className="flex-1 overflow-auto">
+        <div className="container mx-auto px-4 py-8">
+          <div className="mb-6">
+            <h1 className="text-3xl font-bold tracking-tight">
+              {building.name}
+            </h1>
+          </div>
 
-      <div className="rounded-lg bg-white p-6 shadow">
-        <h2 className="mb-4 text-xl font-semibold">Test Results</h2>
-        {renderTestResults()}
+          <div className="rounded-lg border bg-white p-6 shadow-sm">
+            {renderTestResults()}
+          </div>
+        </div>
       </div>
     </div>
   );

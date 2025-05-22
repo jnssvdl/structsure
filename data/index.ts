@@ -6,9 +6,10 @@ export const buildings: Building[] = [
     id: "b1",
     name: "Empire State Building",
     location: "New York",
+    yearBuilt: 1999,
   },
-  { id: "b2", name: "Burj Khalifa", location: "Dubai" },
-  { id: "b3", name: "Shanghai Tower", location: "Shanghai" },
+  { id: "b2", name: "Burj Khalifa", location: "Dubai", yearBuilt: 1925 },
+  { id: "b3", name: "Shanghai Tower", location: "Shanghai", yearBuilt: 2000 },
 ];
 
 export const machines: Machine[] = [
@@ -16,11 +17,27 @@ export const machines: Machine[] = [
     id: "drh",
     name: "DRH",
     description: "Tests building structural integrity",
+    imageUrl: "/images/machines/x-2000.jpg",
+    parts: [
+      "Laser displacement sensors",
+      "Vibration analyzers",
+      "Thermal cameras",
+      "Data processing unit",
+    ],
+    uses: "Building foundation analysis, crack detection, and load-bearing assessment",
   },
   {
     id: "upv",
     name: "UPV",
     description: "Measures thermal properties",
+    imageUrl: "/images/machines/gpr-5.jpg",
+    parts: [
+      "Antenna array",
+      "Control unit",
+      "Data visualization tablet",
+      "Battery pack",
+    ],
+    uses: "Detecting rebar placement, voids, and deterioration in concrete slabs",
   },
 ];
 

@@ -1,28 +1,27 @@
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
 import { machines } from "@/data";
+import { Header } from "@/components/header";
+import MachineCard from "@/components/machine-card";
 
 export default function MachinesPage() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="mb-8 text-3xl font-bold">Available Machines</h1>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {machines.map((machine) => (
-          <div
-            key={machine.id}
-            className="rounded-lg border p-6 shadow-sm transition-shadow hover:shadow-md"
-          >
-            <h2 className="mb-2 text-xl font-semibold">{machine.name}</h2>
-            <p className="mb-4 text-gray-600">{machine.description}</p>
-            <Link
-              href={`/machines/${machine.id}/buildings`}
-              className={buttonVariants({ variant: "outline", size: "sm" })}
-            >
-              View Buildings
-            </Link>
-          </div>
-        ))}
-      </div>
+    <div className="flex min-h-screen flex-col bg-gray-50">
+      <Header />
+      <main className="container flex-1 px-4 py-8">
+        <div className="mb-10 space-y-1">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+            Available Machines
+          </h1>
+          <p className="text-gray-600">
+            Select a machine to explore details or view buildings
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {machines.map((machine) => (
+            <MachineCard key={machine.id} machine={machine} />
+          ))}
+        </div>
+      </main>
     </div>
   );
 }

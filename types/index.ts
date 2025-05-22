@@ -2,12 +2,16 @@ export type Building = {
   id: string;
   name: string;
   location: string;
+  yearBuilt: number;
 };
 
 export type Machine = {
   id: string;
   name: string;
   description: string;
+  imageUrl: string;
+  parts: string[];
+  uses: string;
 };
 
 export type DRH = {
