@@ -45,7 +45,7 @@ export default async function BuildingTestDataPage({
   return (
     <div className="flex h-full">
       {/* Sidebar */}
-      <div className="hidden w-64 border-r bg-gray-50 p-4 md:block">
+      <div className="hidden w-64 border-r p-4 md:block">
         <h2 className="mb-4 text-lg font-semibold">Tested Buildings</h2>
         <ScrollArea className="h-[calc(100vh-150px)]">
           <div className="space-y-2">
@@ -75,9 +75,7 @@ export default async function BuildingTestDataPage({
             </h1>
           </div>
 
-          <div className="rounded-lg border bg-white p-6 shadow-sm">
-            {renderTestResults()}
-          </div>
+          {renderTestResults()}
         </div>
       </div>
     </div>

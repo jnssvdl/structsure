@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
 
 export function Header() {
   return (
@@ -31,6 +32,7 @@ export function Header() {
             >
               Contact
             </Link>
+            <ModeToggle />
           </nav>
         </div>
 
