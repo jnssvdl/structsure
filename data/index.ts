@@ -17,7 +17,7 @@ export const machines: Machine[] = [
     id: "drh",
     name: "DRH",
     description: "Tests building structural integrity",
-    imageUrl: "/images/machines/x-2000.jpg",
+    imageUrl: "/images/machine.png",
     parts: [
       "Laser displacement sensors",
       "Vibration analyzers",
@@ -30,7 +30,7 @@ export const machines: Machine[] = [
     id: "upv",
     name: "UPV",
     description: "Measures thermal properties",
-    imageUrl: "/images/machines/gpr-5.jpg",
+    imageUrl: "/images/machine.png",
     parts: [
       "Antenna array",
       "Control unit",

@@ -17,7 +17,7 @@ export default function MachineCard({ machine }: { machine: Machine }) {
       <CardHeader>
         <div className="relative h-48 w-full">
           <Image
-            src="/images/machine.png"
+            src={machine.imageUrl}
             alt={machine.name}
             fill
             className="rounded-xl object-cover"
