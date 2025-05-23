@@ -1,50 +1,38 @@
 import Link from "next/link";
-import { Input } from "@/components/ui/input";
+import { Input } from "./ui/input";
 import { Search } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b">
-      <div className="flex h-16 items-center justify-between px-4">
-        {/* Logo and Navigation */}
-        <div className="flex items-center gap-10">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-lg font-semibold">StructSure</span>
-          </Link>
+    <header className="bg-background sticky top-0 z-40 w-full border-b">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <span className="text-primary text-xl font-bold">StructSure</span>
 
-          <nav className="hidden items-center space-x-6 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
+          {["Home", "About", "Team", "Contact"].map((label) => (
             <Link
-              href="/"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
+              key={label}
+              href={`#${label.toLowerCase()}`}
+              className="hover:text-primary font-medium transition-colors"
             >
-              Home
+              {label}
             </Link>
-            <Link
-              href="#about"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
-            >
-              About
-            </Link>
-            <Link
-              href="#contact"
-              className="text-sm font-medium text-gray-700 transition-colors hover:text-blue-600"
-            >
-              Contact
-            </Link>
+          ))}
+
+          <div className="hidden items-center gap-2 md:flex">
+            <div className="relative w-64">
+              <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
+              <Input
+                type="search"
+                placeholder="Search"
+                className="pl-10 text-sm"
+              />
+            </div>
+
             <ModeToggle />
-          </nav>
-        </div>
-
-        {/* Search Bar */}
-        <div className="relative w-full max-w-md">
-          <Search className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-gray-400" />
-          <Input
-            type="search"
-            placeholder="Search machines or data..."
-            className="pl-9"
-          />
-        </div>
+          </div>
+        </nav>
       </div>
     </header>
   );
