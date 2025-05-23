@@ -6,6 +6,14 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return machines.map((machine) => ({
+    machineId: machine.id,
+  }));
+}
+
 export default async function MachineBuildingsPage({
   params,
 }: {

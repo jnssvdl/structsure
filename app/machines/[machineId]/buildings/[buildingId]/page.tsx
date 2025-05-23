@@ -6,6 +6,27 @@ import DRHTable from "@/components/drh-table";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const params = [];
+
+  for (const machine of machines) {
+    const relatedTests = testData.filter(
+      (test) => test.machineId === machine.id,
+    );
+
+    for (const test of relatedTests) {
+      params.push({
+        machineId: machine.id,
+        buildingId: test.buildingId,
+      });
+    }
+  }
+
+  return params;
+}
+
 export default async function BuildingTestDataPage({
   params,
 }: {
