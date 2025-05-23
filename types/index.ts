@@ -3,6 +3,7 @@ export type Building = {
   name: string;
   location: string;
   yearBuilt: number;
+  imageUrl: "";
 };
 
 export type Machine = {
@@ -25,10 +26,15 @@ export type DRH = {
   compressiveStrength: string;
 };
 
-type UPV = {
-  thermalEfficiency: number;
-  insulationRating: string;
-  windowQuality: string;
+export type UPV = {
+  location: string;
+  locationDescription: string;
+  member: string;
+  compressiveStrength: number;
+  velocity: number;
+  method: string;
+  concreteQuality: string;
+  remarks: string;
 };
 
 type TestResult = DRH | UPV;

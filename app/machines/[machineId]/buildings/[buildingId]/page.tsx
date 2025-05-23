@@ -1,10 +1,11 @@
 import { buildings, testData, machines } from "@/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { DRH } from "@/types";
+import { DRH, UPV } from "@/types";
 import DRHTable from "@/components/drh-table";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import UPVTable from "@/components/upv-table";
 
 export default async function BuildingTestDataPage({
   params,
@@ -36,6 +37,9 @@ export default async function BuildingTestDataPage({
       case "drh":
         const drhData = test.data as DRH[];
         return <DRHTable drhData={drhData} />;
+      case "upv":
+        const upvData = test.data as UPV[];
+        return <UPVTable upvData={upvData} />;
       default:
         return <p>No test results available for this machine type.</p>;
     }
