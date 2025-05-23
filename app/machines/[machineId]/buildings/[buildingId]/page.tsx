@@ -23,7 +23,6 @@ export default async function BuildingTestDataPage({
 
   if (!test) return notFound();
 
-  // Get all buildings tested by this machine
   const testedBuildings = Array.from(
     new Set(
       testData
@@ -43,11 +42,11 @@ export default async function BuildingTestDataPage({
   };
 
   return (
-    <div className="flex h-full">
+    <div className="flex min-h-screen">
       {/* Sidebar */}
-      <div className="hidden w-64 border-r p-4 md:block">
+      <aside className="bg-background hidden border-r p-4 md:block md:w-64">
         <h2 className="mb-4 text-lg font-semibold">Tested Buildings</h2>
-        <ScrollArea className="h-[calc(100vh-150px)]">
+        <ScrollArea className="h-[calc(100vh-150px)] pr-2">
           <div className="space-y-2">
             {testedBuildings.map((b) => (
               <Link
@@ -64,20 +63,23 @@ export default async function BuildingTestDataPage({
             ))}
           </div>
         </ScrollArea>
-      </div>
+      </aside>
 
       {/* Main Content */}
-      <div className="flex-1 overflow-auto">
-        <div className="container mx-auto px-4 py-8">
+      <main className="flex-1 overflow-auto px-4 py-8">
+        <div className="mx-auto max-w-6xl">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold tracking-tight">
+            <h1 className="text-primary text-3xl font-bold tracking-tight">
               {building.name}
             </h1>
+            <p className="text-muted-foreground text-sm">
+              {machine.name} Test Results
+            </p>
           </div>
 
-          {renderTestResults()}
+          <div className="overflow-x-auto">{renderTestResults()}</div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

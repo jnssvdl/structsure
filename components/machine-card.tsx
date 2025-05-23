@@ -13,28 +13,27 @@ import Link from "next/link";
 
 export default function MachineCard({ machine }: { machine: Machine }) {
   return (
-    <Card
-      key={machine.id}
-      className="overflow-hidden transition-all hover:shadow-md"
-    >
-      <div className="relative h-48 w-full">
-        <Image
-          src={machine.imageUrl || "/images/machine-placeholder.jpg"}
-          alt={machine.name}
-          fill
-          className="object-cover"
-          placeholder="empty"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
+    <Card>
       <CardHeader>
-        <CardTitle className="text-xl">{machine.name}</CardTitle>
-        <CardDescription className="line-clamp-2">
-          {machine.description}
-        </CardDescription>
+        <div className="relative h-48 w-full">
+          <Image
+            src="/images/machine.png"
+            alt={machine.name}
+            fill
+            className="rounded-xl object-cover"
+            placeholder="empty"
+          />
+        </div>
+        <div className="space-y-2">
+          <CardTitle>{machine.name}</CardTitle>
+          <CardDescription className="text-muted-foreground line-clamp-2">
+            {machine.description}
+          </CardDescription>
+        </div>
       </CardHeader>
-      <CardFooter className="flex flex-col space-y-3">
-        <Button asChild className="w-full" variant="outline">
+
+      <CardFooter className="flex flex-col gap-2">
+        <Button asChild variant="outline" className="w-full">
           <Link href={`/machines/${machine.id}`}>Machine Details</Link>
         </Button>
         <Button asChild className="w-full">

@@ -23,9 +23,7 @@ export default function TeamSection() {
               >
                 <div className="relative h-32 w-32 overflow-hidden rounded-full border">
                   <Image
-                    src={`/placeholder.svg?height=128&width=128&text=${encodeURIComponent(
-                      member.name,
-                    )}`}
+                    src="/images/team/profile.png"
                     alt={member.name}
                     width={128}
                     height={128}

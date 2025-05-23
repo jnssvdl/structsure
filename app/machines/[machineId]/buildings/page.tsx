@@ -2,6 +2,9 @@ import { buildings, testData } from "@/data";
 import { notFound } from "next/navigation";
 import { machines } from "@/data";
 import BuildingCard from "@/components/building-card";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 export default async function MachineBuildingsPage({
   params,
@@ -12,7 +15,6 @@ export default async function MachineBuildingsPage({
   const machine = machines.find((m) => m.id === machineId);
   if (!machine) return notFound();
 
-  // Get buildings tested by this machine
   const testedBuildingIds = new Set(
     testData
       .filter((test) => test.machineId === machineId)
@@ -24,15 +26,26 @@ export default async function MachineBuildingsPage({
   );
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-8">
-        <h1 className="mt-4 text-3xl font-bold tracking-tight">
-          Buildings Tested by {machine.name}
-        </h1>
-        <p className="mt-2 text-gray-600">{machine.description}</p>
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mb-5">
+        <Button asChild variant="ghost">
+          <Link href={`/machines`}>
+            <ArrowLeft className="h-4 w-4" />
+            Back to Machine
+          </Link>
+        </Button>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mb-10 text-center">
+        <h1 className="text-primary text-3xl font-bold tracking-tight">
+          Buildings Tested by {machine.name}
+        </h1>
+        <p className="text-muted-foreground mx-auto mt-2 max-w-2xl">
+          {machine.description}
+        </p>
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testedBuildings.map((building) => (
           <BuildingCard
             key={building.id}

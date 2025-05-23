@@ -7,13 +7,15 @@ export function Header() {
   return (
     <header className="bg-background sticky top-0 z-40 w-full border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <span className="text-primary text-xl font-bold">StructSure</span>
+        <Link href="/" className="text-primary text-xl font-bold">
+          StructSure
+        </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
           {["Home", "About", "Team", "Contact"].map((label) => (
             <Link
               key={label}
-              href={`#${label.toLowerCase()}`}
+              href={`/#${label.toLowerCase()}`}
               className="hover:text-primary font-medium transition-colors"
             >
               {label}
