@@ -7,6 +7,7 @@ export const buildings: Building[] = [
     capacity: 916,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "college-of-criminal-justice",
@@ -14,6 +15,7 @@ export const buildings: Building[] = [
     capacity: 435,
     numberOfFloors: 4,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "college-of-economics-management-development-studies",
@@ -21,6 +23,7 @@ export const buildings: Building[] = [
     capacity: 800,
     numberOfFloors: 2,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "college-of-education",
@@ -28,6 +31,7 @@ export const buildings: Building[] = [
     capacity: 760,
     numberOfFloors: 2,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "college-of-veterinary-medicine",
@@ -35,6 +39,7 @@ export const buildings: Building[] = [
     capacity: 350,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "department-of-industrial-engineering",
@@ -42,6 +47,7 @@ export const buildings: Building[] = [
     capacity: 80,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "department-of-information-technology",
@@ -49,6 +55,7 @@ export const buildings: Building[] = [
     capacity: 916,
     numberOfFloors: 5,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "engineering-science-building",
@@ -56,6 +63,7 @@ export const buildings: Building[] = [
     capacity: 725,
     numberOfFloors: 4,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
   {
     id: "graduate-school-open-learning",
@@ -63,5 +71,6 @@ export const buildings: Building[] = [
     capacity: 240,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
+    buildingAge: 0,
   },
 ];
