@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -15,30 +16,37 @@ export default function MachineCard({ machine }: { machine: Machine }) {
   return (
     <Card>
       <CardHeader>
-        <div className="relative h-48 w-full">
+        <div className="relative h-48">
           <Image
             src={machine.imageUrl}
             alt={machine.name}
             fill
-            className="rounded-xl object-cover"
+            className="object-cover"
             placeholder="empty"
           />
         </div>
+      </CardHeader>
+
+      <CardContent className="flex-1">
         <div className="space-y-2">
           <CardTitle>{machine.name}</CardTitle>
-          <CardDescription className="text-muted-foreground line-clamp-2">
+          <CardDescription className="text-muted-foreground">
             {machine.description}
           </CardDescription>
         </div>
-      </CardHeader>
+      </CardContent>
 
-      <CardFooter className="flex flex-col gap-2">
-        <Button asChild variant="outline" className="w-full">
-          <Link href={`/machines/${machine.id}`}>Machine Details</Link>
-        </Button>
-        <Button asChild className="w-full">
-          <Link href={`/machines/${machine.id}/buildings`}>View Buildings</Link>
-        </Button>
+      <CardFooter>
+        <div className="space-y-2">
+          <Button asChild variant="outline" className="w-full">
+            <Link href={`/machines/${machine.id}`}>Machine Details</Link>
+          </Button>
+          <Button asChild className="w-full">
+            <Link href={`/machines/${machine.id}/buildings`}>
+              View Buildings
+            </Link>
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );
