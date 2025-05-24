@@ -1,18 +1,19 @@
 export type Building = {
   id: string;
   name: string;
-  location: string;
-  yearBuilt: number;
-  imageUrl: "";
+  capacity: number;
+  numberOfFloors: number;
+  function: "OTHERS" | "OFFICE" | "ASSEMBLY" | "SCHOOL" | "OFFICE AND SCHOOL";
+  buildingAge?: number;
+  imageUrl?: string;
 };
 
 export type Machine = {
   id: string;
   name: string;
   description: string;
+  fullText: string;
   imageUrl: string;
-  parts: string[];
-  uses: string;
 };
 
 export type DRH = {
@@ -37,7 +38,11 @@ export type UPV = {
   remarks: string;
 };
 
-type TestResult = DRH | UPV;
+export type GPR = {
+  location: string;
+};
+
+type TestResult = DRH | UPV | GPR;
 
 export type BuildingTestData = {
   buildingId: Building["id"];
