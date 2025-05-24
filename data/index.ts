@@ -1,64 +1,12 @@
-import { Building, BuildingTestData, Machine } from "@/types";
-
-// Sample data
-export const buildings: Building[] = [
-  {
-    id: "b1",
-    name: "Empire State Building",
-    location: "New York",
-    yearBuilt: 1999,
-    imageUrl: "",
-  },
-  {
-    id: "college-of-arts-and-sciences",
-    name: "College of Arts and Sciences",
-    location: "Cavite State Univeristy",
-    yearBuilt: 1925,
-    imageUrl: "",
-  },
-  {
-    id: "b3",
-    name: "Shanghai Tower",
-    location: "Shanghai",
-    yearBuilt: 2000,
-    imageUrl: "",
-  },
-];
-
-export const machines: Machine[] = [
-  {
-    id: "drh",
-    name: "DRH",
-    description: "Tests building structural integrity",
-    imageUrl: "/images/machine.png",
-    parts: [
-      "Laser displacement sensors",
-      "Vibration analyzers",
-      "Thermal cameras",
-      "Data processing unit",
-    ],
-    uses: "Building foundation analysis, crack detection, and load-bearing assessment",
-  },
-  {
-    id: "upv",
-    name: "UPV",
-    description: "Measures thermal properties",
-    imageUrl: "/images/machine.png",
-    parts: [
-      "Antenna array",
-      "Control unit",
-      "Data visualization tablet",
-      "Battery pack",
-    ],
-    uses: "Detecting rebar placement, voids, and deterioration in concrete slabs",
-  },
-];
+import { BuildingTestData } from "@/types";
+export * from "@/data/machines";
+export * from "@/data/buildings";
 
 export const testData: BuildingTestData[] = [
   // Machine 1 tests
   {
-    buildingId: "b1",
-    machineId: "drh",
+    buildingId: "college-of-arts-and-sciences",
+    machineId: "digital-rebound-hammer",
     data: [
       {
         location: "1st Floor",
@@ -325,8 +273,7 @@ export const testData: BuildingTestData[] = [
   // Machine 2 tests
   {
     buildingId: "college-of-arts-and-sciences",
-    machineId: "upv",
-    // testDate: "2023-02-10",
+    machineId: "ultrasonic-pulse-velocity",
     data: [
       {
         location: "1st Floor",
