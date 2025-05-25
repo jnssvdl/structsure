@@ -1,8 +1,7 @@
 import Link from "next/link";
-import Image from "next/image"; // Import Image
-import { Input } from "./ui/input";
-import { Search } from "lucide-react";
+import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
+import Searchbar from "./searchbar";
 
 export function Header() {
   return (
@@ -33,18 +32,9 @@ export function Header() {
             </Link>
           ))}
 
-          <div className="hidden items-center gap-2 md:flex">
-            <div className="relative w-64">
-              <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2" />
-              <Input
-                type="search"
-                placeholder="Search"
-                className="pl-10 text-sm"
-              />
-            </div>
+          <Searchbar />
 
-            <ModeToggle />
-          </div>
+          <ModeToggle />
         </nav>
       </div>
     </header>
