@@ -13,7 +13,7 @@ import {
 export default function DRHTable({ drhData }: { drhData: DRH[] }) {
   return (
     <Table>
-      <TableCaption>Test Results</TableCaption>
+      <TableCaption>Digital Rebound Hammer (DRH)</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead rowSpan={2} className="text-center align-middle">

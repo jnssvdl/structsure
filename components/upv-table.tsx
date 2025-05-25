@@ -13,7 +13,7 @@ import {
 export default function UPVTable({ upvData }: { upvData: UPV[] }) {
   return (
     <Table>
-      <TableCaption>Test Results</TableCaption>
+      <TableCaption>Ultrasonic Pulse Velocity (UPV)</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead rowSpan={2} className="text-center align-middle">
