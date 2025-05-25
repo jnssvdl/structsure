@@ -5,6 +5,15 @@ import BuildingCard from "@/components/building-card";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
+
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return machines.map((machine) => ({
+    machineId: machine.id,
+  }));
+}
+
 export default async function BuildingsPage({
   params,
 }: {

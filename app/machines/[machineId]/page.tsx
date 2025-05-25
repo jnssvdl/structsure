@@ -4,6 +4,14 @@ import { machines } from "@/data";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
 
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return machines.map((machine) => ({
+    machineId: machine.id,
+  }));
+}
+
 export default async function MachinePage({
   params,
 }: {

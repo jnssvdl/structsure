@@ -21,6 +21,22 @@ import {
 import Image from "next/image";
 import { ModeToggle } from "@/components/mode-toggle";
 
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const params = [];
+
+  for (const machine of machines) {
+    for (const building of buildings) {
+      params.push({
+        machineId: machine.id,
+        buildingId: building.id,
+      });
+    }
+  }
+  return params;
+}
+
 export default async function TestPage({
   params,
 }: {
