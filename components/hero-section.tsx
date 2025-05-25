@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { GridPattern } from "./magicui/grid-pattern";
+import { AuroraText } from "./magicui/aurora-text";
 
 export default function HeroSection() {
   return (
@@ -18,9 +19,16 @@ export default function HeroSection() {
         )}
       />
       <div className="container mx-auto flex max-w-3xl flex-col items-center">
-        <h1 className="text-primary mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+        {/* <h1 className="text-primary mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
           StructSure
-        </h1>
+        </h1> */}
+
+        <AuroraText
+          className="text-primary mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
+          colors={["#f7e968", "#aadb4f", "#8ecb4b", "#98db58"]}
+        >
+          StructSure
+        </AuroraText>
         <p className="text-muted-foreground mb-8 text-lg md:text-xl">
           Advanced structural health monitoring for Cavite State University
           facilities using DRH, UPV, and GPR technologies.
