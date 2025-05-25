@@ -1,3 +1,14 @@
+export type Person = {
+  name: string;
+  birthDate: string;
+  residence: string;
+  education: {
+    level: string;
+    school: string;
+    year: number;
+  }[];
+};
+
 export type Building = {
   id: string;
   name: string;

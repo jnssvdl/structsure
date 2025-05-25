@@ -41,7 +41,7 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <form className="max-w-md space-y-6">
+          <form className="space-y-6">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="space-y-2">
                 <Label htmlFor="first-name" className="text-sm font-medium">
