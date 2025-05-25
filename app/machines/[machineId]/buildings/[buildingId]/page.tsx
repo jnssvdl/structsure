@@ -27,24 +27,6 @@ export async function generateStaticParams() {
   const params = [];
 
   for (const machine of machines) {
-<<<<<<< HEAD
-    const relatedTests = testData.filter(
-      (test) => test.machineId === machine.id,
-    );
-
-    for (const test of relatedTests) {
-      params.push({
-        machineId: machine.id,
-        buildingId: test.buildingId,
-      });
-    }
-  }
-
-  return params;
-}
-
-export default async function BuildingTestDataPage({
-=======
     for (const building of buildings) {
       params.push({
         machineId: machine.id,
@@ -56,7 +38,6 @@ export default async function BuildingTestDataPage({
 }
 
 export default async function TestPage({
->>>>>>> dev
   params,
 }: {
   params: Promise<{ machineId: string; buildingId: string }>;

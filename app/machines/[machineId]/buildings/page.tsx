@@ -14,11 +14,7 @@ export async function generateStaticParams() {
   }));
 }
 
-<<<<<<< HEAD
-export default async function MachineBuildingsPage({
-=======
 export default async function BuildingsPage({
->>>>>>> dev
   params,
 }: {
   params: Promise<{ machineId: string }>;
