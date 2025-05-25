@@ -37,11 +37,11 @@ export default function MachineCard({ machine }: { machine: Machine }) {
       </CardContent>
 
       <CardFooter>
-        <div className="space-y-2">
-          <Button asChild variant="outline" className="w-full">
+        <div className="flex w-full flex-col gap-2">
+          <Button asChild variant="outline">
             <Link href={`/machines/${machine.id}`}>Machine Details</Link>
           </Button>
-          <Button asChild className="w-full">
+          <Button asChild>
             <Link href={`/machines/${machine.id}/buildings`}>
               View Buildings
             </Link>
