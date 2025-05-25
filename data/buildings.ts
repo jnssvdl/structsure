@@ -50,6 +50,7 @@ export const buildings: Building[] = [
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
     // buildingAge: 0,
+    imageUrl: "/images/buildings/DIET.jpg",
   },
   {
     id: "department-of-information-technology",
@@ -58,6 +59,7 @@ export const buildings: Building[] = [
     numberOfFloors: 5,
     function: "OFFICE AND SCHOOL",
     // buildingAge: 0,
+    imageUrl: "/images/buildings/DIT.jpg",
   },
   {
     id: "engineering-science-building",
