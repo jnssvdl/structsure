@@ -53,10 +53,10 @@ export type GPR = {
   location: string;
 };
 
-type TestResult = DRH | UPV | GPR;
+type TestData = DRH | UPV | GPR;
 
-export type BuildingTestData = {
+export type Test = {
   buildingId: Building["id"];
   machineId: Machine["id"];
-  data: TestResult[];
+  data: TestData[];
 };

@@ -1,8 +1,8 @@
-import { BuildingTestData } from "@/types";
+import { Test } from "@/types";
 export * from "@/data/machines";
 export * from "@/data/buildings";
 
-export const testData: BuildingTestData[] = [
+export const tests: Test[] = [
   // Machine 1 tests
   {
     buildingId: "college-of-arts-and-sciences",

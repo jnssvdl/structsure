@@ -1,10 +1,11 @@
-import { buildings, testData } from "@/data";
+import { buildings } from "@/data";
 import { notFound } from "next/navigation";
 import { machines } from "@/data";
 import BuildingCard from "@/components/building-card";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
-export default async function MachineBuildingsPage({
+import Image from "next/image";
+export default async function BuildingsPage({
   params,
 }: {
   params: Promise<{ machineId: string }>;
@@ -15,21 +16,21 @@ export default async function MachineBuildingsPage({
 
   if (!machine) return notFound();
 
-  const testedBuildingIds = new Set(
-    testData
-      .filter((test) => test.machineId === machineId)
-      .map((test) => test.buildingId),
-  );
-
-  const testedBuildings = buildings.filter((building) =>
-    testedBuildingIds.has(building.id),
-  );
-
   return (
     <div className="min-h-screen">
       <header className="bg-background sticky top-0 z-40 w-full border-b">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="text-primary text-xl font-bold">
+          <Link
+            href="/"
+            className="text-primary flex items-center gap-2 text-xl font-bold"
+          >
+            <Image
+              src="/images/logo.png"
+              alt="StructSure Logo"
+              width={32}
+              height={32}
+              priority
+            />
             StructSure
           </Link>
           <ModeToggle />
@@ -45,7 +46,7 @@ export default async function MachineBuildingsPage({
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {testedBuildings.map((building) => (
+          {buildings.map((building) => (
             <Link
               key={building.id}
               href={`/machines/${machine.id}/buildings/${building.id}`}

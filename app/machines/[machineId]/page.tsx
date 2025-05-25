@@ -4,7 +4,7 @@ import { machines } from "@/data";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
 
-export default async function MachineDetailsPage({
+export default async function MachinePage({
   params,
 }: {
   params: Promise<{ machineId: string }>;
@@ -19,7 +19,17 @@ export default async function MachineDetailsPage({
     <div className="min-h-screen">
       <header className="bg-background sticky top-0 z-40 w-full border-b">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="text-primary text-xl font-bold">
+          <Link
+            href="/"
+            className="text-primary flex items-center gap-2 text-xl font-bold"
+          >
+            <Image
+              src="/images/logo.png"
+              alt="StructSure Logo"
+              width={32}
+              height={32}
+              priority
+            />
             StructSure
           </Link>
           <ModeToggle />

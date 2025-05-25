@@ -1,4 +1,4 @@
-import { buildings, testData, machines } from "@/data";
+import { buildings, tests, machines } from "@/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { DRH, UPV } from "@/types";
@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import UPVTable from "@/components/upv-table";
 
-export default async function BuildingTestDataPage({
+export default async function TestPage({
   params,
 }: {
   params: Promise<{ machineId: string; buildingId: string }>;
@@ -18,7 +18,7 @@ export default async function BuildingTestDataPage({
 
   if (!machine || !building) return notFound();
 
-  const test = testData.find(
+  const test = tests.find(
     (t) => t.machineId === machineId && t.buildingId === buildingId,
   );
 
@@ -26,20 +26,20 @@ export default async function BuildingTestDataPage({
 
   const testedBuildings = Array.from(
     new Set(
-      testData
-        .filter((t) => t.machineId === machineId)
-        .map((t) => t.buildingId),
+      tests.filter((t) => t.machineId === machineId).map((t) => t.buildingId),
     ),
   ).map((id) => buildings.find((b) => b.id === id)!);
 
-  const renderTestResults = () => {
+  const getTable = () => {
     switch (machineId) {
-      case "drh":
+      case "digital-rebound-hammer":
         const drhData = test.data as DRH[];
         return <DRHTable drhData={drhData} />;
-      case "upv":
+      case "ultrasonic-pulse-velocity":
         const upvData = test.data as UPV[];
         return <UPVTable upvData={upvData} />;
+      case "ground-penetrating-radar":
+        return null;
       default:
         return <p>No test results available for this machine type.</p>;
     }
@@ -49,7 +49,7 @@ export default async function BuildingTestDataPage({
     <div className="flex min-h-screen">
       {/* Sidebar */}
       <aside className="bg-background hidden border-r p-4 md:block md:w-64">
-        <h2 className="mb-4 text-lg font-semibold">Tested Buildings</h2>
+        <h2 className="mb-4 text-lg font-semibold">Buildings</h2>
         <ScrollArea className="h-[calc(100vh-150px)] pr-2">
           <div className="space-y-2">
             {testedBuildings.map((b) => (
@@ -58,7 +58,7 @@ export default async function BuildingTestDataPage({
                 href={`/machines/${machineId}/buildings/${b.id}`}
               >
                 <Button
-                  variant={b.id === buildingId ? "default" : "ghost"}
+                  variant={b.id === buildingId ? "secondary" : "ghost"}
                   className="w-full justify-start"
                 >
                   {b.name}
@@ -76,12 +76,10 @@ export default async function BuildingTestDataPage({
             <h1 className="text-primary text-3xl font-bold tracking-tight">
               {building.name}
             </h1>
-            <p className="text-muted-foreground text-sm">
-              {machine.name} Test Results
-            </p>
+            <p className="text-muted-foreground text-sm">{machine.name}</p>
           </div>
 
-          <div className="overflow-x-auto">{renderTestResults()}</div>
+          <div className="overflow-x-auto">{getTable()}</div>
         </div>
       </main>
     </div>

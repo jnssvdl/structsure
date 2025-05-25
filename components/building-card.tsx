@@ -8,22 +8,23 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+// import Image from "next/image";
 
 export default function BuildingCard({ building }: { building: Building }) {
   return (
-    <Card>
+    <Card className="h-full">
       <CardHeader>
         <div className="relative h-48">
           <Image
-            src={building.imageUrl || "/images/CAS.jpg"}
+            src={building.imageUrl || "/images/logo.jpg"}
             alt={building.name}
             fill
             className="rounded-md object-cover"
           />
         </div>
+        <CardTitle className="text-primary">{building.name}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardTitle className="text-primary mb-2">{building.name}</CardTitle>
         <div>
           <div className="flex items-center gap-2">
             <Users className="text-muted-foreground h-4 w-4" />
@@ -45,7 +46,9 @@ export default function BuildingCard({ building }: { building: Building }) {
           <div className="flex items-center gap-2">
             <Calendar className="text-muted-foreground h-4 w-4" />
             <span className="text-muted-foreground">Building age:</span>
-            <span className="font-medium">{building.buildingAge} years</span>
+            <span className="font-medium">
+              {building.buildingAge && `${building.buildingAge} years`}
+            </span>
           </div>
         </div>
       </CardContent>
