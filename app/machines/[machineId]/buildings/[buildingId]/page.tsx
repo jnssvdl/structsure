@@ -1,11 +1,25 @@
 import { buildings, tests, machines } from "@/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { DRH, UPV } from "@/types";
+import type { DRH, UPV } from "@/types";
 import DRHTable from "@/components/drh-table";
-import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import UPVTable from "@/components/upv-table";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarGroup,
+  SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarProvider,
+  SidebarInset,
+  SidebarTrigger,
+  SidebarHeader,
+} from "@/components/ui/sidebar";
+import Image from "next/image";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export default async function TestPage({
   params,
@@ -24,12 +38,6 @@ export default async function TestPage({
 
   if (!test) return notFound();
 
-  const testedBuildings = Array.from(
-    new Set(
-      tests.filter((t) => t.machineId === machineId).map((t) => t.buildingId),
-    ),
-  ).map((id) => buildings.find((b) => b.id === id)!);
-
   const getTable = () => {
     switch (machineId) {
       case "digital-rebound-hammer":
@@ -41,47 +49,79 @@ export default async function TestPage({
       case "ground-penetrating-radar":
         return null;
       default:
-        return <p>No test results available for this machine type.</p>;
+        return null;
     }
   };
 
   return (
-    <div className="flex min-h-screen">
-      {/* Sidebar */}
-      <aside className="bg-background hidden border-r p-4 md:block md:w-64">
-        <h2 className="mb-4 text-lg font-semibold">Buildings</h2>
-        <ScrollArea className="h-[calc(100vh-150px)] pr-2">
-          <div className="space-y-2">
-            {testedBuildings.map((b) => (
+    <SidebarProvider>
+      <div className="flex min-h-screen w-full">
+        <Sidebar>
+          <SidebarHeader>
+            <div className="p-2">
+              <h1 className="text-primary text-lg font-bold">{machine.name}</h1>
+            </div>
+          </SidebarHeader>
+          <SidebarContent>
+            <SidebarGroup>
+              <SidebarGroupLabel>Buildings</SidebarGroupLabel>
+              <SidebarGroupContent>
+                <SidebarMenu>
+                  {buildings.map((b) => (
+                    <SidebarMenuItem key={b.id}>
+                      <SidebarMenuButton
+                        asChild
+                        isActive={b.id === buildingId}
+                        className="h-full"
+                      >
+                        <Link href={`/machines/${machineId}/buildings/${b.id}`}>
+                          {b.name}
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                  ))}
+                </SidebarMenu>
+              </SidebarGroupContent>
+            </SidebarGroup>
+          </SidebarContent>
+        </Sidebar>
+
+        <SidebarInset>
+          <header className="flex h-16 items-center gap-2 border-b px-4">
+            <SidebarTrigger className="-ml-1" />
+            <div className="mx-auto flex w-full justify-between">
               <Link
-                key={b.id}
-                href={`/machines/${machineId}/buildings/${b.id}`}
+                href="/"
+                className="text-primary flex items-center gap-2 text-xl font-bold"
               >
-                <Button
-                  variant={b.id === buildingId ? "secondary" : "ghost"}
-                  className="w-full justify-start"
-                >
-                  {b.name}
-                </Button>
+                <Image
+                  src="/images/logo.png"
+                  alt="StructSure Logo"
+                  width={32}
+                  height={32}
+                  priority
+                />
+                StructSure
               </Link>
-            ))}
-          </div>
-        </ScrollArea>
-      </aside>
+              <ModeToggle />
+            </div>
+          </header>
 
-      {/* Main Content */}
-      <main className="flex-1 overflow-auto px-4 py-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-6">
-            <h1 className="text-primary text-3xl font-bold tracking-tight">
-              {building.name}
-            </h1>
-            <p className="text-muted-foreground text-sm">{machine.name}</p>
-          </div>
-
-          <div className="overflow-x-auto">{getTable()}</div>
-        </div>
-      </main>
-    </div>
+          <main className="flex-1 overflow-auto p-6">
+            <div className="mx-auto space-y-6">
+              <div>
+                <h2 className="mb-2 text-2xl font-bold tracking-tight">
+                  {building.name}
+                </h2>
+                <p className="text-muted-foreground">
+                  Structural testing results using {machine.name}
+                </p>
+              </div>
+              <div className="overflow-x-auto">{getTable()}</div>
+            </div>
+          </main>
+        </SidebarInset>
+      </div>
+    </SidebarProvider>
   );
 }
