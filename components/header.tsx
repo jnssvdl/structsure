@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"; // Import Image
 import { Input } from "./ui/input";
 import { Search } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -6,8 +7,18 @@ import { ModeToggle } from "./mode-toggle";
 export function Header() {
   return (
     <header className="bg-background sticky top-0 z-40 w-full border-b">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="text-primary text-xl font-bold">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <Link
+          href="/"
+          className="text-primary flex items-center gap-2 text-xl font-bold"
+        >
+          <Image
+            src="/images/logo.png"
+            alt="StructSure Logo"
+            width={32}
+            height={32}
+            priority
+          />
           StructSure
         </Link>
 

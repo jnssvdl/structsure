@@ -1,7 +1,7 @@
 import { Header } from "@/components/header";
 import AboutSection from "@/components/about-section";
 import ContactSection from "@/components/contact-section";
-import TechSection from "@/components/tech-section";
+// import TechSection from "@/components/tech-section";
 import TeamSection from "@/components/team-section";
 import HeroSection from "@/components/hero-section";
 
@@ -15,7 +15,7 @@ export default function Home() {
 
         <AboutSection />
 
-        <TechSection />
+        {/* <TechSection /> */}
 
         <TeamSection />
 

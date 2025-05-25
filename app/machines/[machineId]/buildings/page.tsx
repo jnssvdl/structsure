@@ -1,10 +1,10 @@
-import { buildings, testData } from "@/data";
+import { buildings } from "@/data";
 import { notFound } from "next/navigation";
 import { machines } from "@/data";
 import BuildingCard from "@/components/building-card";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 
 export const dynamicParams = false;
 
@@ -14,53 +14,60 @@ export async function generateStaticParams() {
   }));
 }
 
+<<<<<<< HEAD
 export default async function MachineBuildingsPage({
+=======
+export default async function BuildingsPage({
+>>>>>>> dev
   params,
 }: {
   params: Promise<{ machineId: string }>;
 }) {
   const { machineId } = await params;
+
   const machine = machines.find((m) => m.id === machineId);
+
   if (!machine) return notFound();
 
-  const testedBuildingIds = new Set(
-    testData
-      .filter((test) => test.machineId === machineId)
-      .map((test) => test.buildingId),
-  );
-
-  const testedBuildings = buildings.filter((building) =>
-    testedBuildingIds.has(building.id),
-  );
-
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mb-5">
-        <Button asChild variant="ghost">
-          <Link href={`/machines`}>
-            <ArrowLeft className="h-4 w-4" />
-            Back to Machine
+    <div className="min-h-screen">
+      <header className="bg-background sticky top-0 z-40 w-full border-b">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          <Link
+            href="/"
+            className="text-primary flex items-center gap-2 text-xl font-bold"
+          >
+            <Image
+              src="/images/logo.png"
+              alt="StructSure Logo"
+              width={32}
+              height={32}
+              priority
+            />
+            StructSure
           </Link>
-        </Button>
-      </div>
+          <ModeToggle />
+        </div>
+      </header>
 
-      <div className="mb-10 text-center">
-        <h1 className="text-primary text-3xl font-bold tracking-tight">
-          Buildings Tested by {machine.name}
-        </h1>
-        <p className="text-muted-foreground mx-auto mt-2 max-w-2xl">
-          {machine.description}
-        </p>
-      </div>
+      <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mb-6">
+          <h1 className="text-primary mb-2 text-3xl font-bold tracking-tight">
+            {machine.name}
+          </h1>
+          <h2 className="text-muted-foreground text-lg">Buildings:</h2>
+        </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {testedBuildings.map((building) => (
-          <BuildingCard
-            key={building.id}
-            building={building}
-            machineId={machineId}
-          />
-        ))}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {buildings.map((building) => (
+            <Link
+              key={building.id}
+              href={`/machines/${machine.id}/buildings/${building.id}`}
+            >
+              <BuildingCard building={building} />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
