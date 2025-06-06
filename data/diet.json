@@ -1,0 +1,272 @@
+[
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 43,
+    "averageCompressiveStrengthMpa": 55,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 52,
+    "averageCompressiveStrengthMpa": 83,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "High Strength Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 50,
+    "averageCompressiveStrengthMpa": 72,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "High Strength Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 49,
+    "averageCompressiveStrengthMpa": 72,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "High Strength Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 46,
+    "averageCompressiveStrengthMpa": 62,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 48,
+    "averageCompressiveStrengthMpa": 69,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 42,
+    "averageCompressiveStrengthMpa": 52,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 50,
+    "averageCompressiveStrengthMpa": 76,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "High Strength Concrete"
+  },
+  {
+    "location": "1st Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 46,
+    "averageCompressiveStrengthMpa": 64,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 40,
+    "averageCompressiveStrengthMpa": 48,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 41,
+    "averageCompressiveStrengthMpa": 49,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 37,
+    "averageCompressiveStrengthMpa": 40,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 46,
+    "averageCompressiveStrengthMpa": 63,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 49,
+    "averageCompressiveStrengthMpa": 73,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "High Strength Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 40,
+    "averageCompressiveStrengthMpa": 47,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 48,
+    "averageCompressiveStrengthMpa": 68,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 47,
+    "averageCompressiveStrengthMpa": 67,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 38,
+    "averageCompressiveStrengthMpa": 48,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 48,
+    "averageCompressiveStrengthMpa": 46,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 53,
+    "averageCompressiveStrengthMpa": 59,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "2nd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 51,
+    "averageCompressiveStrengthMpa": 53,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 43,
+    "averageCompressiveStrengthMpa": 54,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 40,
+    "averageCompressiveStrengthMpa": 48,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 39,
+    "averageCompressiveStrengthMpa": 45,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 48,
+    "averageCompressiveStrengthMpa": 68,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 47,
+    "averageCompressiveStrengthMpa": 67,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 41,
+    "averageCompressiveStrengthMpa": 49,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Mid",
+    "averageReboundNumber": 41,
+    "averageCompressiveStrengthMpa": 49,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Top",
+    "averageReboundNumber": 37,
+    "averageCompressiveStrengthMpa": 41,
+    "reboundNumberRemarks": "Good layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  },
+  {
+    "location": "3rd Floor",
+    "member": "Column",
+    "testPoint": "Bot",
+    "averageReboundNumber": 45,
+    "averageCompressiveStrengthMpa": 60,
+    "reboundNumberRemarks": "Very good hard layer",
+    "compressiveStrengthRemarks": "Normal Concrete"
+  }
+]
