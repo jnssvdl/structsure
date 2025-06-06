@@ -20,9 +20,6 @@ export default function UPVTable({ upvData }: { upvData: UPV[] }) {
             Location
           </TableHead>
           <TableHead rowSpan={2} className="text-center align-middle">
-            Location Description
-          </TableHead>
-          <TableHead rowSpan={2} className="text-center align-middle">
             Member
           </TableHead>
           <TableHead rowSpan={2} className="text-center align-middle">
@@ -47,19 +44,18 @@ export default function UPVTable({ upvData }: { upvData: UPV[] }) {
         {upvData.map((test, index) => (
           <TableRow key={`${test.location}-${test.method}-${index}`}>
             <TableCell className="text-center">{test.location}</TableCell>
-            <TableCell className="text-center">
-              {test.locationDescription}
-            </TableCell>
             <TableCell className="text-center">{test.member}</TableCell>
             <TableCell className="text-center">
-              {test.compressiveStrength}
+              {test.compressiveStrengthMpa}
             </TableCell>
-            <TableCell className="text-center">{test.velocity}</TableCell>
+            <TableCell className="text-center">{test.velocityMs}</TableCell>
             <TableCell className="text-center">{test.method}</TableCell>
             <TableCell className="text-center">
-              {test.concreteQuality}
+              {test.concreteQualityRemarks}
             </TableCell>
-            <TableCell className="text-center">{test.remarks}</TableCell>
+            <TableCell className="text-center">
+              {test.compressiveStrengthRemarks}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

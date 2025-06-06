@@ -14,7 +14,7 @@ export type Building = {
   name: string;
   capacity: number;
   numberOfFloors: number;
-  function: "OTHERS" | "OFFICE" | "ASSEMBLY" | "SCHOOL" | "OFFICE AND SCHOOL";
+  function: string;
   buildingAge?: number;
   imageUrl?: string;
 };
@@ -29,24 +29,22 @@ export type Machine = {
 
 export type DRH = {
   location: string;
-  locationDescription: string;
   member: string;
   testPoint: string;
   averageReboundNumber: number;
   averageCompressiveStrengthMpa: number;
-  remarks: string;
-  compressiveStrength: string;
+  reboundNumberRemarks: string;
+  compressiveStrengthRemarks: string;
 };
 
 export type UPV = {
   location: string;
-  locationDescription: string;
   member: string;
-  compressiveStrength: number;
-  velocity: number;
+  compressiveStrengthMpa: number;
+  velocityMs: number;
   method: string;
-  concreteQuality: string;
-  remarks: string;
+  concreteQualityRemarks: string;
+  compressiveStrengthRemarks: string;
 };
 
 export type GPR = {
