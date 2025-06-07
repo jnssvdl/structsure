@@ -1244,13 +1244,13 @@ export const UPVData: Data[] = [
         { floor: "1st Floor", velocity: 3935.42 },
         { floor: "2nd Floor", velocity: 4544 },
         { floor: "3rd Floor", velocity: 3508.93 },
-        { floor: "4rd Floor", velocity: 4415 },
+        { floor: "4th Floor", velocity: 4415 },
       ],
       compressiveStrength: [
         { floor: "1st Floor", compressiveStrength: 34.99 },
         { floor: "2nd Floor", compressiveStrength: 35.09 },
         { floor: "3rd Floor", compressiveStrength: 27.58 },
-        { floor: "4rd Floor", compressiveStrength: 34.19 },
+        { floor: "4th Floor", compressiveStrength: 34.19 },
       ],
     },
     analysis: [
