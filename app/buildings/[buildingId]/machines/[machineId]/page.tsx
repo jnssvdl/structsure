@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { machines } from "@/data";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
+import Searchbar from "@/components/searchbar";
 
 export const dynamicParams = false;
 
@@ -40,32 +41,49 @@ export default async function MachinePage({
             />
             StructSure
           </Link>
-          <ModeToggle />
+
+          <div className="flex items-center gap-4">
+            <div className="hidden sm:block">
+              <Searchbar />
+            </div>
+            <ModeToggle />
+          </div>
+        </div>
+
+        {/* Mobile Searchbar - shows below on small screens */}
+        <div className="border-t px-4 py-3 sm:hidden">
+          <Searchbar />
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl space-y-6 px-6 py-6">
-        <div className="text-center">
-          <h1 className="text-primary text-3xl font-bold tracking-tight">
-            {machine.name}
-          </h1>
+      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="mb-8 text-center">
+          <h1 className="text-3xl font-bold tracking-tight">{machine.name}</h1>
         </div>
 
-        <div className="flex items-center justify-center rounded-xl border">
-          <Image
-            src={machine.imageUrl}
-            width={300}
-            height={300}
-            alt={machine.name}
-            className="object-cover"
-          />
-        </div>
-
-        <div className="space-y-8">
-          <div className="border-primary border-l-2 pl-6">
-            <div className="leading-relaxed">
-              <p>{JSON.stringify(machine.content)}</p>
+        {/* Responsive Content Layout */}
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+          {/* Image Column */}
+          <div className="lg:w-[40%]">
+            <div className="relative aspect-square w-full overflow-hidden rounded-xl border">
+              <Image
+                src={machine.imageUrl}
+                fill
+                alt={machine.name}
+                className="object-cover"
+                priority
+              />
             </div>
+          </div>
+
+          {/* Text Column */}
+          <div className="lg:w-[60%]">
+            <article className="prose prose-sm dark:prose-invert sm:prose-base">
+              <div className="text-muted-foreground rounded-lg p-6 leading-relaxed whitespace-pre-line">
+                {machine.fullText}
+              </div>
+            </article>
           </div>
         </div>
       </main>

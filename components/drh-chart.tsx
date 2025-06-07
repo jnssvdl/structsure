@@ -10,16 +10,20 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { UPVChart } from "@/types";
+import { DRHChartType } from "@/types";
 
 const chartConfig = {
-  velocity: {
-    label: "Velocity",
-    color: "#2563eb",
+  averageReboundNumber: {
+    label: "Average Rebound Number",
+    color: "blue",
+  },
+  averageCompressiveStrength: {
+    label: "Average Compressive Strength",
+    color: "orange",
   },
 } satisfies ChartConfig;
 
-export function VelocityChart({ data }: { data: UPVChart["velocity"] }) {
+export function DRHChart({ data }: { data: DRHChartType }) {
   return (
     <ChartContainer config={chartConfig} className="h-[400px] w-full">
       <BarChart accessibilityLayer data={data}>
@@ -33,7 +37,16 @@ export function VelocityChart({ data }: { data: UPVChart["velocity"] }) {
         />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
-        <Bar dataKey="velocity" fill="var(--color-velocity)" radius={4} />
+        <Bar
+          dataKey="averageReboundNumber"
+          fill="var(--color-averageReboundNumber)"
+          radius={4}
+        />
+        <Bar
+          dataKey="averageCompressiveStrength"
+          fill="var(--color-averageCompressiveStrength)"
+          radius={4}
+        />
       </BarChart>
     </ChartContainer>
   );

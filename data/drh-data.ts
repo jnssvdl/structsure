@@ -1,10 +1,32 @@
-import { Test } from "@/types";
+import { Data } from "@/types";
 
-export const DRH: Test[] = [
+export const DRHData: Data[] = [
   {
     buildingId: "engineering-science-building",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 49,
+        averageCompressiveStrength: 65,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 49,
+        averageCompressiveStrength: 76,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 52,
+        averageCompressiveStrength: 83,
+      },
+      {
+        floor: "4th Floor",
+        averageReboundNumber: 47,
+        averageCompressiveStrength: 65,
+      },
+    ],
+    table: [
       {
         location: "1st",
         member: "Column",
@@ -340,7 +362,24 @@ export const DRH: Test[] = [
   {
     buildingId: "department-of-industrial-engineering-and-technology",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 47,
+        averageCompressiveStrength: 67,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 45,
+        averageCompressiveStrength: 55,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 42,
+        averageCompressiveStrength: 53,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -623,7 +662,24 @@ export const DRH: Test[] = [
   {
     buildingId: "college-of-arts-and-sciences",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 46,
+        averageCompressiveStrength: 62,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 43,
+        averageCompressiveStrength: 51,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 47,
+        averageCompressiveStrength: 69,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -907,7 +963,29 @@ export const DRH: Test[] = [
   {
     buildingId: "college-of-criminal-justice",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 43,
+        averageCompressiveStrength: 56,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 44,
+        averageCompressiveStrength: 59,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 44,
+        averageCompressiveStrength: 59,
+      },
+      {
+        floor: "4th Floor",
+        averageReboundNumber: 40,
+        averageCompressiveStrength: 46,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -1255,7 +1333,34 @@ export const DRH: Test[] = [
   {
     buildingId: "department-of-information-technology",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 51,
+        averageCompressiveStrength: 78,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 53,
+        averageCompressiveStrength: 85,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 50,
+        averageCompressiveStrength: 76,
+      },
+      {
+        floor: "4th Floor",
+        averageReboundNumber: 47,
+        averageCompressiveStrength: 67,
+      },
+      {
+        floor: "5th Floor",
+        averageReboundNumber: 43,
+        averageCompressiveStrength: 57,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -1659,7 +1764,24 @@ export const DRH: Test[] = [
   {
     buildingId: "college-of-veterinary-medicine-and-biomedical-sciences",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 42,
+        averageCompressiveStrength: 52,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 48,
+        averageCompressiveStrength: 70,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 44,
+        averageCompressiveStrength: 57,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -1811,7 +1933,24 @@ export const DRH: Test[] = [
   {
     buildingId: "graduate-school-and-open-learning-college",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 47,
+        averageCompressiveStrength: 67,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 45,
+        averageCompressiveStrength: 61,
+      },
+      {
+        floor: "3rd Floor",
+        averageReboundNumber: 41,
+        averageCompressiveStrength: 51,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -2066,7 +2205,19 @@ export const DRH: Test[] = [
   {
     buildingId: "college-of-education",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 49,
+        averageCompressiveStrength: 75,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 48,
+        averageCompressiveStrength: 72,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",
@@ -2246,7 +2397,19 @@ export const DRH: Test[] = [
   {
     buildingId: "college-of-economics-management-and-development-studies",
     machineId: "digital-rebound-hammer",
-    data: [
+    chart: [
+      {
+        floor: "1st Floor",
+        averageReboundNumber: 44,
+        averageCompressiveStrength: 57,
+      },
+      {
+        floor: "2nd Floor",
+        averageReboundNumber: 46,
+        averageCompressiveStrength: 65,
+      },
+    ],
+    table: [
       {
         location: "1st Floor",
         member: "Column",

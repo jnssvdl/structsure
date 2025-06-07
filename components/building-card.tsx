@@ -16,8 +16,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
-// import { Button } from "./ui/button";
-// import Image from "next/image";
 
 export default function BuildingCard({ building }: { building: Building }) {
   return (

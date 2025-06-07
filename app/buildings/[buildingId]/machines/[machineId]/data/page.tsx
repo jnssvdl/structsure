@@ -1,7 +1,6 @@
-import { buildings, tests, machines } from "@/data";
+import { buildings, DATA, machines } from "@/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import type { DRH, UPV } from "@/types";
 import {
   Sidebar,
   SidebarContent,
@@ -18,8 +17,12 @@ import {
 } from "@/components/ui/sidebar";
 import Image from "next/image";
 import { ModeToggle } from "@/components/mode-toggle";
-import DRHPage from "@/components/drh-page";
-import UPVPage from "@/components/upv-page";
+import DRHTable from "@/components/drh-table";
+import { DRHData, UPVData } from "@/types";
+import UPVTable from "@/components/upv-table";
+import { VelocityChart } from "@/components/velocity-chart";
+import { CompressiveStrengthChart } from "@/components/compression-strength-chart";
+import { DRHChart } from "@/components/drh-chart";
 
 export const dynamicParams = false;
 
@@ -48,11 +51,11 @@ export default async function DataPage({
 
   if (!machine || !building) return notFound();
 
-  const test = tests.find(
-    (t) => t.machineId === machineId && t.buildingId === buildingId,
+  const data = DATA.find(
+    (d) => d.machineId === machineId && d.buildingId === buildingId,
   );
 
-  if (!test) return notFound();
+  if (!data) return notFound();
 
   return (
     <SidebarProvider>
@@ -75,11 +78,7 @@ export default async function DataPage({
                         isActive={b.id === buildingId}
                         className="h-full"
                       >
-                        <Link
-                          href={`/buildings/${b.id}/machines/${machineId}/data`}
-                        >
-                          {b.name}
-                        </Link>
+                        <Link href={`/buildings/${b.id}/`}>{b.name}</Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   ))}
@@ -111,20 +110,61 @@ export default async function DataPage({
           </header>
 
           {machineId === "digital-rebound-hammer" ? (
-            <DRHPage
-              building={building}
-              machine={machine}
-              drhData={test.data as DRH[]}
-            />
+            <div className="mx-auto max-w-6xl flex-1 overflow-auto p-6">
+              <div className="mx-auto space-y-6">
+                <div>
+                  <h2 className="mb-2 text-2xl font-bold tracking-tight">
+                    {building.name}
+                  </h2>
+                  <p className="text-muted-foreground">
+                    Structural testing results using {machine.name}
+                  </p>
+                </div>
+                <DRHPage data={data as DRHData} />
+              </div>
+            </div>
           ) : machineId === "ultrasonic-pulse-velocity" ? (
-            <UPVPage
-              building={building}
-              machine={machine}
-              upvData={test.data as UPV[]}
-            />
+            <div className="flex-1 overflow-auto p-6">
+              <div className="mx-auto space-y-6">
+                <div>
+                  <h2 className="mb-2 text-2xl font-bold tracking-tight">
+                    {building.name}
+                  </h2>
+                  <p className="text-muted-foreground">
+                    Structural testing results using {machine.name}
+                  </p>
+                </div>
+                <UPVPage data={data as UPVData} />
+              </div>
+            </div>
           ) : machineId === "ground-penetrating-radar" ? null : null}
         </SidebarInset>
       </div>
     </SidebarProvider>
+  );
+}
+
+function UPVPage({ data }: { data: UPVData }) {
+  return (
+    <div className="flex-1 overflow-auto p-6">
+      <div className="mx-auto space-y-6">
+        <div className="overflow-x-auto">
+          <UPVTable UPVRecords={data.table} />
+        </div>
+        <VelocityChart data={data.chart.velocity} />
+        <CompressiveStrengthChart data={data.chart.compressiveStrength} />
+      </div>
+    </div>
+  );
+}
+
+function DRHPage({ data }: { data: DRHData }) {
+  return (
+    <>
+      <div className="overflow-x-auto">
+        <DRHTable DRHRecords={data.table} />
+      </div>
+      <DRHChart data={data.chart} />
+    </>
   );
 }

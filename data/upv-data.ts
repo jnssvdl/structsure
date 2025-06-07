@@ -1,15 +1,29 @@
-import { Test } from "@/types";
+import { Data } from "@/types";
 
-export const UPV: Test[] = [
+export const UPVData: Data[] = [
   {
     buildingId: "engineering-science-building",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 3472.52 },
+        { floor: "2nd Floor", velocity: 3207.33 },
+        { floor: "3rd Floor", velocity: 2645.48 },
+        { floor: "4th Floor", velocity: 2782.52 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 28.9 },
+        { floor: "2nd Floor", compressiveStrength: 25.96 },
+        { floor: "3rd Floor", compressiveStrength: 17.85 },
+        { floor: "4th Floor", compressiveStrength: 19.12 },
+      ],
+    },
     analysis: [
       "Wide range of concrete strength (6.2 MPa to 35.7 MPa) and velocity (1895–3607 m/s) points to inconsistent construction practices.",
       "Lower floors performed better, possibly due to better curing.",
       "Retrofitting is recommended in areas with substandard strength, especially on upper floors.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -556,12 +570,24 @@ export const UPV: Test[] = [
   {
     buildingId: "department-of-industrial-engineering-and-technology",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 2496 },
+        { floor: "2nd Floor", velocity: 2740 },
+        { floor: "3rd Floor", velocity: 2461 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 13.71 },
+        { floor: "2nd Floor", compressiveStrength: 16.82 },
+        { floor: "3rd Floor", compressiveStrength: 11.56 },
+      ],
+    },
     analysis: [
       "Highly variable concrete quality, with compressive strength from 2.6 MPa to 29.1 MPa and pulse velocity from 1503–3532 m/s.",
       "Urgent structural evaluation and remediation are recommended, particularly in sections below 5 MPa.",
       "Investigation into construction practices and material handling is also advised.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -838,12 +864,24 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-arts-and-sciences",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 2352 },
+        { floor: "2nd Floor", velocity: 2288 },
+        { floor: "3rd Floor", velocity: 2933 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 10.2 },
+        { floor: "2nd Floor", compressiveStrength: 8.38 },
+        { floor: "3rd Floor", compressiveStrength: 12.04 },
+      ],
+    },
     analysis: [
       "Concrete quality is fair to moderate, with compressive strength ranging from 12.7 MPa to 16.2 MPa and pulse velocity between 2062–3386 m/s.",
       "To ensure structural reliability, especially under dynamic loading, improved quality control during mixing and curing is recommended.",
       "Further inspection may be warranted to monitor potential degradation.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -1201,12 +1239,26 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-criminal-justice",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 3935.42 },
+        { floor: "2nd Floor", velocity: 4544 },
+        { floor: "3rd Floor", velocity: 3508.93 },
+        { floor: "4rd Floor", velocity: 4415 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 34.99 },
+        { floor: "2nd Floor", compressiveStrength: 35.09 },
+        { floor: "3rd Floor", compressiveStrength: 27.58 },
+        { floor: "4rd Floor", compressiveStrength: 34.19 },
+      ],
+    },
     analysis: [
       "Compressive strengths range widely from 18.3 MPa to 97.1 MPa, with pulse velocity readings up to 7296 m/s—highly unusual for general-purpose structures.",
       "Additional testing, such as core sampling, is recommended to confirm results and rule out anomalies or calibration errors.",
       "If verified, this building may represent high-performance concrete standards.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -1690,11 +1742,27 @@ export const UPV: Test[] = [
   {
     buildingId: "department-of-information-technology",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 2928.41 },
+        { floor: "2nd Floor", velocity: 3211.96 },
+        { floor: "3rd Floor", velocity: 2974.47 },
+        { floor: "4th Floor", velocity: 3386.85 },
+        { floor: "5th Floor", velocity: 2381.85 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 27.9 },
+        { floor: "2nd Floor", compressiveStrength: 28.07 },
+        { floor: "3rd Floor", compressiveStrength: 19.9 },
+        { floor: "4th Floor", compressiveStrength: 17.08 },
+        { floor: "5th Floor", compressiveStrength: 22.45 },
+      ],
+    },
     analysis: [
       "Medium to good concrete quality overall, with compressive strength between 11.4 MPa and 38.0 MPa and pulse velocity from 2442–4095 m/s.",
       "Minor inconsistencies suggest the need for localized inspection and possible targeted remediation to ensure uniform performance across all floors.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -2295,11 +2363,23 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-veterinary-medicine-and-biomedical-sciences",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 3231.43 },
+        { floor: "2nd Floor", velocity: 3548.86 },
+        { floor: "3rd Floor", velocity: 3047 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 32.15 },
+        { floor: "2nd Floor", compressiveStrength: 40.67 },
+        { floor: "3rd Floor", compressiveStrength: 39.43 },
+      ],
+    },
     analysis: [
       "Excellent concrete quality with high and consistent values—compressive strength from 38.0 MPa to 71.3 MPa and pulse velocity from 2933–4092 m/s.",
       "This building may serve as a model for best practices in construction and quality control.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -2531,11 +2611,23 @@ export const UPV: Test[] = [
   {
     buildingId: "graduate-school-and-open-learning-college",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 3165.89 },
+        { floor: "2nd Floor", velocity: 3389.89 },
+        { floor: "3rd Floor", velocity: 2896.44 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 23.6 },
+        { floor: "2nd Floor", compressiveStrength: 28.09 },
+        { floor: "3rd Floor", compressiveStrength: 19.78 },
+      ],
+    },
     analysis: [
       "Solid performance, with compressive strength ranging from 23.2 MPa to 39.6 MPa and pulse velocity from 2664–4166 m/s.",
       "Continued periodic monitoring is advised to maintain long-term durability and detect early signs of degradation.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -2785,11 +2877,21 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-education",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 2301.44 },
+        { floor: "2nd Floor", velocity: 2786.11 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 16.99 },
+        { floor: "2nd Floor", compressiveStrength: 27.85 },
+      ],
+    },
     analysis: [
       "Strong and consistent concrete, with compressive strength from 23.9 MPa to 51.8 MPa and pulse velocity from 2628–3184 m/s.",
       "No major issues observed; however, routine monitoring and inspection should continue to preserve structural integrity over time.",
     ],
-    data: [
+    table: [
       {
         location: "1st Floor",
         member: "C1",
@@ -2994,12 +3096,22 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-economics-management-and-development-studies",
     machineId: "ultrasonic-pulse-velocity",
+    chart: {
+      velocity: [
+        { floor: "1st Floor", velocity: 2301.44 },
+        { floor: "2nd Floor", velocity: 2786.11 },
+      ],
+      compressiveStrength: [
+        { floor: "1st Floor", compressiveStrength: 6.08 },
+        { floor: "2nd Floor", compressiveStrength: 7.79 },
+      ],
+    },
     analysis: [
       "Compressive strength values are critically low (3.5 MPa to 10.4 MPa), with pulse velocity also below standard thresholds (1930–3053 m/s).",
       "Immediate comprehensive assessment is necessary.",
       "Retrofitting or reinforcement should be considered, along with improved quality assurance protocols for future work.",
     ],
-    data: [
+    table: [
       {
         location: "1ST FLOOR",
         member: "C1",

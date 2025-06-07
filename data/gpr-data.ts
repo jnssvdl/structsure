@@ -1,6 +1,6 @@
-import { Test } from "@/types";
+import { Data } from "@/types";
 
-export const GRP: Test[] = [
+export const GPRData: Data[] = [
   {
     buildingId: "engineering-science-building",
     machineId: "digital-rebound-hammer",
@@ -13,7 +13,7 @@ export const GRP: Test[] = [
       recommendation:
         "Prioritize further testing; updated structural drawings and software needed",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -28,7 +28,7 @@ export const GRP: Test[] = [
       recommendation:
         "Detailed re-examination; future inspections need full plans and compatible software",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -44,7 +44,7 @@ export const GRP: Test[] = [
       recommendation:
         "Further inspection; need updated plans and software for better interpretation",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -60,7 +60,7 @@ export const GRP: Test[] = [
       recommendation:
         "Additional focused inspection; updated plans and software essential",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -75,7 +75,7 @@ export const GRP: Test[] = [
       recommendation:
         "Focused assessment in unclear areas; obtain full construction plans and use specialized software",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -91,7 +91,7 @@ export const GRP: Test[] = [
       recommendation:
         "Further inspection needed; complete plans and software recommended",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -107,7 +107,7 @@ export const GRP: Test[] = [
       recommendation:
         "Selective re-scanning; use complete plans and software for future evaluations",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -122,7 +122,7 @@ export const GRP: Test[] = [
       recommendation:
         "Use refined tools or supplementary testing; acquire complete plans and proper software",
     },
-    data: [],
+    table: [],
   },
 
   {
@@ -137,6 +137,6 @@ export const GRP: Test[] = [
       recommendation:
         "Targeted re-inspection; need full plans and software tools",
     },
-    data: [],
+    table: [],
   },
 ];

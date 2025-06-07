@@ -1,4 +1,4 @@
-import { UPV } from "@/types";
+import { UPVRecord } from "@/types";
 import React from "react";
 import {
   Table,
@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export default function UPVTable({ upvData }: { upvData: UPV[] }) {
+export default function UPVTable({ UPVRecords }: { UPVRecords: UPVRecord[] }) {
   return (
     <Table>
       <TableCaption>Ultrasonic Pulse Velocity (UPV)</TableCaption>
@@ -41,7 +41,7 @@ export default function UPVTable({ upvData }: { upvData: UPV[] }) {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {upvData.map((test, index) => (
+        {UPVRecords.map((test, index) => (
           <TableRow key={`${test.location}-${test.method}-${index}`}>
             <TableCell className="text-center">{test.location}</TableCell>
             <TableCell className="text-center">{test.member}</TableCell>

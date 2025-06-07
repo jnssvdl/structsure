@@ -13,13 +13,17 @@ import {
 import { UPVChart } from "@/types";
 
 const chartConfig = {
-  velocity: {
-    label: "Velocity",
-    color: "#2563eb",
+  compressiveStrength: {
+    label: "Compressive Strength",
+    color: "var(--chart-1)",
   },
 } satisfies ChartConfig;
 
-export function VelocityChart({ data }: { data: UPVChart["velocity"] }) {
+export function CompressiveStrengthChart({
+  data,
+}: {
+  data: UPVChart["compressiveStrength"];
+}) {
   return (
     <ChartContainer config={chartConfig} className="h-[400px] w-full">
       <BarChart accessibilityLayer data={data}>
@@ -33,7 +37,11 @@ export function VelocityChart({ data }: { data: UPVChart["velocity"] }) {
         />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
-        <Bar dataKey="velocity" fill="var(--color-velocity)" radius={4} />
+        <Bar
+          dataKey="compressiveStrength"
+          fill="var(--color-compressiveStrength)"
+          radius={4}
+        />
       </BarChart>
     </ChartContainer>
   );

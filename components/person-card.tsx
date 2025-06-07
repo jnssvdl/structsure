@@ -8,7 +8,7 @@ export default function PersonCard({ person }: { person: Person }) {
   return (
     <Card className="h-full">
       <CardHeader>
-        <CardTitle className="text-xl">{person.name}</CardTitle>
+        <CardTitle className="text-primary text-xl">{person.name}</CardTitle>
         <div className="text-muted-foreground space-y-2 text-sm">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
@@ -32,9 +32,7 @@ export default function PersonCard({ person }: { person: Person }) {
             {person.education.map((e, i) => (
               <div key={i} className="space-y-1">
                 <div className="flex items-start justify-between gap-2">
-                  <span className="text-primary text-sm font-medium">
-                    {e.level}
-                  </span>
+                  <span className="text-sm font-medium">{e.level}</span>
                   <Badge variant={"secondary"}>{e.year}</Badge>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
