@@ -33,7 +33,7 @@ export default function HeroSection() {
           Advanced structural health monitoring for Cavite State University
           facilities using DRH, UPV, and GPR technologies.
         </p>
-        <Link href="/machines" passHref>
+        <Link href="/buildings" passHref>
           <Button size="lg" asChild>
             <span>Explore</span>
           </Button>

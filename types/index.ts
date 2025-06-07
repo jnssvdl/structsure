@@ -15,15 +15,20 @@ export type Building = {
   capacity: number;
   numberOfFloors: number;
   function: string;
-  buildingAge?: number;
-  imageUrl?: string;
+  buildingAge: number;
+  imageUrl: string;
 };
 
 export type Machine = {
   id: string;
   name: string;
   description: string;
-  fullText: string;
+  content: {
+    overview: string;
+    principle: string;
+    interpretation: string;
+    applications: string;
+  };
   imageUrl: string;
 };
 
@@ -51,10 +56,29 @@ export type GPR = {
   location: string;
 };
 
+type DRHAnalysis = {
+  compressiveStrength: string;
+  reboundValue: string;
+  conreteCondition: string;
+  recommendation: string;
+};
+
+type UPVAnalysis = string[];
+
+type GPRAnalysis = {
+  slabRebarSpacing: string;
+  wallRebarSpacing: string;
+  signalClaritySpacing: string;
+  rebarCondition: string;
+  issuesDetected: string;
+  recommendation: string;
+};
+
 type TestData = DRH | UPV | GPR;
 
 export type Test = {
   buildingId: Building["id"];
   machineId: Machine["id"];
   data: TestData[];
+  analysis: DRHAnalysis | UPVAnalysis | GPRAnalysis;
 };

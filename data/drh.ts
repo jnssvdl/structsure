@@ -330,6 +330,12 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "Up to 83 MPa (3rd floor)",
+      reboundValue: "47–52 across multiple floors",
+      conreteCondition: "Strong, uniform, and structurally sound",
+      recommendation: "Routine monitoring only",
+    },
   },
   {
     buildingId: "department-of-industrial-engineering-and-technology",
@@ -606,6 +612,13 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "Around 51 MPa on some floors",
+      reboundValue: "42–48 (moderate)",
+      conreteCondition:
+        "Acceptable but variable; may reflect surface wear or aging",
+      recommendation: "Further NDT for floors below 55 MPa or rebound <44",
+    },
   },
   {
     buildingId: "college-of-arts-and-sciences",
@@ -882,6 +895,13 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "Around 51 MPa on some floors",
+      reboundValue: "42–48 (moderate)",
+      conreteCondition:
+        "Generally acceptable, but with potential aging or inconsistencies",
+      recommendation: "Additional testing on lower-performing floors",
+    },
   },
 
   {
@@ -1224,6 +1244,12 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "46 MPa (4th floor) – lowest among all buildings",
+      reboundValue: "40 (4th floor)",
+      conreteCondition: "Below average; may suggest aging or surface issues",
+      recommendation: "Prioritize further evaluation using UPV or GPR",
+    },
   },
 
   {
@@ -1622,6 +1648,12 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "85 MPa (2nd floor) – highest among all buildings",
+      reboundValue: "53 (2nd floor) – highest surface hardness",
+      conreteCondition: "Excellent; exceeds typical structural requirements",
+      recommendation: "Routine monitoring only",
+    },
   },
 
   {
@@ -1768,6 +1800,12 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "55–70 MPa (moderate)",
+      reboundValue: "42–48 (moderate)",
+      conreteCondition: "Generally sound with minor variability",
+      recommendation: "Monitor and selectively reassess if rebound <44",
+    },
   },
 
   {
@@ -2018,6 +2056,12 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "As low as 51 MPa on some floors",
+      reboundValue: "41 (3rd floor)",
+      conreteCondition: "Lower strength; possible early deterioration",
+      recommendation: "Further assessment using complementary NDT",
+    },
   },
   {
     buildingId: "college-of-education",
@@ -2191,6 +2235,12 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "75 MPa (1st floor), 72 MPa (2nd floor)",
+      reboundValue: "47–52 (consistently high)",
+      conreteCondition: "Consistent and high quality",
+      recommendation: "Routine monitoring only",
+    },
   },
 
   {
@@ -2360,5 +2410,11 @@ export const DRH: Test[] = [
         compressiveStrengthRemarks: "Normal Concrete",
       },
     ],
+    analysis: {
+      compressiveStrength: "55–70 MPa (moderate)",
+      reboundValue: "42–48 (moderate)",
+      conreteCondition: "Sound, with acceptable variability",
+      recommendation: "Routine monitoring, with follow-up on weaker areas",
+    },
   },
 ];

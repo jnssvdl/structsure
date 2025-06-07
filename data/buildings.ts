@@ -7,7 +7,7 @@ export const buildings: Building[] = [
     capacity: 916,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/CAS.png",
   },
   {
@@ -25,7 +25,7 @@ export const buildings: Building[] = [
     capacity: 800,
     numberOfFloors: 2,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/CEMDS.png",
   },
   {
@@ -34,7 +34,7 @@ export const buildings: Building[] = [
     capacity: 760,
     numberOfFloors: 2,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/CED.png",
   },
   {
@@ -43,7 +43,7 @@ export const buildings: Building[] = [
     capacity: 350,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/CVMBS.png",
   },
   {
@@ -52,7 +52,7 @@ export const buildings: Building[] = [
     capacity: 80,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/DIET.jpg",
   },
   {
@@ -61,7 +61,7 @@ export const buildings: Building[] = [
     capacity: 916,
     numberOfFloors: 5,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/DIT.jpg",
   },
   {
@@ -70,7 +70,7 @@ export const buildings: Building[] = [
     capacity: 725,
     numberOfFloors: 4,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
     imageUrl: "/images/buildings/ES.png",
   },
   {
@@ -79,6 +79,7 @@ export const buildings: Building[] = [
     capacity: 240,
     numberOfFloors: 3,
     function: "OFFICE AND SCHOOL",
-    // buildingAge: 0,
+    buildingAge: 0,
+    imageUrl: "/images/buildings/ES.png",
   },
 ];

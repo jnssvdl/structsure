@@ -43,9 +43,16 @@ export default function MachineCard({
 
       <CardFooter>
         <div className="flex w-full flex-col gap-2">
-          <Button asChild>
+          <Button asChild variant="outline">
             <Link href={`/buildings/${building.id}/machines/${machine.id}`}>
-              Data
+              Machine Details
+            </Link>
+          </Button>
+          <Button asChild>
+            <Link
+              href={`/buildings/${building.id}/machines/${machine.id}/data`}
+            >
+              View test data
             </Link>
           </Button>
         </div>

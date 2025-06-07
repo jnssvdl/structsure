@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Person } from "@/types";
 import { Calendar, GraduationCap, MapPin } from "lucide-react";
 import { Separator } from "./ui/separator";
+import { Badge } from "./ui/badge";
 
 export default function PersonCard({ person }: { person: Person }) {
   return (
@@ -28,20 +29,18 @@ export default function PersonCard({ person }: { person: Person }) {
           </div>
 
           <div className="space-y-3">
-            {person.education.map((edu, eduIndex) => (
-              <div key={eduIndex} className="space-y-1">
+            {person.education.map((e, i) => (
+              <div key={i} className="space-y-1">
                 <div className="flex items-start justify-between gap-2">
                   <span className="text-primary text-sm font-medium">
-                    {edu.level}
+                    {e.level}
                   </span>
-                  <span className="text-muted-foreground bg-muted rounded px-2 py-1 text-xs">
-                    {edu.year}
-                  </span>
+                  <Badge variant={"secondary"}>{e.year}</Badge>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  {edu.school}
+                  {e.school}
                 </p>
-                {eduIndex < person.education.length - 1 && (
+                {i < person.education.length - 1 && (
                   <Separator className="mt-2" />
                 )}
               </div>

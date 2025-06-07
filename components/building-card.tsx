@@ -3,6 +3,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -15,6 +16,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
+// import { Button } from "./ui/button";
 // import Image from "next/image";
 
 export default function BuildingCard({ building }: { building: Building }) {
@@ -41,7 +43,7 @@ export default function BuildingCard({ building }: { building: Building }) {
         </CardDescription>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="flex-1">
         <div className="flex items-center gap-2">
           <Users className="text-muted-foreground h-4 w-4" />
           <span className="text-muted-foreground">Capacity:</span>
@@ -65,6 +67,10 @@ export default function BuildingCard({ building }: { building: Building }) {
           </span>
         </div>
       </CardContent>
+
+      {/* <CardFooter>
+        <Button className="w-full">View testing data</Button>
+      </CardFooter> */}
     </Card>
   );
 }

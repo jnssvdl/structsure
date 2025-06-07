@@ -4,6 +4,11 @@ export const UPV: Test[] = [
   {
     buildingId: "engineering-science-building",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Wide range of concrete strength (6.2 MPa to 35.7 MPa) and velocity (1895–3607 m/s) points to inconsistent construction practices.",
+      "Lower floors performed better, possibly due to better curing.",
+      "Retrofitting is recommended in areas with substandard strength, especially on upper floors.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -551,6 +556,11 @@ export const UPV: Test[] = [
   {
     buildingId: "department-of-industrial-engineering-and-technology",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Highly variable concrete quality, with compressive strength from 2.6 MPa to 29.1 MPa and pulse velocity from 1503–3532 m/s.",
+      "Urgent structural evaluation and remediation are recommended, particularly in sections below 5 MPa.",
+      "Investigation into construction practices and material handling is also advised.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -828,6 +838,11 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-arts-and-sciences",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Concrete quality is fair to moderate, with compressive strength ranging from 12.7 MPa to 16.2 MPa and pulse velocity between 2062–3386 m/s.",
+      "To ensure structural reliability, especially under dynamic loading, improved quality control during mixing and curing is recommended.",
+      "Further inspection may be warranted to monitor potential degradation.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -843,7 +858,7 @@ export const UPV: Test[] = [
         member: "C1",
         compressiveStrengthMpa: 23.8,
         velocityMs: 3460,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Doubtful/Fair",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -852,7 +867,7 @@ export const UPV: Test[] = [
         member: "C1",
         compressiveStrengthMpa: 12.6,
         velocityMs: 2062,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -870,7 +885,7 @@ export const UPV: Test[] = [
         member: "C2",
         compressiveStrengthMpa: 8.9,
         velocityMs: 2136,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -879,7 +894,7 @@ export const UPV: Test[] = [
         member: "C2",
         compressiveStrengthMpa: 7.6,
         velocityMs: 2133,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -897,7 +912,7 @@ export const UPV: Test[] = [
         member: "C3",
         compressiveStrengthMpa: 0.8,
         velocityMs: 1239,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -906,7 +921,7 @@ export const UPV: Test[] = [
         member: "C3",
         compressiveStrengthMpa: 2.7,
         velocityMs: 1873,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -924,7 +939,7 @@ export const UPV: Test[] = [
         member: "W1",
         compressiveStrengthMpa: 6.3,
         velocityMs: 2101,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -933,7 +948,7 @@ export const UPV: Test[] = [
         member: "W1",
         compressiveStrengthMpa: 12.3,
         velocityMs: 3480,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Doubtful/Fair",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -951,7 +966,7 @@ export const UPV: Test[] = [
         member: "C1",
         compressiveStrengthMpa: 10.4,
         velocityMs: 2361,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -960,7 +975,7 @@ export const UPV: Test[] = [
         member: "C1",
         compressiveStrengthMpa: 8.9,
         velocityMs: 2136,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -978,7 +993,7 @@ export const UPV: Test[] = [
         member: "C2",
         compressiveStrengthMpa: 7.3,
         velocityMs: 2150,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -987,7 +1002,7 @@ export const UPV: Test[] = [
         member: "C2",
         compressiveStrengthMpa: 20.2,
         velocityMs: 2971,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1005,7 +1020,7 @@ export const UPV: Test[] = [
         member: "C3",
         compressiveStrengthMpa: 8.8,
         velocityMs: 3175,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Doubtful/Fair",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1014,7 +1029,7 @@ export const UPV: Test[] = [
         member: "C3",
         compressiveStrengthMpa: 4.4,
         velocityMs: 1616,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1032,7 +1047,7 @@ export const UPV: Test[] = [
         member: "G1",
         compressiveStrengthMpa: 4,
         velocityMs: 1956,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1041,7 +1056,7 @@ export const UPV: Test[] = [
         member: "G1",
         compressiveStrengthMpa: 5.4,
         velocityMs: 2169,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1059,7 +1074,7 @@ export const UPV: Test[] = [
         member: "W1",
         compressiveStrengthMpa: 5.2,
         velocityMs: 2518,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1068,7 +1083,7 @@ export const UPV: Test[] = [
         member: "W1",
         compressiveStrengthMpa: 5.9,
         velocityMs: 2773,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1086,7 +1101,7 @@ export const UPV: Test[] = [
         member: "C1",
         compressiveStrengthMpa: 15.9,
         velocityMs: 2673,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1095,7 +1110,7 @@ export const UPV: Test[] = [
         member: "C1",
         compressiveStrengthMpa: 16.6,
         velocityMs: 3210,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Doubtful/Fair",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1113,7 +1128,7 @@ export const UPV: Test[] = [
         member: "C2",
         compressiveStrengthMpa: 11.1,
         velocityMs: 2320,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1122,7 +1137,7 @@ export const UPV: Test[] = [
         member: "C2",
         compressiveStrengthMpa: 15,
         velocityMs: 4130,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Good",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1140,7 +1155,7 @@ export const UPV: Test[] = [
         member: "C3",
         compressiveStrengthMpa: 5.9,
         velocityMs: 3460,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Doubtful/Fair",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1149,7 +1164,7 @@ export const UPV: Test[] = [
         member: "C3",
         compressiveStrengthMpa: 6.6,
         velocityMs: 2230,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Very Low Strength Concrete",
       },
@@ -1167,7 +1182,7 @@ export const UPV: Test[] = [
         member: "W1",
         compressiveStrengthMpa: 12.8,
         velocityMs: 2349,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1176,7 +1191,7 @@ export const UPV: Test[] = [
         member: "W1",
         compressiveStrengthMpa: 16.2,
         velocityMs: 2839,
-        method: "",
+        method: "INDIRECT",
         concreteQualityRemarks: "Poor or Defective",
         compressiveStrengthRemarks: "Normal Concrete",
       },
@@ -1186,6 +1201,11 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-criminal-justice",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Compressive strengths range widely from 18.3 MPa to 97.1 MPa, with pulse velocity readings up to 7296 m/s—highly unusual for general-purpose structures.",
+      "Additional testing, such as core sampling, is recommended to confirm results and rule out anomalies or calibration errors.",
+      "If verified, this building may represent high-performance concrete standards.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -1670,6 +1690,10 @@ export const UPV: Test[] = [
   {
     buildingId: "department-of-information-technology",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Medium to good concrete quality overall, with compressive strength between 11.4 MPa and 38.0 MPa and pulse velocity from 2442–4095 m/s.",
+      "Minor inconsistencies suggest the need for localized inspection and possible targeted remediation to ensure uniform performance across all floors.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -2271,6 +2295,10 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-veterinary-medicine-and-biomedical-sciences",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Excellent concrete quality with high and consistent values—compressive strength from 38.0 MPa to 71.3 MPa and pulse velocity from 2933–4092 m/s.",
+      "This building may serve as a model for best practices in construction and quality control.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -2503,6 +2531,10 @@ export const UPV: Test[] = [
   {
     buildingId: "graduate-school-and-open-learning-college",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Solid performance, with compressive strength ranging from 23.2 MPa to 39.6 MPa and pulse velocity from 2664–4166 m/s.",
+      "Continued periodic monitoring is advised to maintain long-term durability and detect early signs of degradation.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -2753,6 +2785,10 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-education",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Strong and consistent concrete, with compressive strength from 23.9 MPa to 51.8 MPa and pulse velocity from 2628–3184 m/s.",
+      "No major issues observed; however, routine monitoring and inspection should continue to preserve structural integrity over time.",
+    ],
     data: [
       {
         location: "1st Floor",
@@ -2958,6 +2994,11 @@ export const UPV: Test[] = [
   {
     buildingId: "college-of-economics-management-and-development-studies",
     machineId: "ultrasonic-pulse-velocity",
+    analysis: [
+      "Compressive strength values are critically low (3.5 MPa to 10.4 MPa), with pulse velocity also below standard thresholds (1930–3053 m/s).",
+      "Immediate comprehensive assessment is necessary.",
+      "Retrofitting or reinforcement should be considered, along with improved quality assurance protocols for future work.",
+    ],
     data: [
       {
         location: "1ST FLOOR",
