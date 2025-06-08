@@ -3,7 +3,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -34,41 +33,36 @@ export default function BuildingCard({ building }: { building: Building }) {
       <CardHeader>
         <div className="flex justify-between">
           <CardTitle className="line-clamp-2">{building.name}</CardTitle>
-          <BuildingIcon className="text-muted-foreground ml-2 h-4 w-4 flex-shrink-0" />
+          <BuildingIcon className="text-muted-foreground h-4 w-4" />
         </div>
         <CardDescription>
           <Badge variant="secondary">{building.function}</Badge>
         </CardDescription>
       </CardHeader>
 
-      <CardContent className="flex-1">
-        <div className="flex items-center gap-2">
-          <Users className="text-muted-foreground h-4 w-4" />
-          <span className="text-muted-foreground">Capacity:</span>
+      <CardContent className="flex-1 space-y-2">
+        <div className="text-muted-foreground flex items-center gap-2 text-sm">
+          <Users className="h-4 w-4" />
+          <span>Capacity:</span>
           <span>{building.capacity.toLocaleString()}</span>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Layers className="text-muted-foreground h-4 w-4" />
-          <span className="text-muted-foreground">Floors:</span>
+        <div className="text-muted-foreground flex items-center gap-2 text-sm">
+          <Layers className="h-4 w-4" />
+          <span>Floors:</span>
           <span>{building.numberOfFloors}</span>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Calendar className="text-muted-foreground h-4 w-4" />
-          <span className="text-muted-foreground">Age:</span>
+        <div className="text-muted-foreground flex items-center gap-2 text-sm">
+          <Calendar className="h-4 w-4" />
+          <span>Age:</span>
           <span>
             {building.buildingAge
-              ? `${building.buildingAge} 
-                ${building.buildingAge === 1 ? "year" : "years"}`
+              ? `${building.buildingAge} ${building.buildingAge === 1 ? "year" : "years"}`
               : "N/A"}
           </span>
         </div>
       </CardContent>
-
-      {/* <CardFooter>
-        <Button className="w-full">View testing data</Button>
-      </CardFooter> */}
     </Card>
   );
 }

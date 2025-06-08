@@ -1,3 +1,4 @@
+import type React from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import Searchbar from "@/components/searchbar";
 import {
@@ -6,7 +7,6 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
-  SidebarHeader,
   SidebarInset,
   SidebarMenu,
   SidebarMenuButton,
@@ -14,6 +14,12 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { buildings } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,61 +32,86 @@ export default async function DataLayout({
   params: Promise<{ buildingId: string }>;
 }>) {
   const { buildingId } = await params;
+
   return (
-    <SidebarProvider>
-      <div className="flex min-h-screen w-full">
-        <Sidebar>
-          <SidebarHeader></SidebarHeader>
-          <SidebarContent>
-            <SidebarGroup>
-              <SidebarGroupLabel>Buildings</SidebarGroupLabel>
-              <SidebarGroupContent>
-                <SidebarMenu>
-                  {buildings.map((b) => (
-                    <SidebarMenuItem key={b.id}>
-                      <SidebarMenuButton
-                        asChild
-                        isActive={b.id === buildingId}
-                        className="h-full"
-                      >
-                        <Link href={`/buildings/${b.id}/`}>{b.name}</Link>
-                      </SidebarMenuButton>
-                    </SidebarMenuItem>
-                  ))}
-                </SidebarMenu>
-              </SidebarGroupContent>
-            </SidebarGroup>
-          </SidebarContent>
-        </Sidebar>
+    <TooltipProvider>
+      <SidebarProvider>
+        <div className="flex min-h-screen w-full">
+          <Sidebar className="border-r">
+            <SidebarContent className="gap-0">
+              <SidebarGroup className="px-0">
+                <SidebarGroupLabel className="text-muted-foreground px-4 py-2 text-xs font-medium">
+                  All Buildings
+                </SidebarGroupLabel>
+                <SidebarGroupContent>
+                  <SidebarMenu className="gap-1 px-2">
+                    {buildings.map((building) => (
+                      <SidebarMenuItem key={building.id}>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <SidebarMenuButton
+                              asChild
+                              isActive={building.id === buildingId}
+                              className="h-10 justify-start px-3"
+                            >
+                              <Link href={`/buildings/${building.id}/`}>
+                                <span className="flex-1 truncate text-left">
+                                  {building.name}
+                                </span>
+                              </Link>
+                            </SidebarMenuButton>
+                          </TooltipTrigger>
+                          <TooltipContent
+                            side="right"
+                            className="max-w-[200px] break-words"
+                          >
+                            {building.name}
+                          </TooltipContent>
+                        </Tooltip>
+                      </SidebarMenuItem>
+                    ))}
+                  </SidebarMenu>
+                </SidebarGroupContent>
+              </SidebarGroup>
+            </SidebarContent>
+          </Sidebar>
 
-        <SidebarInset>
-          <header className="flex h-16 items-center gap-2 border-b px-4">
-            <SidebarTrigger className="-ml-1" />
-            <div className="mx-auto flex w-full justify-between">
-              <Link
-                href="/"
-                className="text-primary flex items-center gap-2 text-xl font-bold"
-              >
-                <Image
-                  src="/images/logo.png"
-                  alt="StructSure Logo"
-                  width={32}
-                  height={32}
-                  priority
-                />
-                StructSure
-              </Link>
-
-              <div className="hidden items-center gap-6 md:flex">
-                <Searchbar />
-                <ModeToggle />
+          <SidebarInset className="flex flex-1 flex-col">
+            <header className="bg-background sticky top-0 z-40 flex w-full border-b">
+              <div className="flex items-center">
+                <SidebarTrigger className="ml-4" />
               </div>
-            </div>
-          </header>
+              <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-6 lg:px-8">
+                <div className="flex flex-1 justify-between">
+                  <Link
+                    href="/"
+                    className="text-primary hover:text-primary/80 flex items-center gap-2 text-xl font-bold transition-colors"
+                  >
+                    <Image
+                      src="/images/logo.png"
+                      alt="StructSure Logo"
+                      width={32}
+                      height={32}
+                      priority
+                      className="rounded-md"
+                    />
+                    <span className="hidden sm:inline">StructSure</span>
+                  </Link>
+                </div>
 
-          {children}
-        </SidebarInset>
-      </div>
-    </SidebarProvider>
+                <div className="flex items-center gap-2">
+                  <div className="hidden md:block">
+                    <Searchbar />
+                  </div>
+                  <ModeToggle />
+                </div>
+              </div>
+            </header>
+
+            <div className="flex-1 overflow-auto">{children}</div>
+          </SidebarInset>
+        </div>
+      </SidebarProvider>
+    </TooltipProvider>
   );
 }

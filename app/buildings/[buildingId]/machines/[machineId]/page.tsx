@@ -25,9 +25,9 @@ export default async function MachinePage({
   if (!machine) return notFound();
 
   return (
-    <div className="min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <header className="bg-background sticky top-0 z-40 w-full border-b">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
             className="text-primary flex items-center gap-2 text-xl font-bold"
@@ -50,42 +50,39 @@ export default async function MachinePage({
           </div>
         </div>
 
-        {/* Mobile Searchbar - shows below on small screens */}
+        {/* Mobile Searchbar */}
         <div className="border-t px-4 py-3 sm:hidden">
           <Searchbar />
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold tracking-tight">{machine.name}</h1>
-        </div>
+      <main className="mx-auto max-w-7xl flex-1 px-4 py-12 sm:px-6 lg:px-12">
+        {/* Title */}
+        <section className="mb-12 text-center">
+          <h1 className="text-primary text-4xl font-bold tracking-tight">
+            {machine.name}
+          </h1>
+        </section>
 
-        {/* Responsive Content Layout */}
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
-          {/* Image Column */}
-          <div className="lg:w-[40%]">
+        <section className="flex flex-col gap-12 lg:flex-row lg:items-start">
+          <div className="lg:w-2/5">
             <div className="relative aspect-square w-full overflow-hidden rounded-xl border">
               <Image
                 src={machine.imageUrl}
-                fill
                 alt={machine.name}
+                fill
                 className="object-cover"
                 priority
               />
             </div>
           </div>
 
-          {/* Text Column */}
-          <div className="lg:w-[60%]">
-            <article className="prose prose-sm dark:prose-invert sm:prose-base">
-              <div className="text-muted-foreground rounded-lg p-6 leading-relaxed whitespace-pre-line">
-                {machine.fullText}
-              </div>
-            </article>
-          </div>
-        </div>
+          <article className="prose dark:prose-invert sm:prose-lg mx-auto max-w-none lg:w-3/5">
+            <div className="text-muted-foreground rounded-lg p-6 leading-relaxed whitespace-pre-line">
+              {machine.fullText}
+            </div>
+          </article>
+        </section>
       </main>
     </div>
   );

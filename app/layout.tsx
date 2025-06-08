@@ -32,6 +32,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <footer className="border-t-2 px-4 py-4 sm:px-6 lg:px-8">
+            <p className="text-muted-foreground text-center">
+              © {new Date().getFullYear()} StructSure - Cavite State University
+            </p>
+          </footer>
         </ThemeProvider>
       </body>
     </html>

@@ -7,7 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { Building2, Hammer, AlertTriangle } from "lucide-react";
 
 import type { Building, DRHData, Machine } from "@/types";
@@ -20,28 +19,26 @@ type DRHPageProps = {
 
 export default function DRHPage({ building, machine, data }: DRHPageProps) {
   return (
-    <div className="min-h-screen">
-      <div className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
+    <div className="bg-background min-h-screen">
+      <main className="mx-auto max-w-7xl space-y-12 px-4 py-12 sm:px-6 lg:px-12">
         {/* Header Section */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <Building2 className="h-8 w-8" />
+            <Building2 className="text-primary h-8 w-8" />
             <div>
-              <h1 className="text-2xl font-bold tracking-tight md:text-3xl">
+              <h1 className="text-primary text-4xl font-extrabold tracking-tight">
                 {building.name}
               </h1>
-              <div className="text-muted-foreground mt-1 flex items-center gap-2 text-sm">
+              <p className="text-muted-foreground mt-1 flex items-center gap-2 text-sm">
                 <Hammer className="h-4 w-4" />
-                Structural testing results using {machine.name}
-              </div>
+                Structural testing results using{" "}
+                <span className="font-semibold">{machine.name}</span>
+              </p>
             </div>
           </div>
-          <Separator />
         </div>
 
-        {/* Analysis + Recommendation Grid */}
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
-          {/* Compressive Strength */}
+        <section className="grid grid-cols-1 gap-6 lg:grid-cols-5">
           <Card className="h-full">
             <CardHeader>
               <CardTitle>Compressive Strength</CardTitle>
@@ -49,7 +46,6 @@ export default function DRHPage({ building, machine, data }: DRHPageProps) {
             <CardContent>{data.analysis.compressiveStrength}</CardContent>
           </Card>
 
-          {/* Rebound Value */}
           <Card className="h-full">
             <CardHeader>
               <CardTitle>Rebound Value</CardTitle>
@@ -57,7 +53,6 @@ export default function DRHPage({ building, machine, data }: DRHPageProps) {
             <CardContent>{data.analysis.reboundValue}</CardContent>
           </Card>
 
-          {/* Concrete Condition */}
           <Card className="h-full">
             <CardHeader>
               <CardTitle>Concrete Condition</CardTitle>
@@ -65,11 +60,10 @@ export default function DRHPage({ building, machine, data }: DRHPageProps) {
             <CardContent>{data.analysis.conreteCondition}</CardContent>
           </Card>
 
-          {/* Recommendation */}
-          <Card className="h-full">
+          <Card className="h-full lg:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-sm font-semibold">
-                <AlertTriangle className="h-4 w-4 text-amber-500" />
+                <AlertTriangle className="h-5 w-5 text-amber-500" />
                 Recommendations
               </CardTitle>
             </CardHeader>
@@ -79,44 +73,43 @@ export default function DRHPage({ building, machine, data }: DRHPageProps) {
               </p>
             </CardContent>
           </Card>
-        </div>
+        </section>
 
-        {/* Data Visualization Section */}
-        <div className="grid grid-cols-1 gap-4 xl:grid-cols-3">
-          <div className="xl:col-span-2">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-base font-semibold">
-                  Test Results Visualization
-                </CardTitle>
-                <CardDescription>
-                  Graphical representation of structural testing data
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <DRHChart data={data.chart} />
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold">
+                Test Results Visualization
+              </CardTitle>
+              <CardDescription>
+                Graphical representation of structural testing data
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <DRHChart data={data.chart} />
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Data Table Section */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base font-semibold">
-              Detailed Test Records
-            </CardTitle>
-            <CardDescription>
-              Complete dataset from structural testing measurements
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="overflow-x-auto">
-              <DRHTable DRHRecords={data.table} />
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold">
+                Detailed Test Records
+              </CardTitle>
+              <CardDescription>
+                Complete dataset from structural testing measurements
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto">
+                <DRHTable DRHRecords={data.table} />
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+      </main>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import { Header } from "@/components/header";
-import ContactSection from "@/components/contact-section";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { AuroraText } from "@/components/magicui/aurora-text";
@@ -15,7 +14,10 @@ export default function Home() {
       <Header />
 
       <main className="flex-1">
-        <section id="hero" className="py-20">
+        <section
+          id="hero"
+          className="px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32"
+        >
           <GridPattern
             width={30}
             height={30}
@@ -26,14 +28,14 @@ export default function Home() {
               "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
             )}
           />
-          <div className="container mx-auto flex flex-col items-center">
+          <div className="mx-auto flex max-w-7xl flex-col items-center">
             <AuroraText
-              className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl"
+              className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl"
               colors={["#f7e968", "#aadb4f", "#8ecb4b", "#98db58"]}
             >
               StructSure
             </AuroraText>
-            <p className="mb-8">
+            <p className="text-muted-foreground mx-auto mb-8 max-w-2xl text-center text-lg md:text-xl">
               Advanced structural health monitoring for Cavite State University
               facilities using DRH, UPV, and GPR technologies.
             </p>
@@ -45,28 +47,30 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <section
+          id="about"
+          className="px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32"
+        >
+          <div className="mx-auto flex max-w-7xl flex-col items-center">
             <h2 className="text-primary mb-12 text-center text-4xl font-bold">
               About Us
             </h2>
+
             <div className="grid items-center gap-12 md:grid-cols-2">
-              <div className="w-full">
-                <div className="relative h-0 w-full overflow-hidden rounded-lg pb-[66.66%] shadow-lg">
-                  <Image
-                    src="/images/cvsu.jpg"
-                    alt="Cavite State University"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/images/cvsu.jpg"
+                  alt="Cavite State University"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <div className="space-y-6">
+              <div className="text-muted-foreground space-y-6">
                 <p>
-                  <strong>StructSure</strong> is a thesis research project
-                  developed at Cavite State University to advance structural
-                  health monitoring techniques for academic and professional
-                  applications.
+                  <strong className="text-primary">StructSure</strong> is a
+                  thesis research project developed at Cavite State University
+                  to advance structural health monitoring techniques for
+                  academic and professional applications.
                 </p>
                 <p>
                   The project was part of the Civil Engineering graduate
@@ -85,28 +89,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="team" className="py-20">
-          <div className="mx-auto max-w-6xl">
+        <section
+          id="team"
+          className="px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32"
+        >
+          <div className="mx-auto flex max-w-7xl flex-col items-center">
             <h2 className="text-primary mb-12 text-center text-4xl font-bold">
               Our Team
             </h2>
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+
+            <div className="grid w-full gap-10 sm:grid-cols-2 lg:grid-cols-3">
               {persons.map((member) => (
                 <PersonCard key={member.name} person={member} />
               ))}
             </div>
           </div>
         </section>
-
-        <ContactSection />
       </main>
-
-      {/* Footer */}
-      <footer className="border-2 p-4">
-        <p className="text-muted-foreground text-center">
-          © {new Date().getFullYear()} StructSure - Cavite State University
-        </p>
-      </footer>
     </div>
   );
 }

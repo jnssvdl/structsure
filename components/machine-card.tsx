@@ -22,7 +22,7 @@ export default function MachineCard({
   return (
     <Card>
       <CardHeader>
-        <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
+        <div className="relative h-48 w-full overflow-hidden">
           <Image
             src={machine.imageUrl}
             alt={machine.name}

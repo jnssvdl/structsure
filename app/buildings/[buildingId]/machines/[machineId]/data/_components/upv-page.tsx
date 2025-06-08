@@ -9,8 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Building2, BarChart3 } from "lucide-react";
+import { Building2, Hammer } from "lucide-react";
 
 type UPVPageProps = {
   building: Building;
@@ -20,29 +19,25 @@ type UPVPageProps = {
 
 export default function UPVPage({ building, machine, data }: UPVPageProps) {
   return (
-    <div className="min-h-screen">
-      <div className="mx-auto max-w-7xl space-y-6 p-4 md:p-6">
-        {/* Header Section */}
+    <div className="bg-background min-h-screen">
+      <main className="mx-auto max-w-7xl space-y-12 px-4 py-12 sm:px-6 lg:px-12">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <BarChart3 className="h-8 w-8" />
+            <Building2 className="text-primary h-8 w-8" />
             <div>
-              <h1 className="text-2xl font-bold tracking-tight md:text-3xl">
-                {machine.name} Test Results
+              <h1 className="text-primary text-4xl font-extrabold tracking-tight">
+                {building.name}
               </h1>
-              <div className="mt-1 flex flex-col text-sm">
-                <span className="flex items-center gap-2">
-                  <Building2 className="h-4 w-4" />
-                  Building: {building.name}
-                </span>
-              </div>
+              <p className="text-muted-foreground mt-1 flex items-center gap-2 text-sm">
+                <Hammer className="h-4 w-4" />
+                Structural testing results using{" "}
+                <span className="font-semibold">{machine.name}</span>
+              </p>
             </div>
           </div>
-          <Separator />
         </div>
 
-        {/* Data Table Section */}
-        <div className="space-y-4">
+        <section>
           <Card>
             <CardHeader>
               <CardTitle>UPV Measurements</CardTitle>
@@ -56,10 +51,9 @@ export default function UPVPage({ building, machine, data }: UPVPageProps) {
               </div>
             </CardContent>
           </Card>
-        </div>
+        </section>
 
-        {/* Charts Section */}
-        <div className="space-y-6">
+        <section>
           <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
             <Card>
               <CardHeader>
@@ -87,11 +81,10 @@ export default function UPVPage({ building, machine, data }: UPVPageProps) {
               </CardContent>
             </Card>
           </div>
-        </div>
+        </section>
 
-        {/* Analysis Section */}
         {data.analysis && data.analysis.length > 0 && (
-          <div className="space-y-4">
+          <section>
             <Card>
               <CardHeader>
                 <CardTitle>Analysis based on UPV test results</CardTitle>
@@ -100,7 +93,7 @@ export default function UPVPage({ building, machine, data }: UPVPageProps) {
                 <div className="space-y-3">
                   {data.analysis.map((point, index) => (
                     <div key={index} className="flex gap-3">
-                      <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full text-sm font-semibold">
+                      <div className="bg-primary flex h-6 w-6 items-center justify-center rounded-full text-sm font-semibold text-white">
                         {index + 1}
                       </div>
                       <p className="text-sm leading-relaxed">{point}</p>
@@ -109,9 +102,9 @@ export default function UPVPage({ building, machine, data }: UPVPageProps) {
                 </div>
               </CardContent>
             </Card>
-          </div>
+          </section>
         )}
-      </div>
+      </main>
     </div>
   );
 }
