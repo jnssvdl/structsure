@@ -1,6 +1,6 @@
 "use client";
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 import {
   ChartConfig,
@@ -31,6 +31,7 @@ export function VelocityChart({ data }: { data: UPVChart["velocity"] }) {
           axisLine={false}
           //   tickFormatter={(value) => value.slice(0, 3)}
         />
+        <YAxis />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
         <Bar dataKey="velocity" fill="var(--color-velocity)" radius={4} />

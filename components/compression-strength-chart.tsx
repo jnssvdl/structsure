@@ -1,6 +1,6 @@
 "use client";
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 import {
   ChartConfig,
@@ -15,7 +15,7 @@ import { UPVChart } from "@/types";
 const chartConfig = {
   compressiveStrength: {
     label: "Compressive Strength",
-    color: "var(--chart-1)",
+    color: "orange",
   },
 } satisfies ChartConfig;
 
@@ -33,8 +33,9 @@ export function CompressiveStrengthChart({
           tickLine={false}
           tickMargin={10}
           axisLine={false}
-          //   tickFormatter={(value) => value.slice(0, 3)}
+          tickFormatter={(value) => value.slice(0, 3)}
         />
+        <YAxis />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
         <Bar

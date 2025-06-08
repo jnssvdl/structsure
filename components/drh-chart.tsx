@@ -1,6 +1,6 @@
 "use client";
 
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 import {
   ChartConfig,
@@ -35,6 +35,7 @@ export function DRHChart({ data }: { data: DRHChartType }) {
           axisLine={false}
           //   tickFormatter={(value) => value.slice(0, 3)}
         />
+        <YAxis />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
         <Bar

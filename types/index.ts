@@ -93,6 +93,7 @@ export type UPVData = {
   chart: UPVChart;
   analysis: UPVAnalysis;
 };
+
 export type DRHData = {
   buildingId: Building["id"];
   machineId: Machine["id"];
