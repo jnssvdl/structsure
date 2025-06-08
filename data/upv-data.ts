@@ -2879,8 +2879,8 @@ export const UPVData: Data[] = [
     machineId: "ultrasonic-pulse-velocity",
     chart: {
       velocity: [
-        { floor: "1st Floor", velocity: 2301.44 },
-        { floor: "2nd Floor", velocity: 2786.11 },
+        { floor: "1st Floor", velocity: 2702.64 },
+        { floor: "2nd Floor", velocity: 2923.68 },
       ],
       compressiveStrength: [
         { floor: "1st Floor", compressiveStrength: 16.99 },

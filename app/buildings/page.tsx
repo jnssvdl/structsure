@@ -2,6 +2,7 @@ import Link from "next/link";
 import { buildings } from "@/data";
 import BuildingCard from "@/components/building-card";
 import { Header } from "@/components/header";
+import { Button } from "@/components/ui/button";
 
 export default function BuildingsPage() {
   return (
@@ -18,6 +19,9 @@ export default function BuildingsPage() {
               includes detailed specifications, testing history, and machine
               analysis data.
             </p>
+            <Button asChild>
+              <Link href={"/buildings/overall"}>Overall building data</Link>
+            </Button>
           </div>
         </section>
 
