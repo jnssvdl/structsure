@@ -3,7 +3,7 @@ import { Data } from "@/types";
 export const GPRData: Data[] = [
   {
     buildingId: "engineering-science-building",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "150 mm – 400 mm",
       wallRebarSpacing: "400 mm – 600 mm",
@@ -18,7 +18,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "department-of-industrial-engineering-and-technology",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "250 mm",
       wallRebarSpacing: "600 mm",
@@ -33,7 +33,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "college-of-arts-and-sciences",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "250 mm – 400 mm",
       wallRebarSpacing: "300 mm – 600 mm",
@@ -49,7 +49,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "college-of-criminal-justice",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "250 mm – 400 mm",
       wallRebarSpacing: "300 mm – 700 mm",
@@ -65,7 +65,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "department-of-information-technology",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "300 mm – 500 mm",
       wallRebarSpacing: "300 mm – 600 mm",
@@ -80,7 +80,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "college-of-veterinary-medicine-and-biomedical-sciences",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "100 mm – 400 mm",
       wallRebarSpacing: "500 mm",
@@ -96,7 +96,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "graduate-school-and-open-learning-college",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "100 mm – 600 mm",
       wallRebarSpacing: "Not inspected (obstructions)",
@@ -112,7 +112,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "college-of-education",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "200 mm – 600 mm",
       wallRebarSpacing: "400 mm – 500 mm",
@@ -127,7 +127,7 @@ export const GPRData: Data[] = [
 
   {
     buildingId: "college-of-economics-management-and-development-studies",
-    machineId: "digital-rebound-hammer",
+    machineId: "ground-penetrating-radar",
     analysis: {
       slabRebarSpacing: "200 mm – 700 mm",
       wallRebarSpacing: "200 mm – 600 mm",
