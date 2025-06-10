@@ -5,8 +5,6 @@ import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
 import Searchbar from "@/components/searchbar";
 
-export const dynamicParams = false;
-
 export async function generateStaticParams() {
   return machines.map((machine) => ({
     machineId: machine.id,
