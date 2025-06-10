@@ -38,6 +38,41 @@ export default function DRHPage({ building, machine, data }: DRHPageProps) {
           </div>
         </div>
 
+        {/* Data Table Section */}
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold">
+                Detailed Test Records
+              </CardTitle>
+              <CardDescription>
+                Complete dataset from structural testing measurements
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto">
+                <DRHTable DRHRecords={data.table} />
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold">
+                Test Results Visualization
+              </CardTitle>
+              <CardDescription>
+                Graphical representation of structural testing data
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <DRHChart data={data.chart} />
+            </CardContent>
+          </Card>
+        </section>
+
         <section className="grid grid-cols-1 gap-6 lg:grid-cols-5">
           <Card className="h-full">
             <CardHeader>
@@ -71,41 +106,6 @@ export default function DRHPage({ building, machine, data }: DRHPageProps) {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {data.analysis.recommendation}
               </p>
-            </CardContent>
-          </Card>
-        </section>
-
-        <section>
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-base font-semibold">
-                Test Results Visualization
-              </CardTitle>
-              <CardDescription>
-                Graphical representation of structural testing data
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <DRHChart data={data.chart} />
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Data Table Section */}
-        <section>
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-base font-semibold">
-                Detailed Test Records
-              </CardTitle>
-              <CardDescription>
-                Complete dataset from structural testing measurements
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="overflow-x-auto">
-                <DRHTable DRHRecords={data.table} />
-              </div>
             </CardContent>
           </Card>
         </section>
