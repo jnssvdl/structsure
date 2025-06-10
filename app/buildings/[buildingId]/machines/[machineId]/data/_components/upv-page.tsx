@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Building2, Hammer } from "lucide-react";
+import { Building2, Gauge } from "lucide-react";
 
 type UPVPageProps = {
   building: Building;
@@ -29,7 +29,7 @@ export default function UPVPage({ building, machine, data }: UPVPageProps) {
                 {building.name}
               </h1>
               <p className="text-muted-foreground mt-1 flex items-center gap-2 text-sm">
-                <Hammer className="h-4 w-4" />
+                <Gauge className="h-4 w-4" />
                 Structural testing results using{" "}
                 <span className="font-semibold">{machine.name}</span>
               </p>
