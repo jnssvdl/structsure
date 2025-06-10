@@ -63,7 +63,7 @@ export default async function DataLayout({
                           </TooltipTrigger>
                           <TooltipContent
                             side="right"
-                            className="max-w-[200px] break-words"
+                            className="text-background max-w-[200px] break-words"
                           >
                             {building.name}
                           </TooltipContent>
