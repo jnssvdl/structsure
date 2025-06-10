@@ -4,9 +4,16 @@ import { machines } from "@/data";
 import { notFound } from "next/navigation";
 import { buildings } from "@/data";
 import Image from "next/image";
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return buildings.map((building) => ({
+    buildingId: building.id,
+  }));
+}
 
 export default async function MachinesPage({
   params,
