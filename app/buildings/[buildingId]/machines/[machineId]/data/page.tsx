@@ -1,8 +1,9 @@
 import { buildings, DATA, machines } from "@/data";
 import { notFound } from "next/navigation";
 import DRHPage from "./_components/drh-page";
-import { DRHData, UPVData } from "@/types";
+import { DRHData, GPRData, UPVData } from "@/types";
 import UPVPage from "./_components/upv-page";
+import GPRPage from "./_components/gpr-page";
 
 export const dynamicParams = false;
 
@@ -48,7 +49,9 @@ export default async function DataPage({
   }
 
   if (machineId === "ground-penetrating-radar") {
-    return notFound();
+    return (
+      <GPRPage building={building} machine={machine} data={data as GPRData} />
+    );
   }
 
   return notFound();
