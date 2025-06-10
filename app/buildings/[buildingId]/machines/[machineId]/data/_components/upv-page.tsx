@@ -92,12 +92,9 @@ export default function UPVPage({ building, machine, data }: UPVPageProps) {
               <CardContent>
                 <div className="space-y-3">
                   {data.analysis.map((point, index) => (
-                    <div key={index} className="flex gap-3">
-                      <div className="bg-primary flex h-6 w-6 items-center justify-center rounded-full text-sm font-semibold text-white">
-                        {index + 1}
-                      </div>
-                      <p className="text-sm leading-relaxed">{point}</p>
-                    </div>
+                    <li key={index} className="text-sm leading-relaxed">
+                      {point}
+                    </li>
                   ))}
                 </div>
               </CardContent>
