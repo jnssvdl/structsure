@@ -54,7 +54,9 @@ export default async function DataLayout({
                               isActive={building.id === buildingId}
                               className="h-10 justify-start px-3"
                             >
-                              <Link href={`/buildings/${building.id}/`}>
+                              <Link
+                                href={`/buildings/${building.id}/#machines`}
+                              >
                                 <span className="flex-1 truncate text-left">
                                   {building.name}
                                 </span>
