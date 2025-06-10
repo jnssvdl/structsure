@@ -6,7 +6,8 @@ import Searchbar from "./searchbar";
 export function Header() {
   return (
     <header className="bg-background sticky top-0 z-40 w-full border-b">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 lg:px-8">
+        {/* Logo + Brand */}
         <Link
           href="/"
           className="text-primary flex items-center gap-2 text-xl font-bold"
@@ -22,7 +23,7 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {["Home", "About", "Team", "Contact"].map((label) => (
+          {["Home", "About", "Team"].map((label) => (
             <Link
               key={label}
               href={`/#${label.toLowerCase()}`}
@@ -33,7 +34,6 @@ export function Header() {
           ))}
 
           <Searchbar />
-
           <ModeToggle />
         </nav>
       </div>

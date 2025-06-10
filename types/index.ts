@@ -14,9 +14,9 @@ export type Building = {
   name: string;
   capacity: number;
   numberOfFloors: number;
-  function: "OTHERS" | "OFFICE" | "ASSEMBLY" | "SCHOOL" | "OFFICE AND SCHOOL";
-  buildingAge?: number;
-  imageUrl?: string;
+  function: string;
+  buildingAge: number;
+  imageUrl: string;
 };
 
 export type Machine = {
@@ -27,36 +27,86 @@ export type Machine = {
   imageUrl: string;
 };
 
-export type DRH = {
+export type DRHRecord = {
   location: string;
-  locationDescription: string;
   member: string;
   testPoint: string;
   averageReboundNumber: number;
   averageCompressiveStrengthMpa: number;
-  remarks: string;
-  compressiveStrength: string;
+  reboundNumberRemarks: string;
+  compressiveStrengthRemarks: string;
 };
 
-export type UPV = {
+export type UPVRecord = {
   location: string;
-  locationDescription: string;
   member: string;
-  compressiveStrength: number;
-  velocity: number;
+  compressiveStrengthMpa: number;
+  velocityMs: number;
   method: string;
-  concreteQuality: string;
-  remarks: string;
+  concreteQualityRemarks: string;
+  compressiveStrengthRemarks: string;
 };
 
-export type GPR = {
+export type GPRRecord = {
   location: string;
 };
 
-type TestData = DRH | UPV | GPR;
+type DRHAnalysis = {
+  compressiveStrength: string;
+  reboundValue: string;
+  conreteCondition: string;
+  recommendation: string;
+};
 
-export type Test = {
+type UPVAnalysis = string[];
+
+type GPRAnalysis = {
+  slabRebarSpacing: string;
+  wallRebarSpacing: string;
+  signalClaritySpacing: string;
+  rebarCondition: string;
+  issuesDetected: string;
+  recommendation: string;
+};
+
+export type UPVChart = {
+  velocity: {
+    floor: string;
+    velocity: number;
+  }[];
+  compressiveStrength: {
+    floor: string;
+    compressiveStrength: number;
+  }[];
+};
+
+export type DRHChartType = {
+  floor: string;
+  averageReboundNumber: number;
+  averageCompressiveStrength: number;
+}[];
+
+export type UPVData = {
   buildingId: Building["id"];
   machineId: Machine["id"];
-  data: TestData[];
+  table: UPVRecord[];
+  chart: UPVChart;
+  analysis: UPVAnalysis;
 };
+
+export type DRHData = {
+  buildingId: Building["id"];
+  machineId: Machine["id"];
+  table: DRHRecord[];
+  chart: DRHChartType;
+  analysis: DRHAnalysis;
+};
+
+export type GPRData = {
+  buildingId: Building["id"];
+  machineId: Machine["id"];
+  table: GPRRecord[];
+  analysis: GPRAnalysis;
+};
+
+export type Data = UPVData | DRHData | GPRData;

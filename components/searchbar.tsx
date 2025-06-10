@@ -72,7 +72,7 @@ export default function Searchbar() {
             <div className="max-h-64 overflow-y-auto">
               {searchResults.map((result) => (
                 <Link
-                  href={`/machines/${result.machineId}/buildings/${result.buildingId}`}
+                  href={`/buildings/${result.buildingId}/machines/${result.machineId}/data`}
                   key={`${result.buildingId}-${result.machineId}`}
                 >
                   <div className="hover:bg-muted cursor-pointer border-b p-3 transition-colors last:border-b-0">

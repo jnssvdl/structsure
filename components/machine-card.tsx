@@ -8,21 +8,26 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Machine } from "@/types";
+import { Building, Machine } from "@/types";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
-export default function MachineCard({ machine }: { machine: Machine }) {
+export default function MachineCard({
+  machine,
+  building,
+}: {
+  machine: Machine;
+  building: Building;
+}) {
   return (
     <Card>
       <CardHeader>
-        <div className="relative h-48">
+        <div className="relative h-48 w-full overflow-hidden">
           <Image
             src={machine.imageUrl}
             alt={machine.name}
             fill
             className="object-cover"
-            placeholder="empty"
           />
         </div>
       </CardHeader>
@@ -39,11 +44,15 @@ export default function MachineCard({ machine }: { machine: Machine }) {
       <CardFooter>
         <div className="flex w-full flex-col gap-2">
           <Button asChild variant="outline">
-            <Link href={`/machines/${machine.id}`}>Machine Details</Link>
+            <Link href={`/buildings/${building.id}/machines/${machine.id}`}>
+              Machine Details
+            </Link>
           </Button>
           <Button asChild>
-            <Link href={`/machines/${machine.id}/buildings`}>
-              View Buildings
+            <Link
+              href={`/buildings/${building.id}/machines/${machine.id}/data`}
+            >
+              View test data
             </Link>
           </Button>
         </div>

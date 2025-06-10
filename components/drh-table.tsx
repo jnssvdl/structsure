@@ -1,4 +1,4 @@
-import { DRH } from "@/types";
+import { DRHRecord } from "@/types";
 import React from "react";
 import {
   Table,
@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export default function DRHTable({ drhData }: { drhData: DRH[] }) {
+export default function DRHTable({ DRHRecords }: { DRHRecords: DRHRecord[] }) {
   return (
     <Table>
       <TableCaption>Digital Rebound Hammer (DRH)</TableCaption>
@@ -18,9 +18,6 @@ export default function DRHTable({ drhData }: { drhData: DRH[] }) {
         <TableRow>
           <TableHead rowSpan={2} className="text-center align-middle">
             LOCATION
-          </TableHead>
-          <TableHead rowSpan={2} className="text-center align-middle">
-            LOCATION DESCRIPTION
           </TableHead>
           <TableHead rowSpan={2} className="text-center align-middle">
             MEMBER
@@ -44,12 +41,9 @@ export default function DRHTable({ drhData }: { drhData: DRH[] }) {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {drhData.map((test, index) => (
+        {DRHRecords.map((test, index) => (
           <TableRow key={`${test.location}-${test.testPoint}-${index}`}>
             <TableCell className="text-center">{test.location}</TableCell>
-            <TableCell className="text-center">
-              {test.locationDescription}
-            </TableCell>
             <TableCell className="text-center">{test.member}</TableCell>
             <TableCell className="text-center">{test.testPoint}</TableCell>
             <TableCell className="text-center">
@@ -58,9 +52,11 @@ export default function DRHTable({ drhData }: { drhData: DRH[] }) {
             <TableCell className="text-center">
               {test.averageCompressiveStrengthMpa}
             </TableCell>
-            <TableCell className="text-center">{test.remarks}</TableCell>
             <TableCell className="text-center">
-              {test.compressiveStrength}
+              {test.reboundNumberRemarks}
+            </TableCell>
+            <TableCell className="text-center">
+              {test.compressiveStrengthRemarks}
             </TableCell>
           </TableRow>
         ))}
