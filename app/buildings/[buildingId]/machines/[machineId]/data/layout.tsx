@@ -100,9 +100,7 @@ export default async function DataLayout({
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <div className="hidden md:block">
-                    <Searchbar />
-                  </div>
+                  <Searchbar />
                   <ModeToggle />
                 </div>
               </div>

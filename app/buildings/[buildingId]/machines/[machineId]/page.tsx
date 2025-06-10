@@ -43,9 +43,7 @@ export default async function MachinePage({
           </Link>
 
           <div className="flex items-center gap-4">
-            <div className="hidden sm:block">
-              <Searchbar />
-            </div>
+            <Searchbar />
             <ModeToggle />
           </div>
         </div>
