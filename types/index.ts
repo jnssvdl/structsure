@@ -48,7 +48,15 @@ export type UPVRecord = {
 };
 
 export type GPRRecord = {
+  scanId: number;
   location: string;
+  member: string;
+  layer: string;
+  materialGuess: string;
+  rebarSpacingMm: string;
+  signalClarity: string;
+  rebarCondition: string;
+  remarks: string;
 };
 
 type DRHAnalysis = {
