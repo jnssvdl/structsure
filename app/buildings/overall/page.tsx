@@ -32,82 +32,94 @@ export default function OverallPage() {
             </p>
           </div>
 
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Rebound Number Analysis</CardTitle>
-                <CardDescription>
-                  Average rebound number measurements across all buildings using
-                  Digtal Rebound Hammer
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <OverallChart data={overallAverageReboudNumber} />
-              </CardContent>
-            </Card>
+          <div className="space-y-10">
+            <div className="space-y-8">
+              <h2 className="mb-4 text-2xl font-semibold tracking-tight">
+                Digital Rebound Hammer (DRH)
+              </h2>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Compressive Strength Analysis</CardTitle>
-                <CardDescription>
-                  Average compressive strength measurements across all buildings
-                  using Digital Rebound Hammer
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <OverallChart data={overallAverageCompressiveStrength} />
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Rebound Number Analysis</CardTitle>
+                  <CardDescription>
+                    Average rebound number measurements across all buildings
+                    using Digital Rebound Hammer
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <OverallChart data={overallAverageReboudNumber} />
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Building Remarks</CardTitle>
-                <CardDescription>
-                  Overview of remarks for each building in the DRH
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <OverallTable data={DRHOverallRemarks} />
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Compressive Strength Analysis</CardTitle>
+                  <CardDescription>
+                    Average compressive strength measurements across all
+                    buildings using Digital Rebound Hammer
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <OverallChart data={overallAverageCompressiveStrength} />
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Velocity Analysis</CardTitle>
-                <CardDescription>
-                  Average velocity measurements across all buildings using
-                  Ultrasonic Pulse Velocity
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <OverallChart data={overallAverageVelocity} />
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Building Remarks</CardTitle>
+                  <CardDescription>
+                    Overview of remarks for each building in the DRH
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <OverallTable data={DRHOverallRemarks} />
+                </CardContent>
+              </Card>
+            </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Compressive Strength Analysis</CardTitle>
-                <CardDescription>
-                  Average compressive strength measurements across all using
-                  Ultrasonic Pulse Velocity
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <OverallChart data={overallAverageCompressiveStrengthUPV} />
-              </CardContent>
-            </Card>
+            <div className="space-y-8">
+              <h2 className="mb-4 text-2xl font-semibold tracking-tight">
+                Ultrasonic Pulse Velocity (UPV)
+              </h2>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Building Remarks</CardTitle>
-                <CardDescription>
-                  Overview of remarks for each building in the UPV
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <OverallTable data={UPVOverallRemarks} />
-              </CardContent>
-            </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Velocity Analysis</CardTitle>
+                  <CardDescription>
+                    Average velocity measurements across all buildings using
+                    Ultrasonic Pulse Velocity
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <OverallChart data={overallAverageVelocity} />
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Compressive Strength Analysis</CardTitle>
+                  <CardDescription>
+                    Average compressive strength measurements across all
+                    buildings using Ultrasonic Pulse Velocity
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <OverallChart data={overallAverageCompressiveStrengthUPV} />
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Building Remarks</CardTitle>
+                  <CardDescription>
+                    Overview of remarks for each building in the UPV
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <OverallTable data={UPVOverallRemarks} />
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </main>
