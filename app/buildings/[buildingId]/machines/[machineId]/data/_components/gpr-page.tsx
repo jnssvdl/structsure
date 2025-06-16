@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Building2, Radar } from "lucide-react";
 import type { Building, GPRData, Machine } from "@/types";
+import GPRTable from "@/components/gpr-table";
 
 type GPRPageProps = {
   building: Building;
@@ -33,6 +34,24 @@ export default function GPRPage({ building, machine, data }: GPRPageProps) {
             </div>
           </div>
         </div>
+
+        <section>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold">
+                Detailed Test Records
+              </CardTitle>
+              <CardDescription>
+                Complete dataset from structural testing measurements
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="overflow-x-auto">
+                <GPRTable GPRRecords={data.table} />
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         <section>
           <Card>
