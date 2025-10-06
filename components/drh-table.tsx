@@ -1,4 +1,4 @@
-import { DRHRecord } from "@/types";
+import { DRHRecord } from "@/types/ultrasonic-pulse-velocity";
 import React from "react";
 import {
   Table,

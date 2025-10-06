@@ -1,6 +1,6 @@
 import type React from "react";
 import { ModeToggle } from "@/components/mode-toggle";
-import Searchbar from "@/components/searchbar";
+import Searchbar from "@/components/search-form";
 import {
   Sidebar,
   SidebarContent,

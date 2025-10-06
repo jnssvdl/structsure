@@ -9,7 +9,11 @@ import {
 } from "@/components/ui/card";
 import { Building2, Hammer, AlertTriangle } from "lucide-react";
 
-import type { Building, DRHData, Machine } from "@/types";
+import type {
+  Building,
+  DRHData,
+  Machine,
+} from "@/types/ultrasonic-pulse-velocity";
 
 type DRHPageProps = {
   building: Building;

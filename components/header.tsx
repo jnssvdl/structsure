@@ -1,17 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
-import Searchbar from "./searchbar";
+import SearchForm from "./search-form";
+import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="bg-background sticky top-0 z-40 w-full border-b">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 lg:px-8">
-        {/* Logo + Brand */}
-        <Link
-          href="/"
-          className="text-primary flex items-center gap-2 text-xl font-bold"
-        >
+    // <header className="sticky top-0 z-50 w-full border-b bg-transparent backdrop-blur">
+    <header className="bg-background sticky top-0 z-50 w-full border-b">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo.png"
             alt="StructSure Logo"
@@ -19,22 +18,33 @@ export function Header() {
             height={32}
             priority
           />
-          StructSure
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {["Home", "About", "Team"].map((label) => (
-            <Link
-              key={label}
-              href={`/#${label.toLowerCase()}`}
-              className="hover:text-primary font-medium transition-colors"
-            >
-              {label}
-            </Link>
+        <nav className="flex items-center gap-2 md:gap-4">
+          <Button variant="ghost" asChild>
+            <Link href="/buildings">Explore</Link>
+          </Button>
+          <Button variant="ghost" asChild>
+            <Link href="/overall">Summary</Link>
+          </Button>
+          {["About", "Team"].map((label) => (
+            <Button key={label} variant="ghost" asChild>
+              <Link href={`/#${label.toLowerCase()}`}>{label}</Link>
+            </Button>
           ))}
 
-          <Searchbar />
+          <SearchForm />
+
           <ModeToggle />
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            aria-label="Open Menu"
+          >
+            <Menu className="h-5 w-5" />
+          </Button>
         </nav>
       </div>
     </header>

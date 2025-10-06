@@ -33,7 +33,7 @@ export default function Home() {
             A directory of structural health assessments at Cavite State
             University
           </h1>
-          <p className="text-muted-foreground mt-6 max-w-4xl text-lg">
+          <p className="text-muted-foreground mt-6 max-w-4xl xl:text-lg">
             Explore data collected through Ultrasonic Pulse Velocity, Digital
             Rebound Hammer, and Ground Penetrating Radar of university
             buildings.

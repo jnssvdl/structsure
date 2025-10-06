@@ -1,7 +1,11 @@
 import { CompressiveStrengthChart } from "@/components/compression-strength-chart";
 import UPVTable from "@/components/upv-table";
 import { VelocityChart } from "@/components/velocity-chart";
-import type { Building, Machine, UPVData } from "@/types";
+import type {
+  Building,
+  Machine,
+  UPVData,
+} from "@/types/ultrasonic-pulse-velocity";
 import {
   Card,
   CardContent,

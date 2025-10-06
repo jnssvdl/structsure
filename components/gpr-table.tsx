@@ -1,4 +1,4 @@
-import { GPRRecord } from "@/types";
+import { GPRRecord } from "@/types/ultrasonic-pulse-velocity";
 import React from "react";
 import {
   Table,

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { machines } from "@/data";
 import Link from "next/link";
 import { ModeToggle } from "@/components/mode-toggle";
-import Searchbar from "@/components/searchbar";
+import Searchbar from "@/components/search-form";
+import { machines } from "@/data/machines";
 
 export async function generateStaticParams() {
   return machines.map((machine) => ({
@@ -18,7 +18,7 @@ export default async function MachinePage({
 }) {
   const { machineId } = await params;
 
-  const machine = machines.find((m) => m.id === machineId);
+  const machine = MACHINES.find((m) => m.id === machineId);
 
   if (!machine) return notFound();
 

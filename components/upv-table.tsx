@@ -1,4 +1,4 @@
-import { UPVRecord } from "@/types";
+import { UPVRecord } from "@/types/ultrasonic-pulse-velocity";
 import React from "react";
 import {
   Table,

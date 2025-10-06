@@ -10,7 +10,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { DRHChartType } from "@/types";
+import { DRHChartType } from "@/types/ultrasonic-pulse-velocity";
 
 const chartConfig = {
   averageReboundNumber: {

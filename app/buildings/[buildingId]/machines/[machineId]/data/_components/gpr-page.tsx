@@ -6,7 +6,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Building2, Radar } from "lucide-react";
-import type { Building, GPRData, Machine } from "@/types";
+import type {
+  Building,
+  GPRData,
+  Machine,
+} from "@/types/ultrasonic-pulse-velocity";
 import GPRTable from "@/components/gpr-table";
 
 type GPRPageProps = {

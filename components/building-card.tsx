@@ -1,68 +1,45 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Building } from "@/types";
-import {
-  Building as BuildingIcon,
-  Calendar,
-  Layers,
-  Users,
-} from "lucide-react";
+import { Building as BuildingIcon } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
+import { Building } from "@/types/building";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export default function BuildingCard({ building }: { building: Building }) {
   return (
-    <Card className="h-full cursor-pointer pt-0 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg">
-      {building.imageUrl && (
-        <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
-          <Image
-            src={building.imageUrl}
-            alt={building.name}
-            fill
-            className="object-cover transition-transform duration-200 group-hover:scale-105"
-          />
-        </div>
-      )}
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <div className="flex h-full flex-col rounded-xl border p-4">
+          <div className="relative aspect-square w-full overflow-hidden rounded-md">
+            <Image
+              src={building.image || ""}
+              alt={building.name}
+              fill
+              className="object-cover"
+            />
+          </div>
 
-      <CardHeader>
-        <div className="flex justify-between">
-          <CardTitle className="line-clamp-2">{building.name}</CardTitle>
-          <BuildingIcon className="text-muted-foreground h-4 w-4" />
-        </div>
-        <CardDescription>
-          <Badge variant="secondary">{building.function}</Badge>
-        </CardDescription>
-      </CardHeader>
+          <div className="mt-4 space-y-2">
+            <div className="flex items-center gap-2">
+              <BuildingIcon className="text-muted-foreground h-4 w-4 shrink-0" />
+              <h3 className="text-foreground truncate text-base leading-tight font-semibold">
+                {building.name}
+              </h3>
+            </div>
 
-      <CardContent className="flex-1 space-y-2">
-        <div className="text-muted-foreground flex items-center gap-2 text-sm">
-          <Users className="h-4 w-4" />
-          <span>Capacity:</span>
-          <span>{building.capacity.toLocaleString()}</span>
+            <div className="flex flex-wrap gap-2">
+              {building.function.map((f, index) => (
+                <Badge variant="secondary" key={index}>
+                  {f}
+                </Badge>
+              ))}
+            </div>
+          </div>
         </div>
-
-        <div className="text-muted-foreground flex items-center gap-2 text-sm">
-          <Layers className="h-4 w-4" />
-          <span>Floors:</span>
-          <span>{building.numberOfFloors}</span>
-        </div>
-
-        <div className="text-muted-foreground flex items-center gap-2 text-sm">
-          <Calendar className="h-4 w-4" />
-          <span>Age:</span>
-          <span>
-            {building.buildingAge
-              ? `${building.buildingAge} ${building.buildingAge === 1 ? "year" : "years"}`
-              : "N/A"}
-          </span>
-        </div>
-      </CardContent>
-    </Card>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>{building.name}</p>
+      </TooltipContent>
+    </Tooltip>
   );
 }

@@ -3,14 +3,14 @@ import Image from "next/image";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Building, Machine } from "@/types";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Machine } from "@/types/machine";
+import { Building } from "@/types/building";
 
 export default function MachineCard({
   machine,
@@ -24,7 +24,7 @@ export default function MachineCard({
       <CardHeader>
         <div className="relative h-48 w-full overflow-hidden">
           <Image
-            src={machine.imageUrl}
+            src={machine.image}
             alt={machine.name}
             fill
             className="object-cover"
@@ -35,9 +35,6 @@ export default function MachineCard({
       <CardContent className="flex-1">
         <div className="space-y-2">
           <CardTitle>{machine.name}</CardTitle>
-          <CardDescription className="text-muted-foreground">
-            {machine.description}
-          </CardDescription>
         </div>
       </CardContent>
 

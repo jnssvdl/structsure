@@ -10,7 +10,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { UPVChart } from "@/types";
+import { UPVChart } from "@/types/ultrasonic-pulse-velocity";
 
 const chartConfig = {
   compressiveStrength: {
