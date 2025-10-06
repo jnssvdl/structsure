@@ -1,9 +1,18 @@
-import { Data } from "@/types";
-import { DRHData } from "./drh-data";
-import { UPVData } from "./upv-data";
-import { GPRData } from "./gpr-data";
+import { DIGITAL_REBOUND_HAMMER } from "./digital-rebound-hammer";
+import { ULTRASONIC_PULSE_VELOCITY } from "./ultrasonic-pulse-velocity";
+import { GROUND_PENETRATING_RADAR } from "./ground-penetrating-radar";
+import { GroundPenetratingRadarType } from "@/types/ground-penetrating-radar";
+import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
+import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
 
-export * from "@/data/machines";
-export * from "@/data/buildings";
+export const DATA: (
+  | GroundPenetratingRadarType
+  | UltrasonicPulseVelocityType
+  | DigitalReboundHammerType
+)[] = [
+  ...DIGITAL_REBOUND_HAMMER,
+  ...ULTRASONIC_PULSE_VELOCITY,
+  ...GROUND_PENETRATING_RADAR,
+];
 
-export const DATA: Data[] = [...DRHData, ...UPVData, ...GPRData];
+// this is a temporary file just for the app to work right now please change or delete me once you work on data

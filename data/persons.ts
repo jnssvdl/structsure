@@ -1,9 +1,9 @@
-import { Person } from "@/types";
+import { Person } from "@/types/person";
 
 export const persons: Person[] = [
   {
     name: "Justine L. Arica",
-    birthDate: "April 26, 2003",
+    birthdate: "April 26, 2003",
     residence: "Trece Martires, Cavite",
     education: [
       {
@@ -36,7 +36,7 @@ export const persons: Person[] = [
   {
     name: "Kimberly Shane R. Cadigal",
     residence: "Imus, Cavite",
-    birthDate: "June 29, 2003",
+    birthdate: "June 29, 2003",
     education: [
       {
         level: "Elementary",
@@ -57,7 +57,7 @@ export const persons: Person[] = [
   },
   {
     name: "Sarah Angelika T. Rufin",
-    birthDate: "February 2, 2002",
+    birthdate: "February 2, 2002",
     residence: "Dasmarinas, Cavite",
     education: [
       { level: "Elementary", school: "Danhill Academy", year: 2014 },
