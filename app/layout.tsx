@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "@/components/header";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -31,10 +32,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
-          <footer className="border-t-2 px-4 py-4 sm:px-6 lg:px-8">
+          <footer className="border-t p-4">
             <p className="text-muted-foreground text-center">
-              © {new Date().getFullYear()} StructSure - Cavite State University
+              &copy; 2025 StructSure - Cavite State University
             </p>
           </footer>
         </ThemeProvider>
