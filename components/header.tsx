@@ -3,13 +3,14 @@ import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
 import SearchForm from "./search-form";
 import { Button } from "./ui/button";
+import MobileNav from "./mobile-nav";
 // import { Menu } from "lucide-react";
 
 export function Header() {
   return (
     // <header className="sticky top-0 z-50 w-full border-b bg-transparent backdrop-blur">
     <header className="bg-background sticky top-0 z-50 border-b">
-      <nav className="container mx-auto flex h-16 items-center justify-between p-4 xl:max-w-7xl">
+      <div className="container mx-auto flex h-16 items-center justify-between p-4 xl:max-w-7xl">
         <Link href="/">
           <Image
             src="/images/logo.png"
@@ -20,7 +21,7 @@ export function Header() {
           />
         </Link>
 
-        <ul className="flex items-center gap-4">
+        <nav className="hidden items-center gap-4 md:flex">
           <Button variant="ghost" asChild>
             <Link href="/dashboard">Dashboard</Link>
           </Button>
@@ -36,19 +37,11 @@ export function Header() {
           ))}
 
           <SearchForm />
-
           <ModeToggle />
+        </nav>
 
-          {/* <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            aria-label="Open Menu"
-          >
-            <Menu className="h-5 w-5" />
-          </Button> */}
-        </ul>
-      </nav>
+        <MobileNav />
+      </div>
     </header>
   );
 }
