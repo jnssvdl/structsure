@@ -3,4 +3,5 @@ export type Machine = {
   name: string;
   description: string;
   image: string;
+  icon: React.ElementType;
 };

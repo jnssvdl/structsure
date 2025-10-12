@@ -2,19 +2,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import PersonCard from "@/components/person-card";
 import { persons } from "@/data/persons";
-import { Activity, Hammer, Radar } from "lucide-react";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import { MACHINES } from "@/data/machines";
 import React from "react";
 import { ArrowRight } from "lucide-react";
-
-const machineIcons: Record<string, React.ElementType> = {
-  "ultrasonic-pulse-velocity": Activity,
-  "digital-rebound-hammer": Hammer,
-  "ground-penetrating-radar": Radar,
-};
 
 export default function Home() {
   return (
@@ -104,7 +97,7 @@ export default function Home() {
 
           <div className="grid w-full gap-6 lg:grid-cols-3">
             {MACHINES.map((machine) => {
-              const Icon = machineIcons[machine.id];
+              const Icon = machine.icon;
               return (
                 <div
                   key={machine.id}
@@ -121,7 +114,7 @@ export default function Home() {
                     </div>
 
                     <Button variant={"link"} className="group" asChild>
-                      <Link href={`/${machine.id}`}>
+                      <Link href={`/machines/${machine.id}`}>
                         Learn more{" "}
                         <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                       </Link>
