@@ -14,9 +14,9 @@ export default async function BuildingsPage({
   );
 
   return (
-    <section className="py-16">
+    <section className="py-12">
       <div className="container mx-auto w-full px-4 xl:max-w-7xl">
-        <div className="mb-16 flex flex-col items-center text-center">
+        <div className="mb-12 flex flex-col items-center text-center">
           <h1 className="text-4xl font-bold tracking-tight">
             Building Directory
           </h1>
