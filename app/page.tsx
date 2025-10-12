@@ -99,28 +99,24 @@ export default function Home() {
             {MACHINES.map((machine) => {
               const Icon = machine.icon;
               return (
-                <div
+                <Link
                   key={machine.id}
-                  className="hover:bg-card rounded-xl border p-8 text-center transition-all"
+                  href={`/machines/${machine.id}`}
+                  className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all"
                 >
-                  <div className="flex flex-col items-center">
-                    {Icon && (
-                      <div className="bg-border mb-4 rounded-full p-4">
-                        <Icon className="h-10 w-10" />
-                      </div>
-                    )}
-                    <div className="mb-2 font-semibold">
-                      {machine.name.slice(0, machine.name.indexOf("("))}
+                  {Icon && (
+                    <div className="bg-border mb-4 rounded-full p-4">
+                      <Icon className="h-10 w-10" />
                     </div>
-
-                    <Button variant={"link"} className="group" asChild>
-                      <Link href={`/machines/${machine.id}`}>
-                        Learn more{" "}
-                        <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                      </Link>
-                    </Button>
+                  )}
+                  <div className="mb-2 font-semibold">
+                    {machine.name.slice(0, machine.name.indexOf("("))}
                   </div>
-                </div>
+                  <div className="flex items-center text-sm font-medium">
+                    Learn more{" "}
+                    <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                  </div>
+                </Link>
               );
             })}
           </div>
