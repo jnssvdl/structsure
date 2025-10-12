@@ -1,57 +1,58 @@
+import React from "react";
 import {
   Table,
   TableBody,
   TableCaption,
   TableCell,
-  //   TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
-import React from "react";
+import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
 
-export default function UltrasonicPulseVelocityTable({
+export default function DigitalReboundHammerTable({
   table,
 }: {
-  table: UltrasonicPulseVelocityType["table"];
+  table: DigitalReboundHammerType["table"];
 }) {
   return (
     <Table>
-      <TableCaption>Ultrasonic Pulse Velocity</TableCaption>
+      <TableCaption>Digital Rebound Hammer (DRH)z</TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead colSpan={5}></TableHead>
+          <TableHead colSpan={5} className="text-center"></TableHead>
           <TableHead colSpan={2} className="text-center">
-            Remarks
+            REMARKS
           </TableHead>
         </TableRow>
         <TableRow>
           <TableHead className="text-center align-middle">LOCATION</TableHead>
           <TableHead className="text-center align-middle">MEMBER</TableHead>
+          <TableHead className="text-center align-middle">TEST POINT</TableHead>
           <TableHead className="text-center align-middle">
-            COMPRESSIVE STRENGTH
+            AVERAGE REBOUND NUMBER
           </TableHead>
           <TableHead className="text-center align-middle">
-            VELOCITY (m/s)
+            AVERAGE COMPRESSIVE STRENGTH (MPA)
           </TableHead>
-          <TableHead className="text-center align-middle">METHOD</TableHead>
-          <TableHead className="text-center">QUALITY</TableHead>
+          <TableHead className="text-center">REBOUND NUMBER</TableHead>
           <TableHead className="text-center">COMPRESSIVE STRENGTH</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
         {table.map((row, index) => (
-          <TableRow key={`${row.location}-${row.method}-${index}`}>
+          <TableRow key={`${index}`}>
             <TableCell className="text-center">{row.location}</TableCell>
             <TableCell className="text-center">{row.member}</TableCell>
+            <TableCell className="text-center">{row.testPoint}</TableCell>
             <TableCell className="text-center">
-              {row.compressiveStrength}
+              {row.averageReboundNumber}
             </TableCell>
-            <TableCell className="text-center">{row.velocity}</TableCell>
-            <TableCell className="text-center">{row.method}</TableCell>
             <TableCell className="text-center">
-              {row.remarks.concreteQuality}
+              {row.averageCompressiveStrength}
+            </TableCell>
+            <TableCell className="text-center">
+              {row.remarks.reboundNumber}
             </TableCell>
             <TableCell className="text-center">
               {row.remarks.compressiveStrength}

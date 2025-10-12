@@ -1,7 +1,6 @@
 import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
 import React from "react";
 import UltrasonicPulseVelocityTable from "./table";
-// import { VelocityChart } from "@/components/velocity-chart";
 import VelocityChart from "./charts/velocity";
 import { CompressiveStrengthChart } from "./charts/compressive-strength";
 
@@ -12,27 +11,35 @@ export default function UltrasonicPulseVelocityPage({
 }) {
   return (
     <React.Fragment>
-      <section>
-        <div className="overflow-x-auto">
+      <section className="py-16">
+        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
           <UltrasonicPulseVelocityTable table={data.table} />
         </div>
       </section>
 
-      <section>
-        <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
-          <VelocityChart data={data.chart.velocity} />
-          <CompressiveStrengthChart data={data.chart.compressiveStrength} />
+      <section className="py-16">
+        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
+          <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
+            <div className="bg-card rounded-xl border p-12">
+              <VelocityChart data={data.chart.velocity} />
+            </div>
+            <div className="bg-card rounded-xl border p-12">
+              <CompressiveStrengthChart data={data.chart.compressiveStrength} />
+            </div>
+          </div>
         </div>
       </section>
 
       {data.analysis && data.analysis.length > 0 && (
-        <section>
-          <div className="space-y-3">
-            {data.analysis.map((point, index) => (
-              <li key={index} className="text-sm leading-relaxed">
-                {point}
-              </li>
-            ))}
+        <section className="py-16">
+          <div className="container mx-auto w-full px-4 xl:max-w-7xl">
+            <ul className="list-disc space-y-2">
+              {data.analysis.map((point, index) => (
+                <li key={index} className="text-sm leading-relaxed">
+                  {point}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       )}

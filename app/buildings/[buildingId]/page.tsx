@@ -1,4 +1,3 @@
-// import MachineCard from "@/components/machine-card";
 import React from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -108,7 +107,9 @@ export default async function BuildingPage({
                   </div>
 
                   <Button variant={"link"} className="group" asChild>
-                    <Link href={`/buildings/${buildingId}/machines/new`}>
+                    <Link
+                      href={`/buildings/${buildingId}/machines/${machine.id}`}
+                    >
                       See data{" "}
                       <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </Link>

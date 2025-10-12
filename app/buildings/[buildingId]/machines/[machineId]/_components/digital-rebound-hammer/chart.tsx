@@ -10,19 +10,23 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
-import { UPVChart } from "@/types/ultrasonic-pulse-velocity";
+import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
 
 const chartConfig = {
-  compressiveStrength: {
-    label: "Compressive Strength",
+  averageReboundNumber: {
+    label: "Average Rebound Number",
+    color: "blue",
+  },
+  averageCompressiveStrength: {
+    label: "Average Compressive Strength",
     color: "orange",
   },
 } satisfies ChartConfig;
 
-export function CompressiveStrengthChart({
+export function DigitalReboundHammerChart({
   data,
 }: {
-  data: UPVChart["compressiveStrength"];
+  data: DigitalReboundHammerType["chart"];
 }) {
   return (
     <ChartContainer config={chartConfig} className="h-[400px] w-full">
@@ -33,14 +37,19 @@ export function CompressiveStrengthChart({
           tickLine={false}
           tickMargin={10}
           axisLine={false}
-          tickFormatter={(value) => value.slice(0, 3)}
+          //   tickFormatter={(value) => value.slice(0, 3)}
         />
         <YAxis />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
         <Bar
-          dataKey="compressiveStrength"
-          fill="var(--color-compressiveStrength)"
+          dataKey="averageReboundNumber"
+          fill="var(--color-averageReboundNumber)"
+          radius={4}
+        />
+        <Bar
+          dataKey="averageCompressiveStrength"
+          fill="var(--color-averageCompressiveStrength)"
           radius={4}
         />
       </BarChart>

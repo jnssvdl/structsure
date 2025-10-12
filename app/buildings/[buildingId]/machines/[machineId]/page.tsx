@@ -33,10 +33,6 @@ export default async function Page({
   params: Promise<{ machineId: string; buildingId: string }>;
 }) {
   const { machineId, buildingId } = await params;
-  const machine = MACHINES.find((m) => m.id === machineId);
-  const building = BUILDINGS.find((b) => b.id === buildingId);
-
-  if (!machine || !building) return notFound();
 
   const data = [
     ...DIGITAL_REBOUND_HAMMER,
