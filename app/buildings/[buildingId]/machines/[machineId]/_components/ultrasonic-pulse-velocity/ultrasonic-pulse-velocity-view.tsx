@@ -1,10 +1,10 @@
 import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
 import React from "react";
-import UltrasonicPulseVelocityTable from "./table";
-import VelocityChart from "./charts/velocity";
-import { CompressiveStrengthChart } from "./charts/compressive-strength";
+import UltrasonicPulseVelocityTable from "./ultrasonic-pulse-velocity-table";
+import VelocityChart from "./velocity-chart";
+import { CompressiveStrengthChart } from "./compressive-strength-chart";
 
-export default function UltrasonicPulseVelocityPage({
+export default function UltrasonicPulseVelocityView({
   data,
 }: {
   data: UltrasonicPulseVelocityType;

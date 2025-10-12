@@ -1,7 +1,7 @@
 import { GroundPenetratingRadarType } from "@/types/ground-penetrating-radar";
-import GroundPenetratingRadarTable from "./table";
+import GroundPenetratingRadarTable from "./ground-penetrating-radar-table";
 
-export default function GroundPenetratingRadarPage({
+export default function GroundPenetratingRadarView({
   data,
 }: {
   data: GroundPenetratingRadarType;

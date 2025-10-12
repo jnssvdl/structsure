@@ -1,8 +1,8 @@
 import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
-import DigitalReboundHammerTable from "./table";
-import { DigitalReboundHammerChart } from "./chart";
+import DigitalReboundHammerTable from "./digital-rebound-hammer-table";
+import { DigitalReboundHammerChart } from "./digital-rebound-hammer-chart";
 
-export default function DigitalReboundHammerPage({
+export default function DigitalReboundHammerView({
   data,
 }: {
   data: DigitalReboundHammerType;
