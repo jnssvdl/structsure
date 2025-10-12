@@ -1,85 +1,64 @@
-import Image from "next/image";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { ModeToggle } from "@/components/mode-toggle";
-import Searchbar from "@/components/search-form";
-import { machines } from "@/data/machines";
+import { MACHINES } from "@/data/machines";
+import { BUILDINGS } from "@/data/buildings";
+import { DIGITAL_REBOUND_HAMMER } from "@/data/digital-rebound-hammer";
+import { ULTRASONIC_PULSE_VELOCITY } from "@/data/ultrasonic-pulse-velocity";
+import { GROUND_PENETRATING_RADAR } from "@/data/ground-penetrating-radar";
+import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
+import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
+import { GroundPenetratingRadarType } from "@/types/ground-penetrating-radar";
+import UltrasonicPulseVelocityPage from "./_components/ultrasonic-pulse-velocity/page";
+import GroundPenetratingRadarPage from "./_components/ground-penetrating-radar/page";
+import DigitalReboundHammerPage from "./_components/digital-rebound-hammer/page";
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return machines.map((machine) => ({
-    machineId: machine.id,
-  }));
+  const params = [];
+
+  for (const machine of MACHINES) {
+    for (const building of BUILDINGS) {
+      params.push({
+        machineId: machine.id,
+        buildingId: building.id,
+      });
+    }
+  }
+  return params;
 }
 
-export default async function MachinePage({
+export default async function Page({
   params,
 }: {
-  params: Promise<{ machineId: string }>;
+  params: Promise<{ machineId: string; buildingId: string }>;
 }) {
-  const { machineId } = await params;
-
+  const { machineId, buildingId } = await params;
   const machine = MACHINES.find((m) => m.id === machineId);
+  const building = BUILDINGS.find((b) => b.id === buildingId);
 
-  if (!machine) return notFound();
+  if (!machine || !building) return notFound();
 
-  return (
-    <div className="flex min-h-screen flex-col">
-      <header className="bg-background sticky top-0 z-40 w-full border-b">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="text-primary flex items-center gap-2 text-xl font-bold"
-          >
-            <Image
-              src="/images/logo.png"
-              alt="StructSure Logo"
-              width={32}
-              height={32}
-              priority
-            />
-            StructSure
-          </Link>
+  const data = [
+    ...DIGITAL_REBOUND_HAMMER,
+    ...ULTRASONIC_PULSE_VELOCITY,
+    ...GROUND_PENETRATING_RADAR,
+  ].find((d) => d.machineId === machineId && d.buildingId === buildingId);
 
-          <div className="flex items-center gap-4">
-            <Searchbar />
-            <ModeToggle />
-          </div>
-        </div>
+  if (machineId === "digital-rebound-hammer") {
+    return <DigitalReboundHammerPage data={data as DigitalReboundHammerType} />;
+  }
 
-        {/* Mobile Searchbar */}
-        <div className="border-t px-4 py-3 sm:hidden">
-          <Searchbar />
-        </div>
-      </header>
+  if (machineId === "ultrasonic-pulse-velocity") {
+    return (
+      <UltrasonicPulseVelocityPage data={data as UltrasonicPulseVelocityType} />
+    );
+  }
 
-      <main className="mx-auto max-w-7xl flex-1 px-4 py-12 sm:px-6 lg:px-12">
-        {/* Title */}
-        <section className="mb-12 text-center">
-          <h1 className="text-primary text-4xl font-bold tracking-tight">
-            {machine.name}
-          </h1>
-        </section>
+  if (machineId === "ground-penetrating-radar") {
+    return (
+      <GroundPenetratingRadarPage data={data as GroundPenetratingRadarType} />
+    );
+  }
 
-        <section className="flex flex-col gap-12 lg:flex-row lg:items-start">
-          <div className="lg:w-2/5">
-            <div className="relative aspect-square w-full overflow-hidden rounded-xl border">
-              <Image
-                src={machine.imageUrl}
-                alt={machine.name}
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-          </div>
-
-          <article className="prose dark:prose-invert sm:prose-lg mx-auto max-w-none lg:w-3/5">
-            <div className="text-muted-foreground rounded-lg p-6 leading-relaxed whitespace-pre-line">
-              {machine.fullText}
-            </div>
-          </article>
-        </section>
-      </main>
-    </div>
-  );
+  return notFound();
 }
