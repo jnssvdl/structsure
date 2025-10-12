@@ -87,7 +87,7 @@ export default function Home() {
 
       <section id="machines" className="border-b py-24">
         <div className="container mx-auto flex flex-col items-center px-4 text-center xl:max-w-7xl">
-          <h2 className="mb-6 text-4xl leading-tight font-bold">
+          <h2 className="mb-2 text-4xl leading-tight font-bold">
             Machines Used
           </h2>
           <p className="text-muted-foreground mb-12 max-w-2xl">
