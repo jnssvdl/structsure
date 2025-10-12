@@ -15,7 +15,6 @@ import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
 const chartConfig = {
   velocity: {
     label: "Velocity",
-    color: "#2563eb",
   },
 } satisfies ChartConfig;
 
@@ -38,7 +37,7 @@ export default function VelocityChart({
         <YAxis />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
-        <Bar dataKey="velocity" fill="var(--color-velocity)" radius={4} />
+        <Bar dataKey="velocity" fill="var(--color-chart-1)" radius={4} />
       </BarChart>
     </ChartContainer>
   );

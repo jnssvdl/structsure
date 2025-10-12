@@ -21,23 +21,18 @@ import {
 const chartConfig = {
   firstFloor: {
     label: "1st Floor",
-    color: "#2563eb",
   },
   secondFloor: {
     label: "2nd Floor",
-    color: "#dc2626",
   },
   thirdFloor: {
     label: "3rd Floor",
-    color: "#16a34a",
   },
   fourthFloor: {
     label: "4th Floor",
-    color: "#ca8a04",
   },
   fifthFloor: {
     label: "5th Floor",
-    color: "#9333ea",
   },
 } satisfies ChartConfig;
 
@@ -76,19 +71,19 @@ export function DashboardChart({ data }: DashboardChartProps) {
         <YAxis />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend content={<ChartLegendContent />} />
-        <Bar dataKey="firstFloor" fill="var(--color-firstFloor)" radius={2}>
+        <Bar dataKey="firstFloor" fill="var(--color-chart-1)" radius={2}>
           <LabelList dataKey="firstFloor" position="top" />
         </Bar>
-        <Bar dataKey="secondFloor" fill="var(--color-secondFloor)" radius={2}>
+        <Bar dataKey="secondFloor" fill="var(--color-chart-2)" radius={2}>
           <LabelList dataKey="secondFloor" position="top" />
         </Bar>
-        <Bar dataKey="thirdFloor" fill="var(--color-thirdFloor)" radius={2}>
+        <Bar dataKey="thirdFloor" fill="var(--color-chart-3)" radius={2}>
           <LabelList dataKey="thirdFloor" position="top" />
         </Bar>
-        <Bar dataKey="fourthFloor" fill="var(--color-fourthFloor)" radius={2}>
+        <Bar dataKey="fourthFloor" fill="var(--color-chart-4)" radius={2}>
           <LabelList dataKey="fourthFloor" position="top" />
         </Bar>
-        <Bar dataKey="fifthFloor" fill="var(--color-fifthFloor)" radius={2}>
+        <Bar dataKey="fifthFloor" fill="var(--color-chart-5)" radius={2}>
           <LabelList dataKey="fifthFloor" position="top" />
         </Bar>
       </BarChart>

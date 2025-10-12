@@ -15,11 +15,9 @@ import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
 const chartConfig = {
   averageReboundNumber: {
     label: "Average Rebound Number",
-    color: "blue",
   },
   averageCompressiveStrength: {
     label: "Average Compressive Strength",
-    color: "orange",
   },
 } satisfies ChartConfig;
 
@@ -44,12 +42,12 @@ export function DigitalReboundHammerChart({
         <ChartLegend content={<ChartLegendContent />} />
         <Bar
           dataKey="averageReboundNumber"
-          fill="var(--color-averageReboundNumber)"
+          fill="var(--color-chart-1)"
           radius={4}
         />
         <Bar
           dataKey="averageCompressiveStrength"
-          fill="var(--color-averageCompressiveStrength)"
+          fill="var(--color-chart-2)"
           radius={4}
         />
       </BarChart>

@@ -15,7 +15,6 @@ import { UltrasonicPulseVelocityType } from "@/types/ultrasonic-pulse-velocity";
 const chartConfig = {
   compressiveStrength: {
     label: "Compressive Strength",
-    color: "orange",
   },
 } satisfies ChartConfig;
 
@@ -40,7 +39,7 @@ export function CompressiveStrengthChart({
         <ChartLegend content={<ChartLegendContent />} />
         <Bar
           dataKey="compressiveStrength"
-          fill="var(--color-compressiveStrength)"
+          fill="var(--color-chart-2)"
           radius={4}
         />
       </BarChart>

@@ -49,7 +49,9 @@ export default function GroundPenetratingRadarTable({
             <TableCell className="text-center">{row.rebarSpacing}</TableCell>
             <TableCell className="text-center">{row.signalClarity}</TableCell>
             <TableCell className="text-center">{row.rebarCondition}</TableCell>
-            <TableCell className="text-center">{row.remarks}</TableCell>
+            <TableCell className="text-center break-words whitespace-normal">
+              {row.remarks}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
