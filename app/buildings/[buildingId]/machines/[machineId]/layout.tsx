@@ -1,6 +1,5 @@
 import { BUILDINGS } from "@/data/buildings";
 import { MACHINES } from "@/data/machines";
-import { Building } from "lucide-react";
 import { notFound } from "next/navigation";
 
 export default async function MachineLayout({
@@ -23,8 +22,7 @@ export default async function MachineLayout({
     <>
       <div className="flex flex-col items-center pt-12 pb-4 text-center">
         <div className="flex items-center gap-2">
-          <Building className="text-muted-foreground h-8 w-8 shrink-0" />
-          <h1 className="text-primary text-4xl font-bold tracking-tight">
+          <h1 className="text-primary max-w-4xl text-4xl font-bold tracking-tight">
             {building.name}
           </h1>
         </div>

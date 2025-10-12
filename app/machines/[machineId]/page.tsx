@@ -46,10 +46,12 @@ export default async function MachinePage({
           </div>
 
           {/* Description */}
-          <article className="prose dark:prose-invert">
-            <p className="text-muted-foreground text-justify leading-relaxed">
-              {machine.description}
-            </p>
+          <article className="prose dark:prose-invert space-y-4">
+            {machine.description.split("\n").map((paragraph, index) => (
+              <p key={index} className="text-justify leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
           </article>
         </div>
       </div>
