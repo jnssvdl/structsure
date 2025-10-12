@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { BUILDINGS } from "@/data/buildings";
 import { MACHINES } from "@/data/machines";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const dynamicParams = false;
@@ -75,7 +74,7 @@ export default async function BuildingPage({
               ].map(({ title, value, unit }) => (
                 <div
                   key={title}
-                  className="bg-card flex flex-col rounded-xl border p-4"
+                  className="bg-card flex flex-col rounded-xl border p-4 shadow-2xs"
                 >
                   <span className="text-muted-foreground text-sm font-medium">
                     {title}
@@ -95,7 +94,7 @@ export default async function BuildingPage({
               <Link
                 key={machine.id}
                 href={`/buildings/${buildingId}/machines/${machine.id}`}
-                className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all"
+                className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all hover:shadow-2xs"
               >
                 {Icon && (
                   <div className="bg-border mb-4 rounded-full p-4">
@@ -107,9 +106,9 @@ export default async function BuildingPage({
                   {machine.name.slice(0, machine.name.indexOf("("))}
                 </div>
 
-                <div className="text-primary flex items-center text-sm font-medium">
+                <div className="flex items-center text-sm font-medium">
                   View{" "}
-                  <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </div>
               </Link>
             );

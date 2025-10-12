@@ -31,7 +31,7 @@ export default function Home() {
               StructSure
             </AuroraText>
           </div>
-          <h1 className="mt-6 text-4xl leading-tight font-bold xl:text-6xl">
+          <h1 className="mt-6 text-4xl leading-tight font-bold xl:text-5xl">
             A directory of structural health assessments at Cavite State
             University
           </h1>
@@ -102,7 +102,7 @@ export default function Home() {
                 <Link
                   key={machine.id}
                   href={`/machines/${machine.id}`}
-                  className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all"
+                  className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all hover:shadow-2xs"
                 >
                   {Icon && (
                     <div className="bg-border mb-4 rounded-full p-4">
@@ -114,7 +114,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center text-sm font-medium">
                     Learn more{" "}
-                    <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </div>
                 </Link>
               );
