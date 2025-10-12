@@ -22,7 +22,7 @@ export default async function MachineLayout({
     <>
       <div className="flex flex-col items-center pt-12 pb-4 text-center">
         <div className="flex items-center gap-2">
-          <h1 className="text-primary max-w-4xl text-4xl font-bold tracking-tight">
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight">
             {building.name}
           </h1>
         </div>
