@@ -9,10 +9,10 @@ export default function BuildingCard({ building }: { building: Building }) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <div className="flex h-full flex-col rounded-xl border p-4">
-          <div className="relative aspect-square w-full overflow-hidden rounded-md">
+        <div className="hover:bg-card flex h-full flex-col rounded-xl border p-4">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md">
             <Image
-              src={building.image || ""}
+              src={building.image || "/placeholder.png"}
               alt={building.name}
               fill
               className="object-cover"
@@ -22,7 +22,7 @@ export default function BuildingCard({ building }: { building: Building }) {
           <div className="mt-4 space-y-2">
             <div className="flex items-center gap-2">
               <BuildingIcon className="text-muted-foreground h-4 w-4 shrink-0" />
-              <h3 className="text-foreground truncate text-base leading-tight font-semibold">
+              <h3 className="text-foreground truncate text-lg leading-tight font-semibold">
                 {building.name}
               </h3>
             </div>

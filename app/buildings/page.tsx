@@ -4,8 +4,8 @@ import { BUILDINGS } from "@/data/buildings";
 
 export default function BuildingsPage() {
   return (
-    <main className="px-4 py-16 lg:px-12">
-      <div className="mx-auto max-w-6xl">
+    <section className="py-16">
+      <div className="container mx-auto w-full px-4 xl:max-w-7xl">
         <div className="mb-16 flex flex-col items-center text-center">
           <h1 className="text-primary text-4xl font-bold tracking-tight">
             Building Directory
@@ -24,6 +24,6 @@ export default function BuildingsPage() {
           ))}
         </div>
       </div>
-    </main>
+    </section>
   );
 }
