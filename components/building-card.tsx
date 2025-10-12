@@ -9,7 +9,7 @@ export default function BuildingCard({ building }: { building: Building }) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <div className="hover:bg-card flex h-full flex-col rounded-xl border p-4">
+        <div className="hover:bg-card flex h-full flex-col rounded-xl border p-4 transition-all">
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-md">
             <Image
               src={building.image || "/placeholder.png"}

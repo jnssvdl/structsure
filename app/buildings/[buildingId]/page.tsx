@@ -108,9 +108,7 @@ export default async function BuildingPage({
                   </div>
 
                   <Button variant={"link"} className="group" asChild>
-                    <Link
-                      href={`/buildings/${buildingId}/machines/${machine.id}`}
-                    >
+                    <Link href={`/buildings/${buildingId}/machines/new`}>
                       See data{" "}
                       <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </Link>

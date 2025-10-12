@@ -9,7 +9,7 @@ export default function SearchForm() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <form className="relative">
+    <form className="relative max-w-64">
       <Input
         placeholder="Search"
         value={searchQuery}

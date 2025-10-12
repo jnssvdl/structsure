@@ -33,8 +33,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st",
@@ -42,8 +44,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 50,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st",
@@ -51,8 +55,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 49,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st",
@@ -60,8 +66,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 53,
         averageCompressiveStrength: 85,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st",
@@ -69,8 +77,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st",
@@ -78,8 +88,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 53,
         averageCompressiveStrength: 85,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st",
@@ -87,8 +99,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 48,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st",
@@ -96,8 +110,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 50,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st",
@@ -105,8 +121,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 49,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -114,8 +132,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 48,
         averageCompressiveStrength: 70,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -123,8 +143,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 55,
         averageCompressiveStrength: 94,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -132,8 +154,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -141,8 +165,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 56,
         averageCompressiveStrength: 100,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Ultra-High-Performance Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Ultra-High-Performance Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -150,8 +176,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 52,
         averageCompressiveStrength: 81,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -159,8 +187,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 58,
         averageCompressiveStrength: 104,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Ultra-High-Performance Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Ultra-High-Performance Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -168,8 +198,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 39,
         averageCompressiveStrength: 45,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -177,8 +209,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 54,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -186,8 +220,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 42,
         averageCompressiveStrength: 53,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -195,8 +231,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 73,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -204,8 +242,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -213,8 +253,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 49,
         averageCompressiveStrength: 72,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -222,8 +264,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 54,
         averageCompressiveStrength: 90,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -231,8 +275,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 53,
         averageCompressiveStrength: 83,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -240,8 +286,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 50,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -249,8 +297,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 55,
         averageCompressiveStrength: 96,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -258,8 +308,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 56,
         averageCompressiveStrength: 95,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -267,8 +319,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 55,
         averageCompressiveStrength: 92,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -276,8 +330,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 50,
         averageCompressiveStrength: 68,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -285,8 +341,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 44,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -294,8 +352,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 55,
         averageCompressiveStrength: 92,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -303,8 +363,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 72,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -312,8 +374,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 42,
         averageCompressiveStrength: 54,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -321,8 +385,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 50,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -330,8 +396,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 40,
         averageCompressiveStrength: 48,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -339,8 +407,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 40,
         averageCompressiveStrength: 45,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -348,8 +418,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -386,8 +458,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 43,
         averageCompressiveStrength: 55,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -395,8 +469,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 52,
         averageCompressiveStrength: 83,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -404,8 +480,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 50,
         averageCompressiveStrength: 72,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -413,8 +491,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 72,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -422,8 +502,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -431,8 +513,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -440,8 +524,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 42,
         averageCompressiveStrength: 52,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -449,8 +535,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 50,
         averageCompressiveStrength: 76,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -458,8 +546,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -467,8 +557,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 40,
         averageCompressiveStrength: 48,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -476,8 +568,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 41,
         averageCompressiveStrength: 49,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -485,8 +579,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 37,
         averageCompressiveStrength: 40,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -494,8 +590,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 63,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -503,8 +601,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 49,
         averageCompressiveStrength: 73,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -512,8 +612,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 40,
         averageCompressiveStrength: 47,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -521,8 +623,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 68,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -530,8 +634,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 47,
         averageCompressiveStrength: 67,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -539,8 +645,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 38,
         averageCompressiveStrength: 48,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -548,8 +656,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 46,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -557,8 +667,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 53,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -566,8 +678,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 53,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -575,8 +689,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 43,
         averageCompressiveStrength: 54,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -584,8 +700,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 40,
         averageCompressiveStrength: 48,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -593,8 +711,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 39,
         averageCompressiveStrength: 45,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -602,8 +722,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 68,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -611,8 +733,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 47,
         averageCompressiveStrength: 67,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -620,8 +744,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 49,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -629,8 +755,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 41,
         averageCompressiveStrength: 49,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -638,8 +766,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 37,
         averageCompressiveStrength: 41,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -647,8 +777,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -686,8 +818,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -695,8 +829,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -704,8 +840,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -713,8 +851,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 71,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -722,8 +862,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 52,
         averageCompressiveStrength: 81,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -731,8 +873,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 48,
         averageCompressiveStrength: 68,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -740,8 +884,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -749,8 +895,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 45,
         averageCompressiveStrength: 61,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -758,8 +906,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 38,
         averageCompressiveStrength: 44,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -767,8 +917,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 49,
         averageCompressiveStrength: 72,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -776,8 +928,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 38,
         averageCompressiveStrength: 44,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -785,8 +939,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 42,
         averageCompressiveStrength: 57,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -794,8 +950,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 34,
         averageCompressiveStrength: 41,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -803,8 +961,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 39,
         averageCompressiveStrength: 44,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -812,8 +972,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -821,8 +983,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 72,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -830,8 +994,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 44,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -839,8 +1005,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 54,
         averageCompressiveStrength: 83,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -848,8 +1016,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 43,
         averageCompressiveStrength: 31,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -857,8 +1027,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 34,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -866,8 +1038,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 42,
         averageCompressiveStrength: 29,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -875,8 +1049,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -884,8 +1060,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 42,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -893,8 +1071,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 43,
         averageCompressiveStrength: 55,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -902,8 +1082,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 50,
         averageCompressiveStrength: 75,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -911,8 +1093,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 44,
         averageCompressiveStrength: 76,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -920,8 +1104,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -929,8 +1115,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 50,
         averageCompressiveStrength: 76,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -938,8 +1126,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 52,
         averageCompressiveStrength: 74,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -947,8 +1137,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 48,
         averageCompressiveStrength: 70,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -959,7 +1151,6 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
       recommendation: "Additional testing on lower-performing floors",
     },
   },
-
   {
     buildingId: "college-of-criminal-justice",
     machineId: "digital-rebound-hammer",
@@ -992,8 +1183,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 41,
         averageCompressiveStrength: 49,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1001,8 +1194,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 42,
         averageCompressiveStrength: 53,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1010,18 +1205,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 63,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1029,8 +1227,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 63,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1038,18 +1238,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 45,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1057,8 +1260,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 45,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1066,18 +1271,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 42,
         averageCompressiveStrength: 53,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Top",
         averageReboundNumber: 45,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1085,8 +1293,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 44,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1094,18 +1304,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 46,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 45,
         averageCompressiveStrength: 61,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1113,8 +1326,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 50,
         averageCompressiveStrength: 74,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1122,18 +1337,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 43,
         averageCompressiveStrength: 55,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1141,8 +1359,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1150,18 +1370,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 38,
         averageCompressiveStrength: 43,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1169,8 +1392,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1178,18 +1403,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 44,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 60,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1197,8 +1425,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 47,
         averageCompressiveStrength: 66,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1206,18 +1436,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 44,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 41,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1225,8 +1458,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1234,18 +1469,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 37,
         averageCompressiveStrength: 41,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "4th Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 38,
         averageCompressiveStrength: 42,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1253,8 +1491,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 41,
         averageCompressiveStrength: 42,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1262,18 +1502,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 36,
         averageCompressiveStrength: 38,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "4th Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 29,
         averageCompressiveStrength: 24,
-        reboundNumber: "Fair",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1281,8 +1524,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 47,
         averageCompressiveStrength: 67,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1290,18 +1535,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 44,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "4th Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 44,
         averageCompressiveStrength: 57,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1309,8 +1557,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 41,
         averageCompressiveStrength: 44,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1318,8 +1568,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 36,
         averageCompressiveStrength: 39,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -1329,7 +1581,6 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
       recommendation: "Prioritize further evaluation using UPV or GPR",
     },
   },
-
   {
     buildingId: "department-of-information-technology",
     machineId: "digital-rebound-hammer",
@@ -1367,8 +1618,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 52,
         averageCompressiveStrength: 80,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1376,8 +1629,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1385,18 +1640,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1404,8 +1662,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 54,
         averageCompressiveStrength: 87,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1413,18 +1673,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 52,
         averageCompressiveStrength: 81,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1432,8 +1695,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 50,
         averageCompressiveStrength: 75,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1441,18 +1706,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Top",
         averageReboundNumber: 54,
         averageCompressiveStrength: 87,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1460,8 +1728,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 54,
         averageCompressiveStrength: 90,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1469,18 +1739,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 78,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 52,
         averageCompressiveStrength: 82,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1488,8 +1761,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 50,
         averageCompressiveStrength: 77,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1497,18 +1772,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 52,
         averageCompressiveStrength: 82,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 52,
         averageCompressiveStrength: 83,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1516,8 +1794,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 54,
         averageCompressiveStrength: 90,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1525,18 +1805,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 55,
         averageCompressiveStrength: 93,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 51,
         averageCompressiveStrength: 80,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1544,8 +1827,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 45,
         averageCompressiveStrength: 61,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1553,18 +1838,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 78,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 53,
         averageCompressiveStrength: 86,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1572,8 +1860,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 51,
         averageCompressiveStrength: 84,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1581,18 +1871,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 47,
         averageCompressiveStrength: 67,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 73,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1600,8 +1893,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 52,
         averageCompressiveStrength: 82,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1609,18 +1904,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 46,
         averageCompressiveStrength: 71,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "4th Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 51,
         averageCompressiveStrength: 78,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1628,8 +1926,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1637,18 +1937,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 53,
         averageCompressiveStrength: 91,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "4th Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 71,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1656,8 +1959,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1665,18 +1970,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 46,
         averageCompressiveStrength: 63,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "4th Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1684,8 +1992,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 47,
         averageCompressiveStrength: 68,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th Floor",
@@ -1693,18 +2003,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 39,
         averageCompressiveStrength: 46,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "#REF!",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 45,
         averageCompressiveStrength: 61,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "#REF!",
@@ -1712,8 +2025,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 40,
         averageCompressiveStrength: 49,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "#REF!",
@@ -1721,18 +2036,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "#REF!",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 47,
         averageCompressiveStrength: 66,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "#REF!",
@@ -1740,8 +2058,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "#REF!",
@@ -1749,8 +2069,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 50,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -1760,7 +2082,6 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
       recommendation: "Routine monitoring only",
     },
   },
-
   {
     buildingId: "college-of-veterinary-medicine-and-biomedical-sciences",
     machineId: "digital-rebound-hammer",
@@ -1788,8 +2109,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 53,
         averageCompressiveStrength: 85,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1797,8 +2120,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 48,
         averageCompressiveStrength: 53,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1806,18 +2131,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 53,
         averageCompressiveStrength: 68,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 44,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1825,8 +2153,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 44,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1834,18 +2164,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 35,
         averageCompressiveStrength: 36,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 35,
         averageCompressiveStrength: 36,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1853,8 +2186,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 36,
         averageCompressiveStrength: 39,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1862,18 +2197,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 34,
         averageCompressiveStrength: 33,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Top",
         averageReboundNumber: 47,
         averageCompressiveStrength: 66,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1881,8 +2219,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 46,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1890,18 +2230,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "3rd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 43,
         averageCompressiveStrength: 54,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1909,8 +2252,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1918,8 +2263,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 61,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -1929,7 +2276,6 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
       recommendation: "Monitor and selectively reassess if rebound <44",
     },
   },
-
   {
     buildingId: "graduate-school-and-open-learning-college",
     machineId: "digital-rebound-hammer",
@@ -1957,8 +2303,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1966,8 +2314,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1975,8 +2325,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1984,8 +2336,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 53,
         averageCompressiveStrength: 78,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1993,8 +2347,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 48,
         averageCompressiveStrength: 71,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2002,8 +2358,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 44,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2011,8 +2369,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 47,
         averageCompressiveStrength: 66,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2020,8 +2380,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 45,
         averageCompressiveStrength: 61,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2029,8 +2391,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 46,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2038,8 +2402,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 41,
         averageCompressiveStrength: 51,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2047,8 +2413,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 48,
         averageCompressiveStrength: 69,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2056,8 +2424,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 44,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2065,8 +2435,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 47,
         averageCompressiveStrength: 64,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2074,8 +2446,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 44,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2083,8 +2457,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 59,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2092,8 +2468,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 47,
         averageCompressiveStrength: 66,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2101,8 +2479,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2110,8 +2490,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 47,
         averageCompressiveStrength: 67,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2119,8 +2501,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 44,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2128,8 +2512,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 42,
         averageCompressiveStrength: 52,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2137,8 +2523,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 38,
         averageCompressiveStrength: 44,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2146,8 +2534,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 42,
         averageCompressiveStrength: 55,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2155,8 +2545,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 42,
         averageCompressiveStrength: 51,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2164,8 +2556,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 39,
         averageCompressiveStrength: 45,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2173,8 +2567,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 42,
         averageCompressiveStrength: 52,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2182,8 +2578,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 41,
         averageCompressiveStrength: 51,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2191,8 +2589,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 41,
         averageCompressiveStrength: 48,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -2224,8 +2624,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 50,
         averageCompressiveStrength: 75,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2233,8 +2635,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 52,
         averageCompressiveStrength: 82,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2242,18 +2646,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 56,
         averageCompressiveStrength: 94,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Top",
         averageReboundNumber: 55,
         averageCompressiveStrength: 92,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2261,8 +2668,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 53,
         averageCompressiveStrength: 84,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2270,18 +2679,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 54,
         averageCompressiveStrength: 90,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "1st Floor",
         member: "Column",
         testPoint: "Top",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2289,8 +2701,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 37,
         averageCompressiveStrength: 42,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2298,18 +2712,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 62,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Top",
         averageReboundNumber: 51,
         averageCompressiveStrength: 79,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2317,8 +2734,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 51,
         averageCompressiveStrength: 80,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2326,18 +2745,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 52,
         averageCompressiveStrength: 78,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 53,
         averageCompressiveStrength: 84,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2345,8 +2767,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 54,
         averageCompressiveStrength: 89,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2354,18 +2778,21 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 53,
         averageCompressiveStrength: 85,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
-
       {
         location: "2nd Floor",
         member: "Column",
         testPoint: "Mid",
         averageReboundNumber: 38,
         averageCompressiveStrength: 43,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2373,8 +2800,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 39,
         averageCompressiveStrength: 52,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2382,8 +2811,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 43,
         averageCompressiveStrength: 56,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {
@@ -2393,7 +2824,6 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
       recommendation: "Routine monitoring only",
     },
   },
-
   {
     buildingId: "college-of-economics-management-and-development-studies",
     machineId: "digital-rebound-hammer",
@@ -2416,8 +2846,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 43,
         averageCompressiveStrength: 55,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2425,8 +2857,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 40,
         averageCompressiveStrength: 48,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2434,8 +2868,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 43,
         averageCompressiveStrength: 54,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2443,8 +2879,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 47,
         averageCompressiveStrength: 65,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2452,8 +2890,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 46,
         averageCompressiveStrength: 63,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2461,8 +2901,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 47,
         averageCompressiveStrength: 66,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2470,8 +2912,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 42,
         averageCompressiveStrength: 52,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2479,8 +2923,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 41,
         averageCompressiveStrength: 51,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2488,8 +2934,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 43,
         averageCompressiveStrength: 57,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2497,8 +2945,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 49,
         averageCompressiveStrength: 74,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2506,8 +2956,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 52,
         averageCompressiveStrength: 81,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2515,8 +2967,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 50,
         averageCompressiveStrength: 76,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2524,8 +2978,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 49,
         averageCompressiveStrength: 71,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2533,8 +2989,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 49,
         averageCompressiveStrength: 73,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "High Strength Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2542,8 +3000,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 45,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2551,8 +3011,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Mid",
         averageReboundNumber: 40,
         averageCompressiveStrength: 48,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2560,8 +3022,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Top",
         averageReboundNumber: 44,
         averageCompressiveStrength: 58,
-        reboundNumber: "Very good hard layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Very good hard layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2569,8 +3033,10 @@ export const DIGITAL_REBOUND_HAMMER: DigitalReboundHammerType[] = [
         testPoint: "Bot",
         averageReboundNumber: 38,
         averageCompressiveStrength: 43,
-        reboundNumber: "Good layer",
-        compressiveStrength: "Normal Concrete",
+        remarks: {
+          reboundNumber: "Good layer",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
     analysis: {

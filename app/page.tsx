@@ -101,7 +101,7 @@ export default function Home() {
               return (
                 <div
                   key={machine.id}
-                  className="hover:bg-card rounded-xl border p-8 text-center"
+                  className="hover:bg-card rounded-xl border p-8 text-center transition-all"
                 >
                   <div className="flex flex-col items-center">
                     {Icon && (
