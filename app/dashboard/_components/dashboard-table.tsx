@@ -7,30 +7,26 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export function OverallTable({
+export function DashboardTable({
   data,
 }: {
   data: { building: string; remarks: string }[];
 }) {
   return (
-    <Table>
+    <Table className="text-center">
       <TableHeader>
         <TableRow>
-          <TableHead className="text-primary text-center align-middle">
-            BUILDING
-          </TableHead>
-          <TableHead className="text-primary text-center align-middle">
-            REMARKS
-          </TableHead>
+          <TableHead className="text-center">BUILDING</TableHead>
+          <TableHead className="text-center">REMARKS</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
         {data.map((row, index) => (
           <TableRow key={index}>
-            <TableCell className="max-w-xs text-center break-words whitespace-normal">
+            <TableCell className="break-words whitespace-normal">
               {row.building}
             </TableCell>
-            <TableCell className="max-w-sm text-center break-words whitespace-normal">
+            <TableCell className="break-words whitespace-normal">
               {row.remarks}
             </TableCell>
           </TableRow>

@@ -17,7 +17,7 @@ export default function DigitalReboundHammerTable({
 }) {
   return (
     <Table>
-      <TableCaption>Digital Rebound Hammer (DRH)z</TableCaption>
+      <TableCaption>Digital Rebound Hammer</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead colSpan={5} className="text-center"></TableHead>

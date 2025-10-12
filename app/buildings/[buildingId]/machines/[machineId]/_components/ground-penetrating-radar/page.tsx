@@ -7,40 +7,55 @@ export default function GroundPenetratingRadarPage({
   data: GroundPenetratingRadarType;
 }) {
   return (
-    <>
-      <section className="py-16">
-        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
-          <GroundPenetratingRadarTable table={data.table} />
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
-          <div className="space-y-4 text-sm leading-relaxed">
-            <p>
-              <strong>Slab Rebar Spacing:</strong>{" "}
+    <section className="py-8">
+      <div className="container mx-auto w-full px-4 xl:max-w-7xl">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-card rounded-xl border p-4">
+            <h3 className="mb-2 text-sm font-medium">Slab Rebar Spacing</h3>
+            <p className="text-muted-foreground text-sm">
               {data.analysis.slabRebarSpacing}
             </p>
-            <p>
-              <strong>Wall Rebar Spacing:</strong>{" "}
+          </div>
+
+          <div className="bg-card rounded-xl border p-4">
+            <h3 className="mb-2 text-sm font-medium">Wall Rebar Spacing</h3>
+            <p className="text-muted-foreground text-sm">
               {data.analysis.wallRebarSpacing}
             </p>
-            <p>
-              <strong>Signal Clarity:</strong>{" "}
+          </div>
+
+          <div className="bg-card rounded-xl border p-4">
+            <h3 className="mb-2 text-sm font-medium">Signal Clarity</h3>
+            <p className="text-muted-foreground text-sm">
               {data.analysis.signalClaritySpacing}
             </p>
-            <p>
-              <strong>Rebar Condition:</strong> {data.analysis.rebarCondition}
+          </div>
+
+          <div className="bg-card rounded-xl border p-4">
+            <h3 className="mb-2 text-sm font-medium">Rebar Condition</h3>
+            <p className="text-muted-foreground text-sm">
+              {data.analysis.rebarCondition}
             </p>
-            <p>
-              <strong>Detected Issues:</strong> {data.analysis.issuesDetected}
+          </div>
+
+          <div className="bg-card rounded-xl border p-4">
+            <h3 className="mb-2 text-sm font-medium">Detected Issues</h3>
+            <p className="text-muted-foreground text-sm">
+              {data.analysis.issuesDetected}
             </p>
-            <p>
-              <strong>Recommendation:</strong> {data.analysis.recommendation}
+          </div>
+
+          <div className="bg-card rounded-xl border p-4">
+            <h3 className="mb-2 text-sm font-medium">Recommendation</h3>
+            <p className="text-muted-foreground text-sm">
+              {data.analysis.recommendation}
             </p>
           </div>
         </div>
-      </section>
-    </>
+        <div className="mt-6">
+          <GroundPenetratingRadarTable table={data.table} />
+        </div>
+      </div>
+    </section>
   );
 }

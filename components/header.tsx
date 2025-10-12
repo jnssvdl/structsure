@@ -22,15 +22,11 @@ export function Header() {
 
         <ul className="flex items-center gap-4">
           <Button variant="ghost" asChild>
-            <Link href="/buildings">Buildings</Link>
+            <Link href="/dashboard">Dashboard</Link>
           </Button>
 
-          {/* <Button variant="ghost" asChild>
-            <Link href="/machines">Machines</Link>
-          </Button> */}
-
           <Button variant="ghost" asChild>
-            <Link href="/summary">Summary</Link>
+            <Link href="/buildings">Buildings</Link>
           </Button>
 
           {["Machines", "About", "Team"].map((label) => (

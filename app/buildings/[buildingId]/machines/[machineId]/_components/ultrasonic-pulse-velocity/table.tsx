@@ -23,7 +23,7 @@ export default function UltrasonicPulseVelocityTable({
         <TableRow>
           <TableHead colSpan={5}></TableHead>
           <TableHead colSpan={2} className="text-center">
-            Remarks
+            REMARKS
           </TableHead>
         </TableRow>
         <TableRow>

@@ -9,46 +9,44 @@ export default function DigitalReboundHammerPage({
 }) {
   return (
     <>
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto w-full px-4 xl:max-w-7xl">
-          <DigitalReboundHammerTable table={data.table} />
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
-          <div className="bg-card rounded-xl border px-32 py-12">
-            <DigitalReboundHammerChart data={data.chart} />
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
-            <div className="h-full">
-              <h4>Compressive Strength</h4>
-              <p>{data.analysis.compressiveStrength}</p>
+          <div className="grid gap-6 lg:grid-cols-4">
+            <div className="bg-card h-full rounded-xl border p-4">
+              <h3 className="mb-2 text-sm font-medium">Compressive Strength</h3>
+              <p className="text-muted-foreground text-sm">
+                {data.analysis.compressiveStrength}
+              </p>
             </div>
 
-            <div className="h-full">
-              <h4>Rebound Value</h4>
-              <span>{data.analysis.reboundValue}</span>
+            <div className="bg-card h-full rounded-xl border p-4">
+              <h3 className="mb-2 text-sm font-medium">Rebound Value</h3>
+              <p className="text-muted-foreground text-sm">
+                {data.analysis.reboundValue}
+              </p>
             </div>
 
-            <div className="h-full">
-              <h4>Concrete Condition</h4>
-              <p>{data.analysis.conreteCondition}</p>
+            <div className="bg-card h-full rounded-xl border p-4">
+              <h3 className="mb-2 text-sm font-medium">Concrete Condition</h3>
+              <p className="text-muted-foreground text-sm">
+                {data.analysis.conreteCondition}
+              </p>
             </div>
 
-            <div className="h-full lg:col-span-2">
-              <h4 className="flex items-center gap-2 text-sm font-semibold">
-                Recommendations
-              </h4>
+            <div className="bg-card h-full rounded-xl border p-4">
+              <h3 className="mb-2 text-sm font-medium">Recommendations</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {data.analysis.recommendation}
               </p>
             </div>
+          </div>
+
+          <div className="mt-6">
+            <DigitalReboundHammerChart data={data.chart} />
+          </div>
+
+          <div className="mt-6">
+            <DigitalReboundHammerTable table={data.table} />
           </div>
         </div>
       </section>

@@ -41,21 +41,18 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-type OverallData = {
-  building: string;
-  firstFloor: number | null;
-  secondFloor: number | null;
-  thirdFloor: number | null;
-  fourthFloor: number | null;
-  fifthFloor: number | null;
+type DashboardChartProps = {
+  data: {
+    building: string;
+    firstFloor: number | null;
+    secondFloor: number | null;
+    thirdFloor: number | null;
+    fourthFloor: number | null;
+    fifthFloor: number | null;
+  }[];
 };
 
-interface OverallChartProps {
-  data: OverallData[];
-}
-
-export function OverallChart({ data }: OverallChartProps) {
-  // Filter out null values and convert 0 to null for better visualization
+export function DashboardChart({ data }: DashboardChartProps) {
   const processedData = data.map((item) => ({
     ...item,
     firstFloor: item.firstFloor === 0 ? null : item.firstFloor,

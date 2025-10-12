@@ -20,19 +20,19 @@ export default function GroundPenetratingRadarTable({
       <TableCaption>Ground Penetrating Radar</TableCaption>
       <TableHeader>
         <TableRow>
-          <TableHead className="text-center align-middle">Scan ID</TableHead>
-          <TableHead className="text-center align-middle">Location</TableHead>
-          <TableHead className="text-center align-middle">Member</TableHead>
-          <TableHead className="text-center align-middle">Layer</TableHead>
+          <TableHead className="text-center align-middle">SCAN ID</TableHead>
+          <TableHead className="text-center align-middle">LOCATION</TableHead>
+          <TableHead className="text-center align-middle">MEMBER</TableHead>
+          <TableHead className="text-center align-middle">LAYER</TableHead>
           <TableHead className="text-center align-middle">
-            Material Guess
+            MATERIAL GUESS
           </TableHead>
           <TableHead className="text-center align-middle">
-            Rebar Spacing (mm)
+            REBAR SPACING (mm)
           </TableHead>
-          <TableHead className="text-center">Signal Clarity</TableHead>
-          <TableHead className="text-center">Rebar Condition</TableHead>
-          <TableHead className="text-center align-middle">Remarks</TableHead>
+          <TableHead className="text-center">SIGNAL CLARITY</TableHead>
+          <TableHead className="text-center">REBAR CONDITION</TableHead>
+          <TableHead className="text-center align-middle">REMARKS</TableHead>
         </TableRow>
         <TableRow></TableRow>
       </TableHeader>
