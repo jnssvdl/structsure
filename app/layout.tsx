@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -25,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <body className={`${poppins.className} antialiased`}>
+      <body
+        className={`${poppins.className} flex min-h-screen flex-col antialiased`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -33,12 +36,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
-          <footer className="border-t p-4">
-            <p className="text-muted-foreground text-center">
-              &copy; 2025 StructSure - Cavite State University
-            </p>
-          </footer>
+          <main className="flex-1">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

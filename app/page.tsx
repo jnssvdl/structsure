@@ -2,15 +2,24 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import PersonCard from "@/components/person-card";
 import { persons } from "@/data/persons";
-import { ArrowRight } from "lucide-react";
+import { Activity, Hammer, Radar } from "lucide-react";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { AuroraText } from "@/components/magicui/aurora-text";
+import { MACHINES } from "@/data/machines";
+import React from "react";
+import { ArrowRight } from "lucide-react";
+
+const machineIcons: Record<string, React.ElementType> = {
+  "ultrasonic-pulse-velocity": Activity,
+  "digital-rebound-hammer": Hammer,
+  "ground-penetrating-radar": Radar,
+};
 
 export default function Home() {
   return (
-    <main>
-      <section className="relative border-b px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32">
+    <React.Fragment>
+      <section className="relative border-b py-32">
         <GridPattern
           width={32}
           height={32}
@@ -23,13 +32,13 @@ export default function Home() {
           )}
         />
 
-        <div className="relative z-10 container mx-auto flex flex-col items-center text-center">
-          <div className="bg-background rounded-full border px-4 py-1 text-sm font-semibold">
+        <div className="relative container mx-auto flex flex-col items-center px-4 text-center xl:max-w-7xl">
+          <div className="bg-background rounded-full border px-4 py-1 text-sm font-bold">
             <AuroraText colors={["#f7e968", "#aadb4f", "#8ecb4b", "#98db58"]}>
               StructSure
             </AuroraText>
           </div>
-          <h1 className="mt-6 max-w-7xl text-4xl leading-tight font-bold xl:text-6xl">
+          <h1 className="mt-6 text-4xl leading-tight font-bold xl:text-6xl">
             A directory of structural health assessments at Cavite State
             University
           </h1>
@@ -40,11 +49,7 @@ export default function Home() {
           </p>
           <div className="mt-10">
             <Button size="lg" asChild className="group">
-              <Link
-                href="/buildings"
-                passHref
-                className="flex items-center gap-2"
-              >
+              <Link href="/buildings" passHref>
                 Explore
                 <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </Link>
@@ -53,14 +58,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="about"
-        className="border-b px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32"
-      >
-        <div className="container mx-auto flex flex-col items-center text-center">
-          <h2 className="mb-10 text-4xl leading-tight font-bold">About Us</h2>
+      <section id="about" className="border-b py-24">
+        <div className="container mx-auto w-full px-4 xl:max-w-7xl">
+          <h2 className="mb-10 text-center text-4xl leading-tight font-bold">
+            About Us
+          </h2>
 
-          <div className="text-muted-foreground max-w-2xl space-y-6 text-justify">
+          <div className="text-muted-foreground mx-auto max-w-2xl space-y-6 text-justify">
             <p>
               <strong>
                 <AuroraText
@@ -88,22 +92,61 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="team"
-        className="px-4 py-16 md:px-8 md:py-24 lg:px-12 lg:py-32"
-      >
-        <div className="container mx-auto flex flex-col items-center">
-          <h2 className="mb-12 text-center text-4xl leading-tight font-bold">
+      <section id="machines" className="border-b py-24">
+        <div className="container mx-auto flex flex-col items-center px-4 text-center xl:max-w-7xl">
+          <h2 className="mb-6 text-4xl leading-tight font-bold">
+            Machines Used
+          </h2>
+          <p className="text-muted-foreground mb-12 max-w-2xl">
+            Each device plays a vital role in assessing the strength, integrity,
+            and subsurface structure of university buildings.
+          </p>
+
+          <div className="grid w-full gap-6 lg:grid-cols-3">
+            {MACHINES.map((machine) => {
+              const Icon = machineIcons[machine.id];
+              return (
+                <div
+                  key={machine.id}
+                  className="rounded-xl border p-8 text-center"
+                >
+                  <div className="flex flex-col items-center">
+                    {Icon && (
+                      <div className="bg-border mb-4 rounded-full p-4">
+                        <Icon className="h-10 w-10" />
+                      </div>
+                    )}
+                    <div className="mb-2 font-semibold">
+                      {machine.name.slice(0, machine.name.indexOf("("))}
+                    </div>
+
+                    <Button variant={"link"} className="group" asChild>
+                      <Link href={`/${machine.id}`}>
+                        Learn more{" "}
+                        <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section id="team" className="py-24">
+        <div className="container mx-auto flex w-full flex-col items-center px-4 xl:max-w-7xl">
+          <h2 className="mb-10 text-center text-4xl leading-tight font-bold">
             Our Team
           </h2>
 
-          <div className="grid w-full gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {persons.map((member) => (
               <PersonCard key={member.name} person={member} />
             ))}
           </div>
         </div>
       </section>
-    </main>
+    </React.Fragment>
   );
 }

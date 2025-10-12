@@ -3,14 +3,14 @@ import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
 import SearchForm from "./search-form";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
+// import { Menu } from "lucide-react";
 
 export function Header() {
   return (
     // <header className="sticky top-0 z-50 w-full border-b bg-transparent backdrop-blur">
-    <header className="bg-background sticky top-0 z-50 w-full border-b">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
-        <Link href="/" className="flex items-center gap-2">
+    <header className="bg-background sticky top-0 z-50 border-b">
+      <nav className="container mx-auto flex h-16 items-center justify-between p-4 xl:max-w-7xl">
+        <Link href="/">
           <Image
             src="/images/logo.png"
             alt="StructSure Logo"
@@ -20,14 +20,20 @@ export function Header() {
           />
         </Link>
 
-        <nav className="flex items-center gap-2 md:gap-4">
+        <ul className="flex items-center gap-4">
           <Button variant="ghost" asChild>
-            <Link href="/buildings">Explore</Link>
+            <Link href="/buildings">Buildings</Link>
           </Button>
+
+          {/* <Button variant="ghost" asChild>
+            <Link href="/machines">Machines</Link>
+          </Button> */}
+
           <Button variant="ghost" asChild>
-            <Link href="/overall">Summary</Link>
+            <Link href="/summary">Summary</Link>
           </Button>
-          {["About", "Team"].map((label) => (
+
+          {["Machines", "About", "Team"].map((label) => (
             <Button key={label} variant="ghost" asChild>
               <Link href={`/#${label.toLowerCase()}`}>{label}</Link>
             </Button>
@@ -37,16 +43,16 @@ export function Header() {
 
           <ModeToggle />
 
-          <Button
+          {/* <Button
             variant="ghost"
             size="icon"
             className="md:hidden"
             aria-label="Open Menu"
           >
             <Menu className="h-5 w-5" />
-          </Button>
-        </nav>
-      </div>
+          </Button> */}
+        </ul>
+      </nav>
     </header>
   );
 }
