@@ -9,7 +9,7 @@ import { DashboardTable } from "./dashboard-table";
 
 export default function DigitalReboundHammer() {
   return (
-    <section className="border-b py-12">
+    <section className="border-b pb-12">
       <div className="container mx-auto w-full px-4 xl:max-w-7xl">
         <h2 className="text-center text-2xl font-bold tracking-tight">
           Digital Rebound Hammer
