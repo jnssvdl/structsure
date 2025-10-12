@@ -4,12 +4,24 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 export default function SearchForm() {
+  const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
 
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!searchQuery.trim()) return;
+
+    const params = new URLSearchParams({ q: searchQuery });
+
+    router.push(`/buildings?${params.toString()}`);
+  };
+
   return (
-    <form className="relative max-w-64">
+    <form className="relative max-w-64" onSubmit={handleSearch}>
       <Input
         placeholder="Search"
         value={searchQuery}
