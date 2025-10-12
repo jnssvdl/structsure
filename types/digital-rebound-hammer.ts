@@ -10,8 +10,10 @@ export type DigitalReboundHammerType = {
     testPoint: string;
     averageReboundNumber: number;
     averageCompressiveStrength: number;
-    reboundNumber: string;
-    compressiveStrength: string;
+    remarks: {
+      reboundNumber: string;
+      compressiveStrength: string;
+    };
   }[];
   chart: {
     floor: string;

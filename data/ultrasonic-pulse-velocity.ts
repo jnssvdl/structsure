@@ -30,8 +30,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.4,
         velocity: 3456,
         method: "DIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -39,8 +41,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.7,
         velocity: 3711,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -48,8 +52,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 30.7,
         velocity: 3876,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -57,8 +63,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 35.3,
         velocity: 3874,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -66,8 +74,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.5,
         velocity: 1920,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -75,8 +85,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.7,
         velocity: 1834,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -84,8 +96,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 93.4,
         velocity: 8569,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -93,8 +107,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 30.2,
         velocity: 3617,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -102,8 +118,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 30.2,
         velocity: 3629,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -111,8 +129,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.3,
         velocity: 2100,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -120,8 +140,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 48.8,
         velocity: 4777,
         method: "DIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -129,8 +151,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 30.3,
         velocity: 3160,
         method: "DIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -138,8 +162,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 0.7,
         velocity: 1980,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -147,8 +173,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.3,
         velocity: 2101,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -156,8 +184,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.3,
         velocity: 3484,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -165,8 +195,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 35.7,
         velocity: 3607,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -174,8 +206,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.6,
         velocity: 3699,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -183,8 +217,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 38,
         velocity: 3784,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -192,8 +228,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 35.4,
         velocity: 3759,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -201,8 +239,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.3,
         velocity: 3676,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -210,8 +250,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.7,
         velocity: 5149,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -219,8 +261,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 22.9,
         velocity: 3454,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -228,8 +272,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 25,
         velocity: 3268,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -237,8 +283,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.4,
         velocity: 3347,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -246,8 +294,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.6,
         velocity: 1684,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -255,8 +305,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 42.6,
         velocity: 4372,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -264,8 +316,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.4,
         velocity: 3095,
         method: "DIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -273,8 +327,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4.7,
         velocity: 1458,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -282,8 +338,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.2,
         velocity: 2519,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd floor",
@@ -291,8 +349,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.9,
         velocity: 2774,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -300,8 +360,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.8,
         velocity: 2456,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -309,8 +371,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6,
         velocity: 2086,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -318,8 +382,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 10.9,
         velocity: 2375,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -327,8 +393,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.6,
         velocity: 3695,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -336,8 +404,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.1,
         velocity: 2732,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -345,8 +415,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6,
         velocity: 2961,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -354,8 +426,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.4,
         velocity: 1256,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -363,8 +437,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.8,
         velocity: 1511,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -372,8 +448,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.6,
         velocity: 2537,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -381,8 +459,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.7,
         velocity: 2629,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -390,8 +470,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.4,
         velocity: 4439,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -399,8 +481,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 110.6,
         velocity: 3618,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Ultra-High-Performance Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Ultra-High-Performance Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -408,8 +492,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.9,
         velocity: 2220,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -417,8 +503,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.8,
         velocity: 2350,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd floor",
@@ -426,8 +514,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.2,
         velocity: 2817,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -435,8 +525,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.2,
         velocity: 1895,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -444,8 +536,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.5,
         velocity: 2177,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -453,8 +547,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.6,
         velocity: 2534,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -462,8 +558,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 35.4,
         velocity: 3552,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -471,8 +569,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.3,
         velocity: 3676,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -480,8 +580,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.4,
         velocity: 3575,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -489,8 +591,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 35.4,
         velocity: 3749,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -498,8 +602,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.3,
         velocity: 3676,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -507,8 +613,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.7,
         velocity: 3613,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -516,8 +624,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.5,
         velocity: 2047,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -525,8 +635,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.5,
         velocity: 2171,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -534,8 +646,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.2,
         velocity: 2204,
         method: "DIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -543,8 +657,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.9,
         velocity: 2162,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -552,8 +668,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.8,
         velocity: 2350,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4th floor",
@@ -561,8 +679,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.2,
         velocity: 2506,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -594,8 +714,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 2.6,
         velocity: 1503,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -603,8 +725,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 3.5,
         velocity: 2034,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -612,8 +736,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.4,
         velocity: 2233,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -621,8 +747,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.1,
         velocity: 2805,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -630,8 +758,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.7,
         velocity: 2456,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -639,8 +769,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.2,
         velocity: 3691,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -648,8 +780,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.3,
         velocity: 2424,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -657,8 +791,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.9,
         velocity: 2602,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -666,8 +802,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.7,
         velocity: 2716,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -675,8 +813,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.1,
         velocity: 3532,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -684,8 +824,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.4,
         velocity: 2893,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -693,8 +835,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.3,
         velocity: 3536,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -702,8 +846,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.1,
         velocity: 3172,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -711,8 +857,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.3,
         velocity: 2219,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -720,8 +868,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.9,
         velocity: 2691,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -729,8 +879,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.4,
         velocity: 3232,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -738,8 +890,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.7,
         velocity: 1852,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -747,8 +901,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.1,
         velocity: 2819,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -756,8 +912,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.9,
         velocity: 2556,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -765,8 +923,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.7,
         velocity: 2177,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -774,8 +934,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.9,
         velocity: 2204,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -783,8 +945,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.5,
         velocity: 2000,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -792,8 +956,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.1,
         velocity: 2790,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -801,8 +967,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.2,
         velocity: 2944,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -810,8 +978,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.4,
         velocity: 2268,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -819,8 +989,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.5,
         velocity: 2279,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -828,8 +1000,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.8,
         velocity: 2710,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -837,8 +1011,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.1,
         velocity: 2242,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -846,8 +1022,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.8,
         velocity: 2206,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -855,8 +1033,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.6,
         velocity: 2711,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -888,8 +1068,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.2,
         velocity: 2358,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -897,8 +1079,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.8,
         velocity: 3460,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -906,8 +1090,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.6,
         velocity: 2062,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -915,8 +1101,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 10.4,
         velocity: 2361,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -924,8 +1112,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.9,
         velocity: 2136,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -933,8 +1123,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.6,
         velocity: 2133,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -942,8 +1134,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.7,
         velocity: 3337,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -951,8 +1145,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 0.8,
         velocity: 1239,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -960,8 +1156,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 2.7,
         velocity: 1873,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -969,8 +1167,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 0.7,
         velocity: 1980,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -978,8 +1178,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.3,
         velocity: 2101,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -987,8 +1189,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.3,
         velocity: 3480,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -996,8 +1200,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.7,
         velocity: 2062,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1005,8 +1211,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 10.4,
         velocity: 2361,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1014,8 +1222,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.9,
         velocity: 2136,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1023,8 +1233,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.6,
         velocity: 2133,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1032,8 +1244,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.3,
         velocity: 2150,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1041,8 +1255,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.2,
         velocity: 2971,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1050,8 +1266,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4.5,
         velocity: 2058,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1059,8 +1277,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.8,
         velocity: 3175,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1068,8 +1288,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4.4,
         velocity: 1616,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1077,8 +1299,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.2,
         velocity: 3279,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1086,8 +1310,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4,
         velocity: 1956,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1095,8 +1321,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.4,
         velocity: 2169,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1104,8 +1332,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4.7,
         velocity: 1457,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1113,8 +1343,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.2,
         velocity: 2518,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -1122,8 +1354,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.9,
         velocity: 2773,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1131,8 +1365,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.1,
         velocity: 3386,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1140,8 +1376,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.9,
         velocity: 2673,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1149,8 +1387,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.6,
         velocity: 3210,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1158,8 +1398,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.1,
         velocity: 3087,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1167,8 +1409,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.1,
         velocity: 2320,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1176,8 +1420,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15,
         velocity: 4130,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1185,8 +1431,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.4,
         velocity: 3296,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1194,8 +1442,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.9,
         velocity: 3460,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1203,8 +1453,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.6,
         velocity: 2230,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1212,8 +1464,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.9,
         velocity: 2220,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1221,8 +1475,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.8,
         velocity: 2349,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -1230,8 +1486,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.2,
         velocity: 2839,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -1265,8 +1523,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 97.1,
         velocity: 7296,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1274,8 +1534,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 84.1,
         velocity: 5742,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1283,8 +1545,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 84.1,
         velocity: 4531,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1292,8 +1556,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.5,
         velocity: 2557,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1301,8 +1567,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.2,
         velocity: 2513,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1310,8 +1578,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.9,
         velocity: 2460,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1319,8 +1589,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4.9,
         velocity: 3497,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1328,8 +1600,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18,
         velocity: 2184,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1337,8 +1611,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 10.2,
         velocity: 6850,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1346,8 +1622,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.13,
         velocity: 4162,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1355,8 +1633,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 34,
         velocity: 1558,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1364,8 +1644,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 34.7,
         velocity: 3875,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1373,8 +1655,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.3,
         velocity: 2837,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1382,8 +1666,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 43,
         velocity: 2288,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1391,8 +1677,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.8,
         velocity: 3500,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1400,8 +1688,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.8,
         velocity: 2248,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1409,8 +1699,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.7,
         velocity: 5229,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1418,8 +1710,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 39.1,
         velocity: 6430,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1427,8 +1721,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 36.7,
         velocity: 6379,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1436,8 +1732,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.9,
         velocity: 7090,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1445,8 +1743,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 39.4,
         velocity: 5958,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1454,8 +1754,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 64.3,
         velocity: 5751,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1463,8 +1765,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 67.5,
         velocity: 5819,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1472,8 +1776,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 68.8,
         velocity: 6312,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1481,8 +1787,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.5,
         velocity: 3159,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1490,8 +1798,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.8,
         velocity: 2473,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1499,8 +1809,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.7,
         velocity: 2687,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1508,8 +1820,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 72.3,
         velocity: 6261,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1517,8 +1831,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 72.2,
         velocity: 4467,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1526,8 +1842,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 81.7,
         velocity: 5329,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1535,8 +1853,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 1.8,
         velocity: 2788,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1544,8 +1864,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 21.1,
         velocity: 6545,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1553,8 +1875,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 2.4,
         velocity: 1955,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1562,8 +1886,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 25.5,
         velocity: 3218,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1571,8 +1897,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.1,
         velocity: 3219,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1580,8 +1908,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.8,
         velocity: 3187,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1589,8 +1919,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.5,
         velocity: 3801,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1598,8 +1930,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.4,
         velocity: 3226,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1607,8 +1941,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 1.2,
         velocity: 1722,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1616,8 +1952,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 1.9,
         velocity: 2169,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1625,8 +1963,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 2.4,
         velocity: 1591,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -1634,8 +1974,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 63.4,
         velocity: 3156,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1643,8 +1985,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 14.93,
         velocity: 6350,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1652,8 +1996,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.3,
         velocity: 6485,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1661,8 +2007,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26.4,
         velocity: 2750,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1670,8 +2018,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 55.5,
         velocity: 5664,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1679,8 +2029,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 58.9,
         velocity: 6695,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1688,8 +2040,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 58.8,
         velocity: 5761,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1697,8 +2051,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.9,
         velocity: 3508,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1706,8 +2062,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 1.81,
         velocity: 3358,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Ultra-High-Performance Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Ultra-High-Performance Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1715,8 +2073,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 21.9,
         velocity: 4936,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1724,8 +2084,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23,
         velocity: 1455,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -1733,8 +2095,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 44.3,
         velocity: 1603,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -1769,8 +2133,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 38,
         velocity: 4095,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1778,8 +2144,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 37.4,
         velocity: 4025,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1787,8 +2155,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 38.6,
         velocity: 4391,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1796,8 +2166,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.7,
         velocity: 2751,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1805,8 +2177,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.7,
         velocity: 3884,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1814,8 +2188,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.1,
         velocity: 3150,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1823,8 +2199,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 30.2,
         velocity: 1785.714286,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1832,8 +2210,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.4,
         velocity: 1888.574127,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1841,8 +2221,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.7,
         velocity: 1755.926251,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1850,8 +2232,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.9,
         velocity: 3721,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1859,8 +2243,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.8,
         velocity: 3825,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1868,8 +2254,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.4,
         velocity: 3961,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1877,8 +2265,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 0,
         velocity: 1161,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1886,8 +2276,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 27.1,
         velocity: 1414,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -1895,8 +2287,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.5,
         velocity: 2118,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1904,8 +2298,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 37.9,
         velocity: 4094.827586,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1913,8 +2309,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 37.7,
         velocity: 4014.084507,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1922,8 +2320,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 38.4,
         velocity: 4442.712393,
         method: "DIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1931,8 +2331,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.9,
         velocity: 2691.79004,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1940,8 +2342,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.5,
         velocity: 3853.564547,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1949,8 +2353,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.6,
         velocity: 3184.713376,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1958,8 +2364,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.9,
         velocity: 1800.180018,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1967,8 +2375,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.1,
         velocity: 1826.484018,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1976,8 +2386,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.6,
         velocity: 1749.781277,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1985,8 +2397,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.9,
         velocity: 3708.281829,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -1994,8 +2408,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.9,
         velocity: 3807.106599,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2003,8 +2419,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.5,
         velocity: 3989.361702,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2012,8 +2430,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 0,
         velocity: 3310.10453,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2021,8 +2441,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.3,
         velocity: 2687.411598,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2030,8 +2452,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.9,
         velocity: 3019.067797,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2039,8 +2463,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.7,
         velocity: 2944,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2048,8 +2474,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.3,
         velocity: 3781,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2057,8 +2485,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.5,
         velocity: 3675,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2066,8 +2496,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13.3,
         velocity: 2538,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2075,8 +2507,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 3.1,
         velocity: 1358,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2084,8 +2518,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.8,
         velocity: 1385,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2093,8 +2529,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.2,
         velocity: 3616,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2102,8 +2540,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.2,
         velocity: 4290,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2111,8 +2551,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 5.2,
         velocity: 2502,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2120,8 +2562,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.8,
         velocity: 2391,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2129,8 +2573,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.3,
         velocity: 3499,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2138,8 +2584,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 27.4,
         velocity: 3371,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2147,8 +2595,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.8,
         velocity: 2188.183807,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2156,8 +2606,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26.5,
         velocity: 2173.913043,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2165,8 +2617,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.4,
         velocity: 2205.071665,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2174,8 +2628,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.4,
         velocity: 3125,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2183,8 +2639,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.6,
         velocity: 2318,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2192,8 +2650,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.5,
         velocity: 2118,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2201,8 +2661,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.1,
         velocity: 2636,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2210,8 +2672,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 14.5,
         velocity: 2467,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2219,8 +2683,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.1,
         velocity: 3327,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2228,8 +2694,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 27,
         velocity: 3814,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2237,8 +2705,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.8,
         velocity: 4612,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2246,8 +2716,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 25.6,
         velocity: 4791,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2255,8 +2727,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.2,
         velocity: 4568,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2264,8 +2738,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.3,
         velocity: 4784.688995,
         method: "INDIRECT",
-        concreteQuality: "Excellent",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Excellent",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2273,8 +2749,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.9,
         velocity: 4376.367615,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2282,8 +2760,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.4,
         velocity: 2247.191011,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2291,8 +2771,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.7,
         velocity: 3067.484663,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "4TH FLOOR",
@@ -2300,8 +2782,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.1,
         velocity: 2551.020408,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "5TH FLOOR",
@@ -2309,8 +2793,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 27.4,
         velocity: 2442.002442,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "5TH FLOOR",
@@ -2318,8 +2804,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.8,
         velocity: 2560.819462,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "5TH FLOOR",
@@ -2327,8 +2815,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26.5,
         velocity: 2418.379686,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "5TH FLOOR",
@@ -2336,8 +2826,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.4,
         velocity: 2232.142857,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "5TH FLOOR",
@@ -2345,8 +2837,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.4,
         velocity: 2380.952381,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "5TH FLOOR",
@@ -2354,8 +2848,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.2,
         velocity: 2254.791432,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -2386,8 +2882,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 38,
         velocity: 4092,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2395,8 +2893,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 34.6,
         velocity: 4030,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2404,8 +2904,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 34.4,
         velocity: 3841,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2413,8 +2915,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.4,
         velocity: 2888,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2422,8 +2926,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 22.5,
         velocity: 2859,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2431,8 +2937,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.2,
         velocity: 1152,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2440,8 +2948,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 20.2,
         velocity: 2225,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2449,8 +2959,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.4,
         velocity: 3282,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2458,8 +2970,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 19.8,
         velocity: 2662,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2467,8 +2981,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26.7,
         velocity: 3389,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2476,8 +2992,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 80.1,
         velocity: 3900,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2485,8 +3003,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.5,
         velocity: 2698,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2494,8 +3014,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 39.2,
         velocity: 4127,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2503,8 +3025,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33.1,
         velocity: 4095,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2512,8 +3036,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 71.3,
         velocity: 3128,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "High Strength Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "High Strength Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2521,8 +3047,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 48.2,
         velocity: 3316,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2530,8 +3058,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 37.7,
         velocity: 3759,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2539,8 +3069,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.1,
         velocity: 3565,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2548,8 +3080,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.7,
         velocity: 3916,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2557,8 +3091,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33,
         velocity: 3822,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2nd Floor",
@@ -2566,8 +3102,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 32.7,
         velocity: 3343,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2575,8 +3113,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 43.1,
         velocity: 2933,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2584,8 +3124,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 67,
         velocity: 3121,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2593,8 +3135,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 34.6,
         velocity: 2775,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3rd Floor",
@@ -2602,8 +3146,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 13,
         velocity: 3359,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -2634,8 +3180,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 33,
         velocity: 3791,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2643,8 +3191,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.4,
         velocity: 3782,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2652,8 +3202,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 27.1,
         velocity: 3053,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2661,8 +3213,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26.9,
         velocity: 3124,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2670,8 +3224,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.7,
         velocity: 2418,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2679,8 +3235,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26.9,
         velocity: 2946,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2688,8 +3246,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18,
         velocity: 3024,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2697,8 +3257,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.4,
         velocity: 2707,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2706,8 +3268,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18,
         velocity: 3648,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2715,8 +3279,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 39.6,
         velocity: 4166,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2724,8 +3290,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 39.5,
         velocity: 3056,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2733,8 +3301,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 30.5,
         velocity: 3106,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2742,8 +3312,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28,
         velocity: 3832,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2751,8 +3323,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 29.5,
         velocity: 3143,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2760,8 +3334,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 28.2,
         velocity: 3152,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2769,8 +3345,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16,
         velocity: 2709,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2778,8 +3356,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 25.5,
         velocity: 3448,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2787,8 +3367,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16,
         velocity: 3897,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2796,8 +3378,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.2,
         velocity: 2664,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2805,8 +3389,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.1,
         velocity: 3644,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2814,8 +3400,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.1,
         velocity: 3652,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2823,8 +3411,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17,
         velocity: 1993,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2832,8 +3422,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.3,
         velocity: 2841,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2841,8 +3433,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17.2,
         velocity: 2753,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2850,8 +3444,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16,
         velocity: 2335,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2859,8 +3455,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.9,
         velocity: 2846,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "3RD FLOOR",
@@ -2868,8 +3466,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.2,
         velocity: 3340,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -2898,8 +3498,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 51.8,
         velocity: 2628,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2907,8 +3509,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 39.4,
         velocity: 3024,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2916,8 +3520,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 35.4,
         velocity: 3312,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2925,8 +3531,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 31.2,
         velocity: 1826,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2934,8 +3542,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26,
         velocity: 3773,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2943,8 +3553,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 26,
         velocity: 2197,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2952,8 +3564,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.9,
         velocity: 1596,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2961,8 +3575,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.5,
         velocity: 3720,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2970,8 +3586,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24,
         velocity: 2852,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2979,8 +3597,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.1,
         velocity: 2343,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "1st Floor",
@@ -2988,8 +3608,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12,
         velocity: 2458,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -2997,8 +3619,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 23.9,
         velocity: 3184,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3006,8 +3630,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 17,
         velocity: 3059,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3015,8 +3641,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.9,
         velocity: 2217,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3024,8 +3652,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.9,
         velocity: 2379,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3033,8 +3663,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.7,
         velocity: 2732,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3042,8 +3674,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 15.6,
         velocity: 2420,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3051,8 +3685,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 16.4,
         velocity: 3404,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3060,8 +3696,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 24.5,
         velocity: 3720,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3069,8 +3707,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.3,
         velocity: 3559,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3078,8 +3718,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 4.2,
         velocity: 2191,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3087,8 +3729,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 18.5,
         velocity: 3292,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },
@@ -3118,8 +3762,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 3.5,
         velocity: 1930,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3127,8 +3773,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 2.8,
         velocity: 2021,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3136,8 +3784,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 1.7,
         velocity: 1706,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3145,8 +3795,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6.6,
         velocity: 2297,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3154,8 +3806,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 6,
         velocity: 2756,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3163,8 +3817,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 7.7,
         velocity: 2517,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3172,8 +3828,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.3,
         velocity: 2521,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "1ST FLOOR",
@@ -3181,17 +3839,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.9,
         velocity: 2543,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
-      },
-      {
-        location: "1ST FLOOR",
-        member: "C3",
-        compressiveStrength: 8.2,
-        velocity: 2422,
-        method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3199,8 +3850,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 10.4,
         velocity: 3053,
         method: "INDIRECT",
-        concreteQuality: "Doubtful/Fair",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Doubtful/Fair",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3208,8 +3861,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 11.3,
         velocity: 2852,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3217,8 +3872,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 8.7,
         velocity: 4030,
         method: "INDIRECT",
-        concreteQuality: "Good",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Good",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3226,8 +3883,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 2.9,
         velocity: 2424,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3235,8 +3894,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 0.8,
         velocity: 2849,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3244,8 +3905,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 1.9,
         velocity: 1822,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3253,8 +3916,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12.7,
         velocity: 2888,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3262,8 +3927,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 9.4,
         velocity: 2354,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Very Low Strength Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Very Low Strength Concrete",
+        },
       },
       {
         location: "2ND FLOOR",
@@ -3271,8 +3938,10 @@ export const ULTRASONIC_PULSE_VELOCITY: UltrasonicPulseVelocityType[] = [
         compressiveStrength: 12,
         velocity: 2803,
         method: "INDIRECT",
-        concreteQuality: "Poor or Defective",
-        remarks: "Normal Concrete",
+        remarks: {
+          concreteQuality: "Poor or Defective",
+          compressiveStrength: "Normal Concrete",
+        },
       },
     ],
   },

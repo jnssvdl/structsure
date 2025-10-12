@@ -10,8 +10,10 @@ export type UltrasonicPulseVelocityType = {
     compressiveStrength: number;
     velocity: number;
     method: string;
-    concreteQuality: string;
-    remarks: string;
+    remarks: {
+      concreteQuality: string;
+      compressiveStrength: string;
+    };
   }[];
   chart: {
     velocity: {
