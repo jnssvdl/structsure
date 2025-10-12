@@ -21,7 +21,7 @@ export default function SearchForm() {
   };
 
   return (
-    <form className="relative max-w-64" onSubmit={handleSearch}>
+    <form className="relative w-full md:max-w-64" onSubmit={handleSearch}>
       <Input
         placeholder="Search"
         value={searchQuery}
