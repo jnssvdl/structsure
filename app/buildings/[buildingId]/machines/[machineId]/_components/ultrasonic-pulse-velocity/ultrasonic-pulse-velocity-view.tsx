@@ -15,10 +15,7 @@ export default function UltrasonicPulseVelocityView({
         <div className="bg-card rounded-xl border p-6">
           <ul className="list-disc space-y-2 pl-6">
             {data.analysis.map((point, index) => (
-              <li
-                key={index}
-                className="text-muted-foreground text-sm leading-relaxed"
-              >
+              <li key={index} className="text-sm leading-relaxed">
                 {point}
               </li>
             ))}
@@ -26,12 +23,8 @@ export default function UltrasonicPulseVelocityView({
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-6 xl:grid-cols-2">
-          <div className="p-12">
-            <VelocityChart data={data.chart.velocity} />
-          </div>
-          <div className="p-12">
-            <CompressiveStrengthChart data={data.chart.compressiveStrength} />
-          </div>
+          <VelocityChart data={data.chart.velocity} />
+          <CompressiveStrengthChart data={data.chart.compressiveStrength} />
         </div>
 
         <div className="mt-6">
