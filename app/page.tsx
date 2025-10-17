@@ -8,6 +8,7 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { MACHINES } from "@/data/machines";
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { LinkCard } from "@/components/link-card";
 
 export default function Home() {
   return (
@@ -99,24 +100,13 @@ export default function Home() {
             {MACHINES.map((machine) => {
               const Icon = machine.icon;
               return (
-                <Link
+                <LinkCard
                   key={machine.id}
                   href={`/machines/${machine.id}`}
-                  className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all hover:shadow-2xs"
-                >
-                  {Icon && (
-                    <div className="bg-border mb-4 rounded-full p-4">
-                      <Icon className="h-10 w-10" />
-                    </div>
-                  )}
-                  <div className="mb-2 font-semibold">
-                    {machine.name.slice(0, machine.name.indexOf("("))}
-                  </div>
-                  <div className="flex items-center text-sm font-medium">
-                    Learn more{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                  </div>
-                </Link>
+                  Icon={Icon}
+                  title={machine.name.slice(0, machine.name.indexOf("("))}
+                  ctaText="Learn more"
+                />
               );
             })}
           </div>
