@@ -1,6 +1,7 @@
 import { DigitalReboundHammerType } from "@/types/digital-rebound-hammer";
 import DigitalReboundHammerTable from "./digital-rebound-hammer-table";
 import { DigitalReboundHammerChart } from "./digital-rebound-hammer-chart";
+import InfoCard from "@/components/info-card";
 
 export default function DigitalReboundHammerView({
   data,
@@ -12,33 +13,25 @@ export default function DigitalReboundHammerView({
       <section className="py-8">
         <div className="container mx-auto w-full px-4 xl:max-w-7xl">
           <div className="grid gap-6 lg:grid-cols-4">
-            <div className="bg-card h-full rounded-xl border p-4">
-              <h3 className="mb-2 text-sm font-medium">Compressive Strength</h3>
-              <p className="text-muted-foreground text-sm">
-                {data.analysis.compressiveStrength}
-              </p>
-            </div>
+            <InfoCard
+              title="Compressive Strength"
+              content={data.analysis.compressiveStrength}
+            />
 
-            <div className="bg-card h-full rounded-xl border p-4">
-              <h3 className="mb-2 text-sm font-medium">Rebound Value</h3>
-              <p className="text-muted-foreground text-sm">
-                {data.analysis.reboundValue}
-              </p>
-            </div>
+            <InfoCard
+              title="Rebound Value"
+              content={data.analysis.reboundValue}
+            />
 
-            <div className="bg-card h-full rounded-xl border p-4">
-              <h3 className="mb-2 text-sm font-medium">Concrete Condition</h3>
-              <p className="text-muted-foreground text-sm">
-                {data.analysis.conreteCondition}
-              </p>
-            </div>
+            <InfoCard
+              title="Concrete Condition"
+              content={data.analysis.conreteCondition}
+            />
 
-            <div className="bg-card h-full rounded-xl border p-4">
-              <h3 className="mb-2 text-sm font-medium">Recommendations</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {data.analysis.recommendation}
-              </p>
-            </div>
+            <InfoCard
+              title="Recommendations"
+              content={data.analysis.recommendation}
+            />
           </div>
 
           <div className="mt-6">
