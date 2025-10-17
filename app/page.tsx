@@ -13,7 +13,7 @@ import { LinkCard } from "@/components/link-card";
 export default function Home() {
   return (
     <React.Fragment>
-      <section className="relative border-b py-32">
+      <section className="relative border-b py-24 lg:py-32">
         <GridPattern
           width={32}
           height={32}
@@ -32,7 +32,7 @@ export default function Home() {
               StructSure
             </AuroraText>
           </div>
-          <h1 className="mt-6 text-4xl leading-tight font-bold xl:text-5xl">
+          <h1 className="mt-6 text-3xl leading-tight font-bold xl:text-5xl">
             A directory of structural health assessments at Cavite State
             University
           </h1>
