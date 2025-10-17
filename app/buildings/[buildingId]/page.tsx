@@ -4,8 +4,7 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { BUILDINGS } from "@/data/buildings";
 import { MACHINES } from "@/data/machines";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { LinkCard } from "@/components/link-card";
 
 export const dynamicParams = false;
 
@@ -91,26 +90,13 @@ export default async function BuildingPage({
           {MACHINES.map((machine) => {
             const Icon = machine.icon;
             return (
-              <Link
+              <LinkCard
                 key={machine.id}
                 href={`/buildings/${buildingId}/machines/${machine.id}`}
-                className="group hover:bg-card flex flex-col items-center rounded-xl border p-8 text-center transition-all hover:shadow-2xs"
-              >
-                {Icon && (
-                  <div className="bg-border mb-4 rounded-full p-4">
-                    <Icon className="h-10 w-10" />
-                  </div>
-                )}
-
-                <div className="mb-2 font-semibold">
-                  {machine.name.slice(0, machine.name.indexOf("("))}
-                </div>
-
-                <div className="flex items-center text-sm font-medium">
-                  View{" "}
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-                </div>
-              </Link>
+                title={machine.name.slice(0, machine.name.indexOf("("))}
+                Icon={Icon}
+                ctaText="View"
+              />
             );
           })}
         </div>
