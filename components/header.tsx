@@ -10,7 +10,7 @@ export function Header() {
   return (
     // <header className="sticky top-0 z-50 w-full border-b bg-transparent backdrop-blur">
     <header className="bg-background sticky top-0 z-50 border-b">
-      <div className="container mx-auto flex h-16 items-center justify-between p-4 xl:max-w-7xl">
+      <div className="container mx-auto flex h-16 items-center justify-between gap-4 p-4 xl:max-w-7xl">
         <Link href="/">
           <Image
             src="/images/logo.png"
